@@ -3,11 +3,12 @@ import 'dart:convert';
 
 class ModelStory {
   String title;
+  String description;
+  String content;
   String articleLink;
   String date;
-  String content;
   String? imageURL;
-  String description;
+  
   ModelStory({
     required this.title,
     required this.articleLink,

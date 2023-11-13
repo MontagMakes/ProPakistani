@@ -59,7 +59,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 (Navigator.push(
                     context,
                     MaterialPageRoute(
-                        builder: (context) => ScreenDescription(stories: stories,))))
+                        builder: (context) => ScreenDescription(stories: stories[index]))))
               },
               child: Stack(
                 children: [
