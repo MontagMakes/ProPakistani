@@ -73,7 +73,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       gradient: const LinearGradient(
 
                           colors: [Colors.black, Colors.transparent],
-                          stops: [],
+                          stops: [1, 1],
                           begin: Alignment.bottomCenter,
                           end: Alignment.topCenter),
                       image: DecorationImage(

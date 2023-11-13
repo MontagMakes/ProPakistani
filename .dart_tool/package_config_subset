@@ -31,9 +31,9 @@ fake_async
 file:///C:/Users/Montag/AppData/Local/Pub/Cache/hosted/pub.dev/fake_async-1.3.1/
 file:///C:/Users/Montag/AppData/Local/Pub/Cache/hosted/pub.dev/fake_async-1.3.1/lib/
 flutter_lints
-2.19
-file:///C:/Users/Montag/AppData/Local/Pub/Cache/hosted/pub.dev/flutter_lints-2.0.3/
-file:///C:/Users/Montag/AppData/Local/Pub/Cache/hosted/pub.dev/flutter_lints-2.0.3/lib/
+3.0
+file:///C:/Users/Montag/AppData/Local/Pub/Cache/hosted/pub.dev/flutter_lints-3.0.1/
+file:///C:/Users/Montag/AppData/Local/Pub/Cache/hosted/pub.dev/flutter_lints-3.0.1/lib/
 get_it
 3.0
 file:///C:/Users/Montag/AppData/Local/Pub/Cache/hosted/pub.dev/get_it-7.6.4/
@@ -44,8 +44,8 @@ file:///C:/Users/Montag/AppData/Local/Pub/Cache/hosted/pub.dev/http_parser-4.0.2
 file:///C:/Users/Montag/AppData/Local/Pub/Cache/hosted/pub.dev/http_parser-4.0.2/lib/
 lints
 3.0
-file:///C:/Users/Montag/AppData/Local/Pub/Cache/hosted/pub.dev/lints-2.1.1/
-file:///C:/Users/Montag/AppData/Local/Pub/Cache/hosted/pub.dev/lints-2.1.1/lib/
+file:///C:/Users/Montag/AppData/Local/Pub/Cache/hosted/pub.dev/lints-3.0.0/
+file:///C:/Users/Montag/AppData/Local/Pub/Cache/hosted/pub.dev/lints-3.0.0/lib/
 matcher
 2.18
 file:///C:/Users/Montag/AppData/Local/Pub/Cache/hosted/pub.dev/matcher-0.12.16/
@@ -120,6 +120,6 @@ file:///C:/flutter/packages/flutter_test/
 file:///C:/flutter/packages/flutter_test/lib/
 dawn
 3.0
-file:///E:/code/flutter%20projects/dawn/
-file:///E:/code/flutter%20projects/dawn/lib/
+file:///E:/code/flutter%20projects/tribune/
+file:///E:/code/flutter%20projects/tribune/lib/
 2
