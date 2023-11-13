@@ -1,7 +1,5 @@
-import 'package:dawn/api_manager.dart';
 import 'package:dawn/screens/screen_home_page/screen_home_page.dart';
 import 'package:flutter/material.dart';
-import 'package:get_it/get_it.dart';
 
 void main() {
   runApp(const MyApp());

@@ -1,5 +1,3 @@
-import 'dart:math';
-import 'dart:developer';
 import 'package:dawn/models/model_story.dart';
 import 'package:dio/dio.dart';
 import 'package:xml/xml.dart';
@@ -15,10 +13,8 @@ class ApiService {
         var document = XmlDocument.parse(response.toString());
 
         var numberOfStories = document.findAllElements("title").length - 1;
-        print(numberOfStories);
 
         for (var i = 1; i < numberOfStories; i++) {
-          print(i);
 
           var title = document.findAllElements("title").elementAt(i).innerText;
           var articleLink =
