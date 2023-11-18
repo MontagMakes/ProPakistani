@@ -8,17 +8,16 @@ import 'package:flutter/material.dart';
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key});
-  
+
   @override
   State<MyHomePage> createState() => _MyHomePageState();
 }
 
 class _MyHomePageState extends State<MyHomePage> {
+  int categoryIndex = 0;
+  bool isDarkModeEnabled = false;
   List<ModelStory> stories = [];
 
-  int categoryIndex = 0;
-
-  bool isDarkModeEnabled = false;
   @override
   void initState() {
     super.initState();
