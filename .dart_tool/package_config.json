@@ -74,6 +74,12 @@
       "languageVersion": "3.0"
     },
     {
+      "name": "html_unescape",
+      "rootUri": "file:///C:/Users/Montag/AppData/Local/Pub/Cache/hosted/pub.dev/html_unescape-2.0.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "http_parser",
       "rootUri": "file:///C:/Users/Montag/AppData/Local/Pub/Cache/hosted/pub.dev/http_parser-4.0.2",
       "packageUri": "lib/",
@@ -188,7 +194,7 @@
       "languageVersion": "3.0"
     }
   ],
-  "generated": "2023-11-13T11:37:02.746994Z",
+  "generated": "2023-11-18T12:52:01.500968Z",
   "generator": "pub",
   "generatorVersion": "3.1.5"
 }

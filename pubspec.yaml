@@ -38,6 +38,8 @@ dependencies:
   get_it: ^7.6.4
   dio: ^5.3.3
   xml: ^6.3.0
+  html_unescape: ^2.0.0
+
 
 dev_dependencies:
   flutter_test:

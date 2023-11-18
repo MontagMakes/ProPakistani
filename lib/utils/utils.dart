@@ -4,7 +4,7 @@ final List<String> categories = [
   'World',
   'Sports',
   'Opinion',
-  'Movies',
+  'TV',
   'Latest',
-  'Analysis'
+  'Analysis',
 ];
