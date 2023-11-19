@@ -39,6 +39,7 @@ dependencies:
   dio: ^5.3.3
   xml: ^6.3.0
   html_unescape: ^2.0.0
+  google_fonts: ^6.1.0
 
 
 dev_dependencies:

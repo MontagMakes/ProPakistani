@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 application
-INJECTED from E:\code\flutter projects\tribune\android\app\src\main\AndroidManifest.xml:2:5-32:19
+INJECTED from E:\code\flutter projects\tribune\android\app\src\main\AndroidManifest.xml:3:5-33:19
 MERGED from [androidx.window:window:1.0.0-beta04] C:\Users\Montag\.gradle\caches\transforms-3\25cee5f028ac2a6b79fd6278ff5b59e2\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:24:5-31:19
 MERGED from [androidx.window:window:1.0.0-beta04] C:\Users\Montag\.gradle\caches\transforms-3\25cee5f028ac2a6b79fd6278ff5b59e2\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:24:5-31:19
 MERGED from [androidx.core:core:1.6.0] C:\Users\Montag\.gradle\caches\transforms-3\7e9df2ac2213a6bd3cef0f2f27870d79\transformed\core-1.6.0\AndroidManifest.xml:24:5-89
@@ -10,17 +10,17 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\Mo
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.6.0] C:\Users\Montag\.gradle\caches\transforms-3\7e9df2ac2213a6bd3cef0f2f27870d79\transformed\core-1.6.0\AndroidManifest.xml:24:18-86
 	android:label
-		ADDED from E:\code\flutter projects\tribune\android\app\src\main\AndroidManifest.xml:3:9-29
+		ADDED from E:\code\flutter projects\tribune\android\app\src\main\AndroidManifest.xml:4:9-44
 	android:icon
-		ADDED from E:\code\flutter projects\tribune\android\app\src\main\AndroidManifest.xml:5:9-43
+		ADDED from E:\code\flutter projects\tribune\android\app\src\main\AndroidManifest.xml:6:9-43
 	android:name
 		INJECTED from E:\code\flutter projects\tribune\android\app\src\main\AndroidManifest.xml
-		ADDED from E:\code\flutter projects\tribune\android\app\src\main\AndroidManifest.xml:4:9-42
+		ADDED from E:\code\flutter projects\tribune\android\app\src\main\AndroidManifest.xml:5:9-42
 manifest
-ADDED from E:\code\flutter projects\tribune\android\app\src\main\AndroidManifest.xml:1:1-33:12
-INJECTED from E:\code\flutter projects\tribune\android\app\src\main\AndroidManifest.xml:1:1-33:12
-INJECTED from E:\code\flutter projects\tribune\android\app\src\main\AndroidManifest.xml:1:1-33:12
-INJECTED from E:\code\flutter projects\tribune\android\app\src\main\AndroidManifest.xml:1:1-33:12
+ADDED from E:\code\flutter projects\tribune\android\app\src\main\AndroidManifest.xml:1:1-34:12
+INJECTED from E:\code\flutter projects\tribune\android\app\src\main\AndroidManifest.xml:1:1-34:12
+INJECTED from E:\code\flutter projects\tribune\android\app\src\main\AndroidManifest.xml:1:1-34:12
+INJECTED from E:\code\flutter projects\tribune\android\app\src\main\AndroidManifest.xml:1:1-34:12
 MERGED from [androidx.window:window-java:1.0.0-beta04] C:\Users\Montag\.gradle\caches\transforms-3\ae81e06d24c799147c26814497a2a305\transformed\jetified-window-java-1.0.0-beta04\AndroidManifest.xml:17:1-23:12
 MERGED from [androidx.window:window:1.0.0-beta04] C:\Users\Montag\.gradle\caches\transforms-3\25cee5f028ac2a6b79fd6278ff5b59e2\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:17:1-33:12
 MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\Montag\.gradle\caches\transforms-3\75f94412898c7559d34d7edbbeaeb394\transformed\fragment-1.1.0\AndroidManifest.xml:17:1-24:12
@@ -38,23 +38,27 @@ MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\Montag\.gradle\cach
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\Montag\.gradle\caches\transforms-3\47ecd4e588b99ef3b772f04d5aa6c9b7\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:17:1-27:12
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\Montag\.gradle\caches\transforms-3\03b9b3b952540ee8cedf6c096276d934\transformed\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\Montag\.gradle\caches\transforms-3\6c0c163cc77ae6c91f9f7dfcd179c29c\transformed\jetified-annotation-experimental-1.1.0\AndroidManifest.xml:17:1-24:12
-INJECTED from E:\code\flutter projects\tribune\android\app\src\main\AndroidManifest.xml:1:1-33:12
-INJECTED from E:\code\flutter projects\tribune\android\app\src\main\AndroidManifest.xml:1:1-33:12
-INJECTED from E:\code\flutter projects\tribune\android\app\src\main\AndroidManifest.xml:1:1-33:12
+INJECTED from E:\code\flutter projects\tribune\android\app\src\main\AndroidManifest.xml:1:1-34:12
+INJECTED from E:\code\flutter projects\tribune\android\app\src\main\AndroidManifest.xml:1:1-34:12
+INJECTED from E:\code\flutter projects\tribune\android\app\src\main\AndroidManifest.xml:1:1-34:12
 	package
 		INJECTED from E:\code\flutter projects\tribune\android\app\src\main\AndroidManifest.xml
-		ADDED from E:\code\flutter projects\tribune\android\app\src\main\AndroidManifest.xml:1:1-33:12
+		ADDED from E:\code\flutter projects\tribune\android\app\src\main\AndroidManifest.xml:1:1-34:12
 		INJECTED from E:\code\flutter projects\tribune\android\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from E:\code\flutter projects\tribune\android\app\src\main\AndroidManifest.xml
-		ADDED from E:\code\flutter projects\tribune\android\app\src\main\AndroidManifest.xml:1:1-33:12
+		ADDED from E:\code\flutter projects\tribune\android\app\src\main\AndroidManifest.xml:1:1-34:12
 		INJECTED from E:\code\flutter projects\tribune\android\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from E:\code\flutter projects\tribune\android\app\src\main\AndroidManifest.xml
-		ADDED from E:\code\flutter projects\tribune\android\app\src\main\AndroidManifest.xml:1:1-33:12
+		ADDED from E:\code\flutter projects\tribune\android\app\src\main\AndroidManifest.xml:1:1-34:12
 		INJECTED from E:\code\flutter projects\tribune\android\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from E:\code\flutter projects\tribune\android\app\src\main\AndroidManifest.xml:1:11-69
+uses-permission#android.permission.INTERNET
+ADDED from E:\code\flutter projects\tribune\android\app\src\main\AndroidManifest.xml:2:1-62
+	android:name
+		ADDED from E:\code\flutter projects\tribune\android\app\src\main\AndroidManifest.xml:2:18-60
 uses-sdk
 INJECTED from E:\code\flutter projects\tribune\android\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from E:\code\flutter projects\tribune\android\app\src\main\AndroidManifest.xml
@@ -104,43 +108,43 @@ INJECTED from E:\code\flutter projects\tribune\android\app\src\main\AndroidManif
 		ADDED from E:\code\flutter projects\tribune\android\app\src\main\AndroidManifest.xml
 		INJECTED from E:\code\flutter projects\tribune\android\app\src\main\AndroidManifest.xml
 activity#com.example.dawn.MainActivity
-ADDED from E:\code\flutter projects\tribune\android\app\src\main\AndroidManifest.xml:6:9-26:20
+ADDED from E:\code\flutter projects\tribune\android\app\src\main\AndroidManifest.xml:7:9-27:20
 	android:launchMode
-		ADDED from E:\code\flutter projects\tribune\android\app\src\main\AndroidManifest.xml:9:13-43
+		ADDED from E:\code\flutter projects\tribune\android\app\src\main\AndroidManifest.xml:10:13-43
 	android:hardwareAccelerated
-		ADDED from E:\code\flutter projects\tribune\android\app\src\main\AndroidManifest.xml:12:13-47
+		ADDED from E:\code\flutter projects\tribune\android\app\src\main\AndroidManifest.xml:13:13-47
 	android:windowSoftInputMode
-		ADDED from E:\code\flutter projects\tribune\android\app\src\main\AndroidManifest.xml:13:13-55
+		ADDED from E:\code\flutter projects\tribune\android\app\src\main\AndroidManifest.xml:14:13-55
 	android:exported
-		ADDED from E:\code\flutter projects\tribune\android\app\src\main\AndroidManifest.xml:8:13-36
+		ADDED from E:\code\flutter projects\tribune\android\app\src\main\AndroidManifest.xml:9:13-36
 	android:configChanges
-		ADDED from E:\code\flutter projects\tribune\android\app\src\main\AndroidManifest.xml:11:13-163
+		ADDED from E:\code\flutter projects\tribune\android\app\src\main\AndroidManifest.xml:12:13-163
 	android:theme
-		ADDED from E:\code\flutter projects\tribune\android\app\src\main\AndroidManifest.xml:10:13-47
+		ADDED from E:\code\flutter projects\tribune\android\app\src\main\AndroidManifest.xml:11:13-47
 	android:name
-		ADDED from E:\code\flutter projects\tribune\android\app\src\main\AndroidManifest.xml:7:13-41
+		ADDED from E:\code\flutter projects\tribune\android\app\src\main\AndroidManifest.xml:8:13-41
 meta-data#io.flutter.embedding.android.NormalTheme
-ADDED from E:\code\flutter projects\tribune\android\app\src\main\AndroidManifest.xml:18:13-21:17
+ADDED from E:\code\flutter projects\tribune\android\app\src\main\AndroidManifest.xml:19:13-22:17
 	android:resource
-		ADDED from E:\code\flutter projects\tribune\android\app\src\main\AndroidManifest.xml:20:15-52
+		ADDED from E:\code\flutter projects\tribune\android\app\src\main\AndroidManifest.xml:21:15-52
 	android:name
-		ADDED from E:\code\flutter projects\tribune\android\app\src\main\AndroidManifest.xml:19:15-70
+		ADDED from E:\code\flutter projects\tribune\android\app\src\main\AndroidManifest.xml:20:15-70
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from E:\code\flutter projects\tribune\android\app\src\main\AndroidManifest.xml:22:13-25:29
+ADDED from E:\code\flutter projects\tribune\android\app\src\main\AndroidManifest.xml:23:13-26:29
 action#android.intent.action.MAIN
-ADDED from E:\code\flutter projects\tribune\android\app\src\main\AndroidManifest.xml:23:17-68
+ADDED from E:\code\flutter projects\tribune\android\app\src\main\AndroidManifest.xml:24:17-68
 	android:name
-		ADDED from E:\code\flutter projects\tribune\android\app\src\main\AndroidManifest.xml:23:25-66
+		ADDED from E:\code\flutter projects\tribune\android\app\src\main\AndroidManifest.xml:24:25-66
 category#android.intent.category.LAUNCHER
-ADDED from E:\code\flutter projects\tribune\android\app\src\main\AndroidManifest.xml:24:17-76
+ADDED from E:\code\flutter projects\tribune\android\app\src\main\AndroidManifest.xml:25:17-76
 	android:name
-		ADDED from E:\code\flutter projects\tribune\android\app\src\main\AndroidManifest.xml:24:27-74
+		ADDED from E:\code\flutter projects\tribune\android\app\src\main\AndroidManifest.xml:25:27-74
 meta-data#flutterEmbedding
-ADDED from E:\code\flutter projects\tribune\android\app\src\main\AndroidManifest.xml:29:9-31:33
+ADDED from E:\code\flutter projects\tribune\android\app\src\main\AndroidManifest.xml:30:9-32:33
 	android:value
-		ADDED from E:\code\flutter projects\tribune\android\app\src\main\AndroidManifest.xml:31:13-30
+		ADDED from E:\code\flutter projects\tribune\android\app\src\main\AndroidManifest.xml:32:13-30
 	android:name
-		ADDED from E:\code\flutter projects\tribune\android\app\src\main\AndroidManifest.xml:30:13-44
+		ADDED from E:\code\flutter projects\tribune\android\app\src\main\AndroidManifest.xml:31:13-44
 uses-library#androidx.window.extensions
 ADDED from [androidx.window:window:1.0.0-beta04] C:\Users\Montag\.gradle\caches\transforms-3\25cee5f028ac2a6b79fd6278ff5b59e2\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:25:9-27:40
 	android:required

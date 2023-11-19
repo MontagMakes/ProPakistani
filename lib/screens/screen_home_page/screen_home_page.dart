@@ -5,6 +5,7 @@ import 'package:dawn/screens/screen_description/screen_description.dart';
 import 'package:dawn/utils/utils.dart';
 
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key});
@@ -24,7 +25,7 @@ class _MyHomePageState extends State<MyHomePage> {
     getTribuneNews();
   }
 
-   void onStateChanged(bool isDarkModeEnabled) {
+  void onStateChanged(bool isDarkModeEnabled) {
     setState(() {
       this.isDarkModeEnabled = isDarkModeEnabled;
     });
@@ -39,28 +40,24 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      
       //Drawer
       drawer: Drawer(
         child: ListView(
           children: [
             DrawerHeader(
                 child: Image.network(
-                    "https://i.tribune.com.pk/media/images/logos/tribune-logo.webp"
-                )
-            ),
-            
+                    "https://i.tribune.com.pk/media/images/logos/tribune-logo.webp")),
+
             //Home category
             ListTile(
               title: const Text('Home'),
-              onTap: () async{
+              onTap: () async {
                 stories = (await ApiService().getNews("home"));
-                if(mounted){
+                if (mounted) {
                   setState(() {
                     Navigator.pop(context);
-                    categoryIndex = 0;  
+                    categoryIndex = 0;
                   });
-                  
                 }
               },
             ),
@@ -68,13 +65,13 @@ class _MyHomePageState extends State<MyHomePage> {
             //Business category
             ListTile(
               title: const Text('Business'),
-              onTap: () async{
+              onTap: () async {
                 stories = (await ApiService().getNews("business"));
-                if(mounted){
+                if (mounted) {
                   setState(() {
                     Navigator.pop(context);
-                    categoryIndex = 1;  
-                  }); 
+                    categoryIndex = 1;
+                  });
                 }
               },
             ),
@@ -82,14 +79,13 @@ class _MyHomePageState extends State<MyHomePage> {
             //World category
             ListTile(
               title: const Text('World'),
-              onTap: () async{
+              onTap: () async {
                 stories = (await ApiService().getNews("world"));
-                if(mounted){
+                if (mounted) {
                   setState(() {
                     Navigator.pop(context);
-                    categoryIndex = 2;  
+                    categoryIndex = 2;
                   });
-                  
                 }
               },
             ),
@@ -97,14 +93,13 @@ class _MyHomePageState extends State<MyHomePage> {
             //Sports category
             ListTile(
               title: const Text('Sports'),
-              onTap: () async{
+              onTap: () async {
                 stories = (await ApiService().getNews("sports"));
-                if(mounted){
+                if (mounted) {
                   setState(() {
                     Navigator.pop(context);
-                    categoryIndex = 3;  
+                    categoryIndex = 3;
                   });
-                  
                 }
               },
             ),
@@ -112,14 +107,13 @@ class _MyHomePageState extends State<MyHomePage> {
             //Opinion category
             ListTile(
               title: const Text('Opinion'),
-              onTap: () async{
+              onTap: () async {
                 stories = (await ApiService().getNews("opinion"));
-                if(mounted){
+                if (mounted) {
                   setState(() {
                     Navigator.pop(context);
-                    categoryIndex = 4;  
+                    categoryIndex = 4;
                   });
-                  
                 }
               },
             ),
@@ -127,14 +121,13 @@ class _MyHomePageState extends State<MyHomePage> {
             //TV category
             ListTile(
               title: const Text('TV'),
-              onTap: () async{
+              onTap: () async {
                 stories = (await ApiService().getNews("tv"));
-                if(mounted){
+                if (mounted) {
                   setState(() {
                     Navigator.pop(context);
-                    categoryIndex = 5;  
+                    categoryIndex = 5;
                   });
-                  
                 }
               },
             ),
@@ -142,14 +135,13 @@ class _MyHomePageState extends State<MyHomePage> {
             //Latest Category
             ListTile(
               title: const Text('Latest'),
-              onTap: () async{
+              onTap: () async {
                 stories = (await ApiService().getNews("latest"));
-                if(mounted){
+                if (mounted) {
                   setState(() {
                     Navigator.pop(context);
-                    categoryIndex = 6;  
+                    categoryIndex = 6;
                   });
-                  
                 }
               },
             ),
@@ -157,12 +149,12 @@ class _MyHomePageState extends State<MyHomePage> {
             //Analysis Category
             ListTile(
               title: const Text('Analysis'),
-              onTap: () async{
+              onTap: () async {
                 stories = (await ApiService().getNews("analysis"));
-                if(mounted){
+                if (mounted) {
                   setState(() {
                     Navigator.pop(context);
-                    categoryIndex = 7;  
+                    categoryIndex = 7;
                   });
                 }
               },
@@ -170,25 +162,42 @@ class _MyHomePageState extends State<MyHomePage> {
           ],
         ),
       ),
-      
+
       appBar: AppBar(
         
-          title: Row(
-            mainAxisAlignment: MainAxisAlignment.center,
+        title: Padding(
+          padding: EdgeInsets.only(left: MediaQuery.sizeOf(context).width*0.12),
+          child: RichText(
+            
+              text: TextSpan(
             children: [
-              Padding(
-                padding: EdgeInsets.only(right: MediaQuery.of(context).size.width *0.15),
-                child: const Image(
-                  image: NetworkImage(
-                      "https://i.tribune.com.pk/media/images/logos/tribune-logo.webp"),
-                  height: 40,
-                ),
+              TextSpan(
+                text: "TRIBUNE",
+                style: GoogleFonts.playfairDisplay(
+                    fontSize: 35,
+                    color: Colors.black,
+                    fontWeight: FontWeight.w500),
               ),
+              WidgetSpan(
+                child: Transform.translate(
+                    offset: const Offset(-65, -30),
+                    child: const Text(
+                      "THE EXPRESS",
+                      style: TextStyle(fontSize: 10, color: Colors.red),
+                    )),
+              )
             ],
           )),
+        ),
+      ),
       body: Column(
         children: [
-          Center(child: Text(categories[categoryIndex], style: TextStyle(fontSize: 20),),),
+          Center(
+            child: Text(
+              categories[categoryIndex],
+              style: const TextStyle(fontSize: 20),
+            ),
+          ),
           Expanded(
             child: ListView.separated(
                 shrinkWrap: true,
