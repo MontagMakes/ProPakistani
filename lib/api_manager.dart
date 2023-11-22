@@ -40,7 +40,7 @@ class ApiService {
               document.findAllElements("description").elementAt(i).innerText;
               description = description.trimLeft().trimRight();
           var imageURL =
-              document.findAllElements("img").elementAt(i).getAttribute("src");
+              document.findAllElements("img").elementAt(i-1).getAttribute("src");
 
           toReturn.add(ModelStory(
               title: title,

@@ -3,8 +3,10 @@ import 'package:dawn/globals/globals.dart';
 import 'package:dawn/models/model_story.dart';
 import 'package:dawn/screens/screen_description/screen_description.dart';
 import 'package:dawn/utils/utils.dart';
+import 'package:flutter/foundation.dart';
 
 import 'package:flutter/material.dart';
+import 'package:flutter/scheduler.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class MyHomePage extends StatefulWidget {
@@ -16,20 +18,17 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   int categoryIndex = 0;
-  bool isDarkModeEnabled = false;
   List<ModelStory> stories = [];
+  final ScrollController _controller = ScrollController();
 
   @override
   void initState() {
     super.initState();
     getTribuneNews();
+    
   }
 
-  void onStateChanged(bool isDarkModeEnabled) {
-    setState(() {
-      this.isDarkModeEnabled = isDarkModeEnabled;
-    });
-  }
+
 
   getTribuneNews() async {
     stories = (await ApiService().getNews("home"));
@@ -39,14 +38,20 @@ class _MyHomePageState extends State<MyHomePage> {
 
   @override
   Widget build(BuildContext context) {
+    final isDarkMode = Theme.of(context).brightness == Brightness.dark; 
     return Scaffold(
-      //Drawer
       drawer: Drawer(
         child: ListView(
           children: [
             DrawerHeader(
-                child: Image.network(
-                    "https://i.tribune.com.pk/media/images/logos/tribune-logo.webp")),
+              child: Image.asset(
+                isDarkMode
+                ? "assets/tribune-logo-dark-mode.png"
+                : "assets/tribune-logo.png",
+                
+                fit: BoxFit.contain,
+              )
+            ),
 
             //Home category
             ListTile(
@@ -57,6 +62,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   setState(() {
                     Navigator.pop(context);
                     categoryIndex = 0;
+                    scrollToTopInstantly(_controller);
                   });
                 }
               },
@@ -71,6 +77,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   setState(() {
                     Navigator.pop(context);
                     categoryIndex = 1;
+                    scrollToTopInstantly(_controller);
                   });
                 }
               },
@@ -85,6 +92,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   setState(() {
                     Navigator.pop(context);
                     categoryIndex = 2;
+                    scrollToTopInstantly(_controller);
                   });
                 }
               },
@@ -99,6 +107,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   setState(() {
                     Navigator.pop(context);
                     categoryIndex = 3;
+                    scrollToTopInstantly(_controller);
                   });
                 }
               },
@@ -113,6 +122,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   setState(() {
                     Navigator.pop(context);
                     categoryIndex = 4;
+                    scrollToTopInstantly(_controller);
                   });
                 }
               },
@@ -127,6 +137,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   setState(() {
                     Navigator.pop(context);
                     categoryIndex = 5;
+                    scrollToTopInstantly(_controller);
                   });
                 }
               },
@@ -141,6 +152,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   setState(() {
                     Navigator.pop(context);
                     categoryIndex = 6;
+                    scrollToTopInstantly(_controller);
                   });
                 }
               },
@@ -155,6 +167,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   setState(() {
                     Navigator.pop(context);
                     categoryIndex = 7;
+                    scrollToTopInstantly(_controller);
                   });
                 }
               },
@@ -164,42 +177,35 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
 
       appBar: AppBar(
-        
         title: Padding(
-          padding: EdgeInsets.only(left: MediaQuery.sizeOf(context).width*0.12),
-          child: RichText(
-            
-              text: TextSpan(
-            children: [
-              TextSpan(
-                text: "TRIBUNE",
-                style: GoogleFonts.playfairDisplay(
-                    fontSize: 35,
-                    color: Colors.black,
-                    fontWeight: FontWeight.w500),
-              ),
-              WidgetSpan(
-                child: Transform.translate(
-                    offset: const Offset(-65, -30),
-                    child: const Text(
-                      "THE EXPRESS",
-                      style: TextStyle(fontSize: 10, color: Colors.red),
-                    )),
+          padding: EdgeInsets.only(left: MediaQuery.sizeOf(context).width*0.12),  
+          child: Image.asset(
+                isDarkMode
+                ? "assets/tribune-logo-dark-mode.png"
+                : "assets/tribune-logo.png",
+                width: MediaQuery.sizeOf(context).width * 0.4,
+                fit: BoxFit.contain,
               )
-            ],
-          )),
         ),
+        actions: [
+          IconButton(onPressed: (){
+            ThemeData.dark();
+          }, icon: Icon(Icons.dark_mode))
+        ],
       ),
+
       body: Column(
         children: [
           Center(
             child: Text(
               categories[categoryIndex],
-              style: const TextStyle(fontSize: 20),
+              
+              style: const TextStyle(fontSize: 20, ),
             ),
           ),
           Expanded(
             child: ListView.separated(
+              controller: _controller,
                 shrinkWrap: true,
                 itemBuilder: (context, index) {
                   return GestureDetector(
