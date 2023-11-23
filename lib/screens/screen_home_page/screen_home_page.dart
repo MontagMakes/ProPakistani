@@ -1,12 +1,11 @@
+import 'package:adaptive_theme/adaptive_theme.dart';
 import 'package:dawn/api_manager.dart';
 import 'package:dawn/globals/globals.dart';
 import 'package:dawn/models/model_story.dart';
 import 'package:dawn/screens/screen_description/screen_description.dart';
 import 'package:dawn/utils/utils.dart';
-import 'package:flutter/foundation.dart';
-
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class MyHomePage extends StatefulWidget {
@@ -25,10 +24,7 @@ class _MyHomePageState extends State<MyHomePage> {
   void initState() {
     super.initState();
     getTribuneNews();
-    
   }
-
-
 
   getTribuneNews() async {
     stories = (await ApiService().getNews("home"));
@@ -38,19 +34,46 @@ class _MyHomePageState extends State<MyHomePage> {
 
   @override
   Widget build(BuildContext context) {
-    final isDarkMode = Theme.of(context).brightness == Brightness.dark; 
+    final isDarkMode = AdaptiveTheme.of(context).mode == AdaptiveThemeMode.dark;
     return Scaffold(
+      drawerDragStartBehavior: DragStartBehavior.start,
       drawer: Drawer(
         child: ListView(
           children: [
-            DrawerHeader(
-              child: Image.asset(
-                isDarkMode
-                ? "assets/tribune-logo-dark-mode.png"
-                : "assets/tribune-logo.png",
-                
-                fit: BoxFit.contain,
-              )
+            SizedBox(
+              height: 75,
+              child: RichText(
+                text: TextSpan(children: [
+                  WidgetSpan(
+                    child: Transform(
+                      transform: Matrix4.translationValues(
+                          MediaQuery.sizeOf(context).width * 0.08, 0, 0),
+                      child: Text(
+                        "TRIBUNE",
+                        style: GoogleFonts.playfair(
+                            fontSize: 60,
+                            color: isDarkMode ? Colors.white : Colors.black),
+                      ),
+                    ),
+                  ),
+                  WidgetSpan(
+                    child: Transform(
+                      transform: Matrix4.translationValues(
+                          -MediaQuery.sizeOf(context).width * -0.463,
+                          -MediaQuery.sizeOf(context).height * 0.1,
+                          0),
+                      child: Text(
+                        "THE EXPRESS",
+                        style: TextStyle(
+                            fontSize: 13,
+                            color: isDarkMode
+                                ? Colors.red
+                                : Colors.redAccent.shade700),
+                      ),
+                    ),
+                  )
+                ]),
+              ),
             ),
 
             //Home category
@@ -175,37 +198,67 @@ class _MyHomePageState extends State<MyHomePage> {
           ],
         ),
       ),
-
       appBar: AppBar(
-        title: Padding(
-          padding: EdgeInsets.only(left: MediaQuery.sizeOf(context).width*0.12),  
-          child: Image.asset(
-                isDarkMode
-                ? "assets/tribune-logo-dark-mode.png"
-                : "assets/tribune-logo.png",
-                width: MediaQuery.sizeOf(context).width * 0.4,
-                fit: BoxFit.contain,
-              )
+        centerTitle: true,
+        title: RichText(
+          text: TextSpan(children: [
+            WidgetSpan(
+              child: Transform(
+                transform: Matrix4.translationValues(
+                    MediaQuery.sizeOf(context).width * 0.09, 0, 0),
+                child: Text(
+                  "TRIBUNE",
+                  style: GoogleFonts.playfair(
+                      fontSize: 43,
+                      color: isDarkMode ? Colors.white : Colors.black),
+                ),
+              ),
+            ),
+            WidgetSpan(
+              child: Transform(
+                transform: Matrix4.translationValues(
+                    -MediaQuery.sizeOf(context).width * 0.085, -40, 0),
+                child: Text(
+                  "THE EXPRESS",
+                  style: TextStyle(
+                      fontSize: 10,
+                      color:
+                          isDarkMode ? Colors.red : Colors.redAccent.shade700),
+                ),
+              ),
+            )
+          ]),
         ),
         actions: [
-          IconButton(onPressed: (){
-            ThemeData.dark();
-          }, icon: Icon(Icons.dark_mode))
+          IconButton(
+              onPressed: () {
+                if (isDarkMode) {
+                  AdaptiveTheme.of(context).setLight();
+                } else {
+                  AdaptiveTheme.of(context).setDark();
+                }
+              },
+              icon: const Icon(Icons.dark_mode))
         ],
       ),
-
       body: Column(
         children: [
           Center(
-            child: Text(
-              categories[categoryIndex],
-              
-              style: const TextStyle(fontSize: 20, ),
+            child: Padding(
+              padding: const EdgeInsets.only(top: 10),
+              child: Text(
+                categories[categoryIndex],
+                style: const TextStyle(
+                  fontSize: 20,
+                ),
+              ),
             ),
           ),
           Expanded(
             child: ListView.separated(
-              controller: _controller,
+                physics: const BouncingScrollPhysics(
+                    parent: AlwaysScrollableScrollPhysics()),
+                controller: _controller,
                 shrinkWrap: true,
                 itemBuilder: (context, index) {
                   return GestureDetector(

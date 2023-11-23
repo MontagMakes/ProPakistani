@@ -1,9 +1,12 @@
+import 'package:adaptive_theme/adaptive_theme.dart';
+
 import 'package:dawn/screens/screen_home_page/screen_home_page.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(
+     const MyApp()
+  );
 }
 
 class MyApp extends StatelessWidget {
@@ -11,23 +14,24 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        
-        primaryColor: Colors.red,
-        useMaterial3: true,
+    return AdaptiveTheme(
+      light: ThemeData(useMaterial3: true),
+      dark: ThemeData(
+          useMaterial3: true,
+          brightness: Brightness.dark,
+          appBarTheme:
+              const AppBarTheme(backgroundColor: Color.fromARGB(255, 38, 0, 77)),
+          drawerTheme: const DrawerThemeData(backgroundColor: Color.fromARGB(255, 38, 0, 77)),
+          canvasColor: const Color.fromARGB(255, 51, 0, 102), 
+          scaffoldBackgroundColor: const Color.fromARGB(255, 26, 0, 51),
       ),
-      darkTheme: ThemeData(
-        brightness: Brightness.dark,
-        appBarTheme: AppBarTheme(backgroundColor: Color.fromARGB(255, 38, 0, 77)),
-        drawerTheme: DrawerThemeData(backgroundColor: Color.fromARGB(255, 38, 0, 77)),
-        canvasColor: Color.fromARGB(255, 13, 0, 26)
-        
-        
+          
+      initial: AdaptiveThemeMode.dark,
+      builder: (theme, dark) => MaterialApp(
+        theme: theme,
+        darkTheme: dark,
+        home: const MyHomePage(),
       ),
-      themeMode: ThemeMode.light,
-      home: const MyHomePage(),
     );
   }
 }

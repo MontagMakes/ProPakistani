@@ -22,12 +22,14 @@ class _ScreenDescriptionState extends State<ScreenDescription> {
               child: Image(
                   image: NetworkImage(widget.stories.imageURL.toString())),
             ),
+
             Container(
-              padding: const EdgeInsets.only(left: 8, right: 8),
+              padding: const EdgeInsets.only(left: 10, right: 10),
               child: Text(
                 widget.stories.title,
+                textAlign: TextAlign.justify,
                 style: const TextStyle(
-                  fontSize: 18,
+                  fontSize: 20,
                   fontWeight: FontWeight.w700,
                 ),
               ),
@@ -36,22 +38,23 @@ class _ScreenDescriptionState extends State<ScreenDescription> {
               height: MediaQuery.sizeOf(context).height * 0.02,
             ),
             Container(
-              padding: const EdgeInsets.only(left: 8, right: 8, bottom: 0),
+              padding: const EdgeInsets.only(left: 10, right: 10, bottom: 0),
               child: Text(
                 widget.stories.description,
                 style:
-                    const TextStyle(fontSize: 16, fontWeight: FontWeight.w500),
+                    const TextStyle(fontSize: 17, fontWeight: FontWeight.w500),
               ),
             ),
             SizedBox(
               height: MediaQuery.sizeOf(context).height * 0.02,
             ),
             Container(
-              padding: const EdgeInsets.only(left: 8, right: 8),
+              padding: const EdgeInsets.only(left: 10, right: 10),
               child: Text(
                 widget.stories.content,
+                textAlign: TextAlign.justify,
                 style:
-                    const TextStyle(fontSize: 16, fontWeight: FontWeight.w400),
+                    const TextStyle(fontSize: 15, fontWeight: FontWeight.w400),
               ),
             )
           ],
