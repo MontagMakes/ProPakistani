@@ -1,0 +1,113 @@
+import 'package:adaptive_theme/adaptive_theme.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+
+class ScreenSetting extends StatefulWidget {
+  const ScreenSetting({super.key});
+
+  @override
+  State<ScreenSetting> createState() => _ScreenSettingState();
+}
+
+class _ScreenSettingState extends State<ScreenSetting> {
+  bool isDarkMode = false;
+
+  @override
+  Widget build(BuildContext context) {
+    // When dark mode is on, the switch will stay switched on
+    AdaptiveThemeMode themeMode = AdaptiveTheme.of(context).mode;
+    if (themeMode == AdaptiveThemeMode.light) {
+      isDarkMode = false;
+    } else {
+      isDarkMode = true;
+    }
+
+    return Scaffold(
+      appBar: AppBar(),
+      body: Padding(
+        padding: const EdgeInsets.only(left: 20, right: 20),
+        child: Column(children: [
+          // Row: Dark mode
+          SizedBox(
+            height: MediaQuery.sizeOf(context).height * 0.08,
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                const Text(
+                  "Dark Mode",
+                  style: TextStyle(fontSize: 20),
+                ),
+                Switch(
+                    value: isDarkMode,
+                    onChanged: (value) {
+                      setState(() {
+                        if (isDarkMode) {
+                          value = isDarkMode;
+                          AdaptiveTheme.of(context).setLight();
+                        } else {
+                          value = isDarkMode;
+                          AdaptiveTheme.of(context).setDark();
+                        }
+                      });
+                    }),
+              ],
+            ),
+          ),
+
+          const Divider(
+            height: 10,
+          ),
+
+          //Row: Contact us
+          SizedBox(
+            height: MediaQuery.sizeOf(context).height * 0.08,
+            child: const Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Text(
+                  "Contact Us",
+                  style: TextStyle(fontSize: 20),
+                ),
+                Text(
+                  "Editor@dawn.com",
+                  style: TextStyle(color: Colors.blue),
+                )
+              ],
+            ),
+          ),
+
+          const Divider(
+            height: 10,
+          ),
+
+          //Row: Website
+          SizedBox(
+            height: MediaQuery.sizeOf(context).height * 0.08,
+            child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  const Text(
+                    "Website",
+                    style: TextStyle(fontSize: 20),
+                  ),
+                  GestureDetector(
+                    onTap: () {
+                      Clipboard.setData(const ClipboardData(
+                              text: "https://tribune.com.pk/"))
+                          .then((value) => ScaffoldMessenger.of(context)
+                              .showSnackBar(const SnackBar(
+                                  content: Text(
+                                      "The link has been successfully copied to your clipboard."))));
+                    },
+                    child: const Text(
+                      "https://tribune.com.pk/",
+                      style: TextStyle(color: Colors.blue),
+                    ),
+                  )
+                ]),
+          )
+        ]),
+      ),
+    );
+  }
+}

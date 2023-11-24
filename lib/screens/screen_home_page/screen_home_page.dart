@@ -3,6 +3,7 @@ import 'package:dawn/api_manager.dart';
 import 'package:dawn/globals/globals.dart';
 import 'package:dawn/models/model_story.dart';
 import 'package:dawn/screens/screen_description/screen_description.dart';
+import 'package:dawn/screens/screen_settings/screen_settings.dart';
 import 'package:dawn/utils/utils.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
@@ -40,10 +41,12 @@ class _MyHomePageState extends State<MyHomePage> {
       drawer: Drawer(
         child: ListView(
           children: [
+            //Appbar Title
             SizedBox(
               height: 75,
               child: RichText(
                 text: TextSpan(children: [
+                  //Title: Tribune
                   WidgetSpan(
                     child: Transform(
                       transform: Matrix4.translationValues(
@@ -56,6 +59,8 @@ class _MyHomePageState extends State<MyHomePage> {
                       ),
                     ),
                   ),
+
+                  //Title: The Express
                   WidgetSpan(
                     child: Transform(
                       transform: Matrix4.translationValues(
@@ -198,6 +203,8 @@ class _MyHomePageState extends State<MyHomePage> {
           ],
         ),
       ),
+
+      //AppBar
       appBar: AppBar(
         centerTitle: true,
         title: RichText(
@@ -229,18 +236,27 @@ class _MyHomePageState extends State<MyHomePage> {
             )
           ]),
         ),
+
+        //Dark Mode
         actions: [
-          IconButton(
-              onPressed: () {
-                if (isDarkMode) {
-                  AdaptiveTheme.of(context).setLight();
-                } else {
-                  AdaptiveTheme.of(context).setDark();
-                }
-              },
-              icon: const Icon(Icons.dark_mode))
+          
+          // IconButton(
+          //     onPressed: () {
+          //       if (isDarkMode) {
+          //         AdaptiveTheme.of(context).setLight();
+          //       } else {
+          //         AdaptiveTheme.of(context).setDark();
+          //       }
+          //     },
+          //     icon: const Icon(Icons.dark_mode)
+          // ),
+          IconButton(onPressed: (){
+            Navigator.push(context, MaterialPageRoute(builder: (context) => const ScreenSetting(),));
+          }, icon: const Icon(Icons.settings)),
         ],
       ),
+
+
       body: Column(
         children: [
           Center(
