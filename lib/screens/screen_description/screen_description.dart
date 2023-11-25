@@ -1,5 +1,6 @@
 import 'package:dawn/models/model_story.dart';
 import 'package:flutter/material.dart';
+import 'package:share_plus/share_plus.dart';
 
 class ScreenDescription extends StatefulWidget {
   const ScreenDescription({super.key, required this.stories});
@@ -10,10 +11,17 @@ class ScreenDescription extends StatefulWidget {
 }
 
 class _ScreenDescriptionState extends State<ScreenDescription> {
+  
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        actions: [
+          IconButton(onPressed: ()async{
+            Share.shareUri(Uri.parse(widget.stories.articleLink));
+          }, icon: const Icon(Icons.share))  
+        ],
+      ),
       body: SingleChildScrollView(
         child: Column(
           children: [

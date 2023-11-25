@@ -1,10 +1,17 @@
 final List<String> categories = [
   'Home',
+  'Latest',
   'Business',
-  'World',
   'Sports',
+  'Technology',
   'Opinion',
   'TV',
-  'Latest',
-  'Analysis',
+  'World',
+  'Pakistan',
+  'Sindh',
+  'Punjab',
+  'Balochistan',
+  'K-P',
+  'Jammu & Kashmir',
+  'Gilgit Baltistan'
 ];

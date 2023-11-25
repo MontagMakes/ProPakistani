@@ -1,3 +1,4 @@
+
 import 'package:adaptive_theme/adaptive_theme.dart';
 import 'package:dawn/api_manager.dart';
 import 'package:dawn/globals/globals.dart';
@@ -17,6 +18,7 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
+
   int categoryIndex = 0;
   List<ModelStory> stories = [];
   final ScrollController _controller = ScrollController();
@@ -40,169 +42,54 @@ class _MyHomePageState extends State<MyHomePage> {
       drawerDragStartBehavior: DragStartBehavior.start,
       drawer: Drawer(
         child: ListView(
-          children: [
-            //Appbar Title
-            SizedBox(
-              height: 75,
-              child: RichText(
-                text: TextSpan(children: [
-                  //Title: Tribune
-                  WidgetSpan(
-                    child: Transform(
-                      transform: Matrix4.translationValues(
-                          MediaQuery.sizeOf(context).width * 0.08, 0, 0),
-                      child: Text(
-                        "TRIBUNE",
-                        style: GoogleFonts.playfair(
-                            fontSize: 60,
-                            color: isDarkMode ? Colors.white : Colors.black),
+            physics: const BouncingScrollPhysics(parent: AlwaysScrollableScrollPhysics()),
+            children: [
+              SizedBox(
+                height: 75,
+                child: RichText(
+                  text: TextSpan(children: [
+        
+                    //Title: Tribune
+                    WidgetSpan(
+                      child: Transform(
+                        transform: Matrix4.translationValues(
+                            MediaQuery.sizeOf(context).width * 0.08, 0, 0),
+                        child: Text(
+                          "TRIBUNE",
+                          style: GoogleFonts.playfair(
+                              fontSize: 60,
+                              color: isDarkMode ? Colors.white : Colors.black),
+                        ),
                       ),
                     ),
-                  ),
-
-                  //Title: The Express
-                  WidgetSpan(
-                    child: Transform(
-                      transform: Matrix4.translationValues(
-                          -MediaQuery.sizeOf(context).width * -0.463,
-                          -MediaQuery.sizeOf(context).height * 0.1,
-                          0),
-                      child: Text(
-                        "THE EXPRESS",
-                        style: TextStyle(
-                            fontSize: 13,
-                            color: isDarkMode
-                                ? Colors.red
-                                : Colors.redAccent.shade700),
+        
+                    //Title: The Express
+                    WidgetSpan(
+                      child: Transform(
+                        transform: Matrix4.translationValues(
+                            -MediaQuery.sizeOf(context).width * -0.463,
+                            -MediaQuery.sizeOf(context).height * 0.1,
+                            0),
+                        child: Text(
+                          "THE EXPRESS",
+                          style: TextStyle(
+                              fontStyle: FontStyle.italic,
+                              fontSize: 13,
+                              color: isDarkMode
+                                  ? Colors.red
+                                  : Colors.redAccent.shade700),
+                        ),
                       ),
-                    ),
-                  )
-                ]),
+                    )
+                  ]),
+                ),
               ),
-            ),
-
-            //Home category
-            ListTile(
-              title: const Text('Home'),
-              onTap: () async {
-                stories = (await ApiService().getNews("home"));
-                if (mounted) {
-                  setState(() {
-                    Navigator.pop(context);
-                    categoryIndex = 0;
-                    scrollToTopInstantly(_controller);
-                  });
-                }
-              },
-            ),
-
-            //Business category
-            ListTile(
-              title: const Text('Business'),
-              onTap: () async {
-                stories = (await ApiService().getNews("business"));
-                if (mounted) {
-                  setState(() {
-                    Navigator.pop(context);
-                    categoryIndex = 1;
-                    scrollToTopInstantly(_controller);
-                  });
-                }
-              },
-            ),
-
-            //World category
-            ListTile(
-              title: const Text('World'),
-              onTap: () async {
-                stories = (await ApiService().getNews("world"));
-                if (mounted) {
-                  setState(() {
-                    Navigator.pop(context);
-                    categoryIndex = 2;
-                    scrollToTopInstantly(_controller);
-                  });
-                }
-              },
-            ),
-
-            //Sports category
-            ListTile(
-              title: const Text('Sports'),
-              onTap: () async {
-                stories = (await ApiService().getNews("sports"));
-                if (mounted) {
-                  setState(() {
-                    Navigator.pop(context);
-                    categoryIndex = 3;
-                    scrollToTopInstantly(_controller);
-                  });
-                }
-              },
-            ),
-
-            //Opinion category
-            ListTile(
-              title: const Text('Opinion'),
-              onTap: () async {
-                stories = (await ApiService().getNews("opinion"));
-                if (mounted) {
-                  setState(() {
-                    Navigator.pop(context);
-                    categoryIndex = 4;
-                    scrollToTopInstantly(_controller);
-                  });
-                }
-              },
-            ),
-
-            //TV category
-            ListTile(
-              title: const Text('TV'),
-              onTap: () async {
-                stories = (await ApiService().getNews("tv"));
-                if (mounted) {
-                  setState(() {
-                    Navigator.pop(context);
-                    categoryIndex = 5;
-                    scrollToTopInstantly(_controller);
-                  });
-                }
-              },
-            ),
-
-            //Latest Category
-            ListTile(
-              title: const Text('Latest'),
-              onTap: () async {
-                stories = (await ApiService().getNews("latest"));
-                if (mounted) {
-                  setState(() {
-                    Navigator.pop(context);
-                    categoryIndex = 6;
-                    scrollToTopInstantly(_controller);
-                  });
-                }
-              },
-            ),
-
-            //Analysis Category
-            ListTile(
-              title: const Text('Analysis'),
-              onTap: () async {
-                stories = (await ApiService().getNews("analysis"));
-                if (mounted) {
-                  setState(() {
-                    Navigator.pop(context);
-                    categoryIndex = 7;
-                    scrollToTopInstantly(_controller);
-                  });
-                }
-              },
-            ),
-          ],
+                
+              for(int i = 0; i < categories.length; i++)
+                listTile(context, categories[i], i),
+            ],
+          ),
         ),
-      ),
 
       //AppBar
       appBar: AppBar(
@@ -229,6 +116,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   "THE EXPRESS",
                   style: TextStyle(
                       fontSize: 10,
+                      fontStyle: FontStyle.italic,
                       color:
                           isDarkMode ? Colors.red : Colors.redAccent.shade700),
                 ),
@@ -239,17 +127,6 @@ class _MyHomePageState extends State<MyHomePage> {
 
         //Dark Mode
         actions: [
-          
-          // IconButton(
-          //     onPressed: () {
-          //       if (isDarkMode) {
-          //         AdaptiveTheme.of(context).setLight();
-          //       } else {
-          //         AdaptiveTheme.of(context).setDark();
-          //       }
-          //     },
-          //     icon: const Icon(Icons.dark_mode)
-          // ),
           IconButton(onPressed: (){
             Navigator.push(context, MaterialPageRoute(builder: (context) => const ScreenSetting(),));
           }, icon: const Icon(Icons.settings)),
@@ -339,6 +216,31 @@ class _MyHomePageState extends State<MyHomePage> {
           ),
         ],
       ),
+    );
+  }
+
+  ListTile listTile(BuildContext context, String categoryName, int index) {
+    
+    return ListTile(
+      title: Text(categoryName),
+      onTap: () async {
+        if(categoryName == "K-P"){
+        categoryName = "khyber-pakhtunkhwa";
+        } else if(categoryName == "Jammu & Kashmir"){
+          categoryName = "jammu-kashmir";
+        } else if(categoryName == "Gilgit Baltistan"){
+          categoryName = "gilgit-baltistan";
+        } 
+
+        stories = (await ApiService().getNews(categoryName.toLowerCase()));
+        if (mounted) {
+          setState(() {
+            Navigator.pop(context);
+            categoryIndex = index;
+            scrollToTopInstantly(_controller);
+          });
+        }
+      },
     );
   }
 }

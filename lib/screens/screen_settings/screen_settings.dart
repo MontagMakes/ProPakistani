@@ -14,6 +14,7 @@ class _ScreenSettingState extends State<ScreenSetting> {
 
   @override
   Widget build(BuildContext context) {
+    
     // When dark mode is on, the switch will stay switched on
     AdaptiveThemeMode themeMode = AdaptiveTheme.of(context).mode;
     if (themeMode == AdaptiveThemeMode.light) {
@@ -23,7 +24,9 @@ class _ScreenSettingState extends State<ScreenSetting> {
     }
 
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        title: const Text("Settings"),
+      ),
       body: Padding(
         padding: const EdgeInsets.only(left: 20, right: 20),
         child: Column(children: [
@@ -61,16 +64,26 @@ class _ScreenSettingState extends State<ScreenSetting> {
           //Row: Contact us
           SizedBox(
             height: MediaQuery.sizeOf(context).height * 0.08,
-            child: const Row(
+            child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Text(
+                const Text(
                   "Contact Us",
                   style: TextStyle(fontSize: 20),
                 ),
-                Text(
-                  "Editor@dawn.com",
-                  style: TextStyle(color: Colors.blue),
+                GestureDetector(
+                  onTap: () {
+                      Clipboard.setData(const ClipboardData(
+                              text: "Editor@dawn.com"))
+                          .then((value) => ScaffoldMessenger.of(context)
+                              .showSnackBar(const SnackBar(
+                                  content: Text(
+                                      "The link has been successfully copied to your clipboard."))));
+                    },
+                  child: const Text(
+                    "Editor@dawn.com",
+                    style: TextStyle(color: Colors.blue),
+                  ),
                 )
               ],
             ),
