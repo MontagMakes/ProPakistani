@@ -1,4 +1,3 @@
-
 import 'package:adaptive_theme/adaptive_theme.dart';
 import 'package:dawn/api_manager.dart';
 import 'package:dawn/globals/globals.dart';
@@ -18,7 +17,6 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-
   int categoryIndex = 0;
   List<ModelStory> stories = [];
   final ScrollController _controller = ScrollController();
@@ -42,54 +40,53 @@ class _MyHomePageState extends State<MyHomePage> {
       drawerDragStartBehavior: DragStartBehavior.start,
       drawer: Drawer(
         child: ListView(
-            physics: const BouncingScrollPhysics(parent: AlwaysScrollableScrollPhysics()),
-            children: [
-              SizedBox(
-                height: 75,
-                child: RichText(
-                  text: TextSpan(children: [
-        
-                    //Title: Tribune
-                    WidgetSpan(
-                      child: Transform(
-                        transform: Matrix4.translationValues(
-                            MediaQuery.sizeOf(context).width * 0.08, 0, 0),
-                        child: Text(
-                          "TRIBUNE",
-                          style: GoogleFonts.playfair(
-                              fontSize: 60,
-                              color: isDarkMode ? Colors.white : Colors.black),
-                        ),
+          physics: const BouncingScrollPhysics(
+              parent: AlwaysScrollableScrollPhysics()),
+          children: [
+            SizedBox(
+              height: 75,
+              child: RichText(
+                text: TextSpan(children: [
+                  //Title: Tribune
+                  WidgetSpan(
+                    child: Transform(
+                      transform: Matrix4.translationValues(
+                          MediaQuery.sizeOf(context).width * 0.08, 0, 0),
+                      child: Text(
+                        "TRIBUNE",
+                        style: GoogleFonts.playfair(
+                            fontSize: MediaQuery.of(context).textScaleFactor* 60,
+                            color: isDarkMode ? Colors.white : Colors.black),
                       ),
                     ),
-        
-                    //Title: The Express
-                    WidgetSpan(
-                      child: Transform(
-                        transform: Matrix4.translationValues(
-                            -MediaQuery.sizeOf(context).width * -0.463,
-                            -MediaQuery.sizeOf(context).height * 0.1,
-                            0),
-                        child: Text(
-                          "THE EXPRESS",
-                          style: TextStyle(
-                              fontStyle: FontStyle.italic,
-                              fontSize: 13,
-                              color: isDarkMode
-                                  ? Colors.red
-                                  : Colors.redAccent.shade700),
-                        ),
+                  ),
+
+                  //Title: The Express
+                  WidgetSpan(
+                    child: Transform(
+                      transform: Matrix4.translationValues(
+                          -MediaQuery.sizeOf(context).width * -0.463,
+                          -MediaQuery.sizeOf(context).height * 0.1,
+                          0),
+                      child: Text(
+                        "THE EXPRESS",
+                        style: TextStyle(
+                            fontStyle: FontStyle.italic,
+                            fontSize: MediaQuery.of(context).textScaleFactor*13,
+                            color: isDarkMode
+                                ? Colors.red
+                                : Colors.redAccent.shade700),
                       ),
-                    )
-                  ]),
-                ),
+                    ),
+                  )
+                ]),
               ),
-                
-              for(int i = 0; i < categories.length; i++)
-                listTile(context, categories[i], i),
-            ],
-          ),
+            ),
+            for (int i = 0; i < categories.length; i++)
+              listTile(context, categories[i], i),
+          ],
         ),
+      ),
 
       //AppBar
       appBar: AppBar(
@@ -97,25 +94,25 @@ class _MyHomePageState extends State<MyHomePage> {
         title: RichText(
           text: TextSpan(children: [
             WidgetSpan(
-              child: Transform(
-                transform: Matrix4.translationValues(
-                    MediaQuery.sizeOf(context).width * 0.09, 0, 0),
+              child: Transform.translate(
+                offset: Offset(
+                    MediaQuery.of(context).size.width * 0.07, 0),
                 child: Text(
                   "TRIBUNE",
                   style: GoogleFonts.playfair(
-                      fontSize: 43,
+                      fontSize: MediaQuery.of(context).textScaleFactor*43,
                       color: isDarkMode ? Colors.white : Colors.black),
                 ),
               ),
             ),
             WidgetSpan(
-              child: Transform(
-                transform: Matrix4.translationValues(
-                    -MediaQuery.sizeOf(context).width * 0.085, -40, 0),
+              child: Transform.translate(
+                offset: Offset(
+                    MediaQuery.of(context).size.width*-0.1,MediaQuery.of(context).size.height*-0.051),
                 child: Text(
                   "THE EXPRESS",
                   style: TextStyle(
-                      fontSize: 10,
+                      fontSize: MediaQuery.of(context).textScaleFactor*10,
                       fontStyle: FontStyle.italic,
                       color:
                           isDarkMode ? Colors.red : Colors.redAccent.shade700),
@@ -127,12 +124,25 @@ class _MyHomePageState extends State<MyHomePage> {
 
         //Dark Mode
         actions: [
-          IconButton(onPressed: (){
-            Navigator.push(context, MaterialPageRoute(builder: (context) => const ScreenSetting(),));
-          }, icon: const Icon(Icons.settings)),
+          IconButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  PageRouteBuilder(pageBuilder: (context, animation, secondaryAnimation) => const ScreenSetting(),
+                    transitionsBuilder: (context, animation, secondaryAnimation, child) => SlideTransition(
+                      position: animation.drive(
+                        Tween(begin: const Offset(1.0,0.0), end: Offset.zero)
+                        .chain(CurveTween(
+                          curve: Curves.decelerate
+                        ))
+                      ),
+                    child: child,),
+                  )
+                );
+              },
+              icon: const Icon(Icons.settings)),
         ],
       ),
-
 
       body: Column(
         children: [
@@ -141,8 +151,8 @@ class _MyHomePageState extends State<MyHomePage> {
               padding: const EdgeInsets.only(top: 10),
               child: Text(
                 categories[categoryIndex],
-                style: const TextStyle(
-                  fontSize: 20,
+                style: TextStyle(
+                  fontSize: MediaQuery.of(context).textScaleFactor*20,
                 ),
               ),
             ),
@@ -158,9 +168,21 @@ class _MyHomePageState extends State<MyHomePage> {
                     onTap: () => {
                       (Navigator.push(
                           context,
-                          MaterialPageRoute(
-                              builder: (context) =>
-                                  ScreenDescription(stories: stories[index]))))
+                          PageRouteBuilder(
+                            pageBuilder:
+                                (context, animation, secondaryAnimation) =>
+                                    ScreenDescription(stories: stories[index]),
+                            transitionsBuilder: (context, animation,
+                                    secondaryAnimation, child) =>
+                                SlideTransition(
+                                    position: animation.drive(
+                                        Tween(
+                                                begin: const Offset(1.0, 0.0),
+                                                end: Offset.zero)
+                                            .chain(CurveTween(
+                                                curve: Curves.decelerate)),
+                                        ), child: child,),
+                          )))
                     },
                     child: Stack(
                       children: [
@@ -187,11 +209,12 @@ class _MyHomePageState extends State<MyHomePage> {
                         Positioned(
                           bottom: 50,
                           left: 18,
-                          width: 350,
+                          width: MediaQuery.sizeOf(context).width * 0.91,
                           child: Text(
                             stories[index].title.toString(),
-                            style: const TextStyle(
-                                fontSize: 18,
+                            textAlign: TextAlign.justify,
+                            style: TextStyle(
+                                fontSize: MediaQuery.of(context).textScaleFactor*18,
                                 fontWeight: FontWeight.bold,
                                 color: Colors.white),
                           ),
@@ -220,17 +243,16 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 
   ListTile listTile(BuildContext context, String categoryName, int index) {
-    
     return ListTile(
       title: Text(categoryName),
       onTap: () async {
-        if(categoryName == "K-P"){
-        categoryName = "khyber-pakhtunkhwa";
-        } else if(categoryName == "Jammu & Kashmir"){
+        if (categoryName == "K-P") {
+          categoryName = "khyber-pakhtunkhwa";
+        } else if (categoryName == "Jammu & Kashmir") {
           categoryName = "jammu-kashmir";
-        } else if(categoryName == "Gilgit Baltistan"){
+        } else if (categoryName == "Gilgit Baltistan") {
           categoryName = "gilgit-baltistan";
-        } 
+        }
 
         stories = (await ApiService().getNews(categoryName.toLowerCase()));
         if (mounted) {

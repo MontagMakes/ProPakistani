@@ -1,5 +1,4 @@
 import 'package:adaptive_theme/adaptive_theme.dart';
-
 import 'package:dawn/screens/screen_home_page/screen_home_page.dart';
 import 'package:flutter/material.dart';
 
@@ -29,6 +28,7 @@ class MyApp extends StatelessWidget {
       ),
       initial: savedThemeMode ?? AdaptiveThemeMode.light,
       builder: (theme, dark) => MaterialApp(
+        
         debugShowCheckedModeBanner: false,
         theme: theme,
         darkTheme: dark,

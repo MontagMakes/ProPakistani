@@ -36,9 +36,9 @@ class _ScreenSettingState extends State<ScreenSetting> {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                const Text(
+                Text(
                   "Dark Mode",
-                  style: TextStyle(fontSize: 20),
+                  style: TextStyle(fontSize: MediaQuery.of(context).textScaleFactor*20),
                 ),
                 Switch(
                     value: isDarkMode,
@@ -67,9 +67,9 @@ class _ScreenSettingState extends State<ScreenSetting> {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                const Text(
+                Text(
                   "Contact Us",
-                  style: TextStyle(fontSize: 20),
+                  style: TextStyle(fontSize: MediaQuery.of(context).textScaleFactor*20),
                 ),
                 GestureDetector(
                   onTap: () {
@@ -99,9 +99,9 @@ class _ScreenSettingState extends State<ScreenSetting> {
             child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  const Text(
+                  Text(
                     "Website",
-                    style: TextStyle(fontSize: 20),
+                    style: TextStyle(fontSize: MediaQuery.of(context).textScaleFactor*20),
                   ),
                   GestureDetector(
                     onTap: () {

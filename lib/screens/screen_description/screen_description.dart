@@ -36,8 +36,8 @@ class _ScreenDescriptionState extends State<ScreenDescription> {
               child: Text(
                 widget.stories.title,
                 textAlign: TextAlign.justify,
-                style: const TextStyle(
-                  fontSize: 20,
+                style: TextStyle(
+                  fontSize: MediaQuery.of(context).textScaleFactor*20,
                   fontWeight: FontWeight.w700,
                 ),
               ),
@@ -50,7 +50,7 @@ class _ScreenDescriptionState extends State<ScreenDescription> {
               child: Text(
                 widget.stories.description,
                 style:
-                    const TextStyle(fontSize: 17, fontWeight: FontWeight.w500),
+                    TextStyle(fontSize: MediaQuery.of(context).textScaleFactor*17, fontWeight: FontWeight.w500),
               ),
             ),
             SizedBox(
@@ -62,7 +62,7 @@ class _ScreenDescriptionState extends State<ScreenDescription> {
                 widget.stories.content,
                 textAlign: TextAlign.justify,
                 style:
-                    const TextStyle(fontSize: 15, fontWeight: FontWeight.w400),
+                    TextStyle(fontSize: MediaQuery.of(context).textScaleFactor*15, fontWeight: FontWeight.w400),
               ),
             )
           ],

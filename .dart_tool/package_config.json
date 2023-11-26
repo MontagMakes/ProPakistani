@@ -242,12 +242,6 @@
       "languageVersion": "2.18"
     },
     {
-      "name": "nested",
-      "rootUri": "file:///C:/Users/Montag/AppData/Local/Pub/Cache/hosted/pub.dev/nested-1.0.0",
-      "packageUri": "lib/",
-      "languageVersion": "2.12"
-    },
-    {
       "name": "path",
       "rootUri": "file:///C:/Users/Montag/AppData/Local/Pub/Cache/hosted/pub.dev/path-1.8.3",
       "packageUri": "lib/",
@@ -312,12 +306,6 @@
       "rootUri": "file:///C:/Users/Montag/AppData/Local/Pub/Cache/hosted/pub.dev/pointycastle-3.7.3",
       "packageUri": "lib/",
       "languageVersion": "2.14"
-    },
-    {
-      "name": "provider",
-      "rootUri": "file:///C:/Users/Montag/AppData/Local/Pub/Cache/hosted/pub.dev/provider-6.1.1",
-      "packageUri": "lib/",
-      "languageVersion": "2.12"
     },
     {
       "name": "share_plus",
@@ -506,7 +494,7 @@
       "languageVersion": "3.0"
     }
   ],
-  "generated": "2023-11-25T12:49:50.155461Z",
+  "generated": "2023-11-25T16:26:40.344567Z",
   "generator": "pub",
   "generatorVersion": "3.1.5"
 }
