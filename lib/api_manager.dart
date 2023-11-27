@@ -16,9 +16,12 @@ class ApiService {
         var numberOfStories = document.findAllElements("title").length - 1;
 
         for (var i = 1; i < numberOfStories; i++) {
-
-          var title = document.findAllElements("title").elementAt(i).innerText
-              .trimLeft().trimRight();
+          var title = document
+              .findAllElements("title")
+              .elementAt(i)
+              .innerText
+              .trimLeft()
+              .trimRight();
           var articleLink =
               document.findAllElements("link").elementAt(i).innerText;
           var date = document
@@ -29,18 +32,25 @@ class ApiService {
 
           var content = document
               .findAllElements("content:encoded")
-              .elementAt(i-1)
-              .innerText.replaceRange(0, 5, '')
-              .trimLeft().trimRight();
+              .elementAt(i - 1)
+              .innerText
+              .replaceRange(0, 5, '')
+              .trimLeft()
+              .trimRight();
 
-              content = HtmlUnescape().convert(content).replaceAll(RegExp(r'&([^;]+);')
-, '');
-              
+          content = HtmlUnescape()
+              .convert(content)
+              .replaceAll(RegExp(r'&([^;]+);'), '');
+
           var description =
               document.findAllElements("description").elementAt(i).innerText;
-              description = description.trimLeft().trimRight();
-          var imageURL =
-              document.findAllElements("img").elementAt(i-1).getAttribute("src");
+          description = description.trimLeft().trimRight();
+          var imageURL = document
+              .findAllElements("img")
+              .elementAt(i - 1)
+              .getAttribute("src");
+          var creator =
+              document.findAllElements("dc:creator").elementAt(i-1).innerText;
 
           toReturn.add(ModelStory(
               title: title,
@@ -48,7 +58,8 @@ class ApiService {
               date: date,
               content: content,
               imageURL: imageURL,
-              description: description));
+              description: description,
+              creator: creator));
         }
       }
     } catch (e) {

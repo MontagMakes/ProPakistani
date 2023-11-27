@@ -146,6 +146,12 @@
       "languageVersion": "2.19"
     },
     {
+      "name": "flutter_speed_dial",
+      "rootUri": "file:///C:/Users/Montag/AppData/Local/Pub/Cache/hosted/pub.dev/flutter_speed_dial-7.0.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "flutter_test",
       "rootUri": "file:///C:/flutter/packages/flutter_test",
       "packageUri": "lib/",
@@ -154,6 +160,12 @@
     {
       "name": "flutter_web_plugins",
       "rootUri": "file:///C:/flutter/packages/flutter_web_plugins",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
+    },
+    {
+      "name": "font_awesome_flutter",
+      "rootUri": "file:///C:/Users/Montag/AppData/Local/Pub/Cache/hosted/pub.dev/font_awesome_flutter-10.6.0",
       "packageUri": "lib/",
       "languageVersion": "3.0"
     },
@@ -494,7 +506,7 @@
       "languageVersion": "3.0"
     }
   ],
-  "generated": "2023-11-25T16:26:40.344567Z",
+  "generated": "2023-11-27T11:05:20.923086Z",
   "generator": "pub",
   "generatorVersion": "3.1.5"
 }

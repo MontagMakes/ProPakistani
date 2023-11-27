@@ -55,7 +55,8 @@ class _MyHomePageState extends State<MyHomePage> {
                       child: Text(
                         "TRIBUNE",
                         style: GoogleFonts.playfair(
-                            fontSize: MediaQuery.of(context).textScaleFactor* 60,
+                            fontSize:
+                                MediaQuery.of(context).textScaleFactor * 60,
                             color: isDarkMode ? Colors.white : Colors.black),
                       ),
                     ),
@@ -72,7 +73,8 @@ class _MyHomePageState extends State<MyHomePage> {
                         "THE EXPRESS",
                         style: TextStyle(
                             fontStyle: FontStyle.italic,
-                            fontSize: MediaQuery.of(context).textScaleFactor*13,
+                            fontSize:
+                                MediaQuery.of(context).textScaleFactor * 13,
                             color: isDarkMode
                                 ? Colors.red
                                 : Colors.redAccent.shade700),
@@ -95,24 +97,23 @@ class _MyHomePageState extends State<MyHomePage> {
           text: TextSpan(children: [
             WidgetSpan(
               child: Transform.translate(
-                offset: Offset(
-                    MediaQuery.of(context).size.width * 0.07, 0),
+                offset: Offset(MediaQuery.of(context).size.width * 0.07, 0),
                 child: Text(
                   "TRIBUNE",
                   style: GoogleFonts.playfair(
-                      fontSize: MediaQuery.of(context).textScaleFactor*43,
+                      fontSize: MediaQuery.of(context).textScaleFactor * 43,
                       color: isDarkMode ? Colors.white : Colors.black),
                 ),
               ),
             ),
             WidgetSpan(
               child: Transform.translate(
-                offset: Offset(
-                    MediaQuery.of(context).size.width*-0.1,MediaQuery.of(context).size.height*-0.051),
+                offset: Offset(MediaQuery.of(context).size.width * -0.1,
+                    MediaQuery.of(context).size.height * -0.051),
                 child: Text(
                   "THE EXPRESS",
                   style: TextStyle(
-                      fontSize: MediaQuery.of(context).textScaleFactor*10,
+                      fontSize: MediaQuery.of(context).textScaleFactor * 10,
                       fontStyle: FontStyle.italic,
                       color:
                           isDarkMode ? Colors.red : Colors.redAccent.shade700),
@@ -122,24 +123,27 @@ class _MyHomePageState extends State<MyHomePage> {
           ]),
         ),
 
-        //Dark Mode
         actions: [
+
+          //Settings Button
           IconButton(
               onPressed: () {
                 Navigator.push(
-                  context,
-                  PageRouteBuilder(pageBuilder: (context, animation, secondaryAnimation) => const ScreenSetting(),
-                    transitionsBuilder: (context, animation, secondaryAnimation, child) => SlideTransition(
-                      position: animation.drive(
-                        Tween(begin: const Offset(1.0,0.0), end: Offset.zero)
-                        .chain(CurveTween(
-                          curve: Curves.decelerate
-                        ))
+                    context,
+                    PageRouteBuilder(
+                      pageBuilder: (context, animation, secondaryAnimation) =>
+                          const ScreenSetting(),
+                      transitionsBuilder:
+                          (context, animation, secondaryAnimation, child) =>
+                              SlideTransition(
+                        position: animation.drive(Tween(
+                                begin: const Offset(1.0, 0.0), end: Offset.zero)
+                            .chain(CurveTween(curve: Curves.decelerate))),
+                        child: child,
                       ),
-                    child: child,),
-                  )
-                );
+                    ));
               },
+        
               icon: const Icon(Icons.settings)),
         ],
       ),
@@ -152,7 +156,7 @@ class _MyHomePageState extends State<MyHomePage> {
               child: Text(
                 categories[categoryIndex],
                 style: TextStyle(
-                  fontSize: MediaQuery.of(context).textScaleFactor*20,
+                  fontSize: MediaQuery.of(context).textScaleFactor * 20,
                 ),
               ),
             ),
@@ -175,13 +179,15 @@ class _MyHomePageState extends State<MyHomePage> {
                             transitionsBuilder: (context, animation,
                                     secondaryAnimation, child) =>
                                 SlideTransition(
-                                    position: animation.drive(
-                                        Tween(
-                                                begin: const Offset(1.0, 0.0),
-                                                end: Offset.zero)
-                                            .chain(CurveTween(
-                                                curve: Curves.decelerate)),
-                                        ), child: child,),
+                              position: animation.drive(
+                                Tween(
+                                        begin: const Offset(1.0, 0.0),
+                                        end: Offset.zero)
+                                    .chain(
+                                        CurveTween(curve: Curves.decelerate)),
+                              ),
+                              child: child,
+                            ),
                           )))
                     },
                     child: Stack(
@@ -192,13 +198,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           margin: const EdgeInsets.all(10),
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(15),
-                            gradient: const LinearGradient(
-                                colors: [Colors.black, Colors.transparent],
-                                stops: [0.6, 1],
-                                begin: Alignment.bottomCenter,
-                                end: Alignment.topCenter),
                             image: DecorationImage(
-                              opacity: 0.7,
                               fit: BoxFit.cover,
                               image: NetworkImage(
                                 stories[index].imageURL.toString(),
@@ -206,6 +206,24 @@ class _MyHomePageState extends State<MyHomePage> {
                             ),
                           ),
                         ),
+                        Container(
+                          height: MediaQuery.of(context).size.height * 0.2,
+                          width: MediaQuery.of(context).size.width,
+                          margin: const EdgeInsets.all(10),
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(15),
+                            gradient: LinearGradient(
+                              begin: Alignment.bottomCenter,
+                              end: Alignment.topCenter,
+                              colors: [
+                                Colors.black.withOpacity(1),
+                                Colors.transparent
+                              ],
+                            ),
+                          ),
+                        ),
+
+                        //CardTitle
                         Positioned(
                           bottom: 50,
                           left: 18,
@@ -214,18 +232,37 @@ class _MyHomePageState extends State<MyHomePage> {
                             stories[index].title.toString(),
                             textAlign: TextAlign.justify,
                             style: TextStyle(
-                                fontSize: MediaQuery.of(context).textScaleFactor*18,
+                                fontSize:
+                                    MediaQuery.of(context).textScaleFactor * 18,
                                 fontWeight: FontWeight.bold,
                                 color: Colors.white),
                           ),
                         ),
+
+                        // CardDate
                         Positioned(
-                          bottom: 15,
+                          bottom: 18,
                           right: 15,
                           child: Text(
                             stories[index].date.toString(),
                             textAlign: TextAlign.right,
-                            style: kCardTextColor,
+                            style: Theme.of(context)
+                                .textTheme
+                                .titleSmall!
+                                .copyWith(color: Colors.white, fontWeight: FontWeight.normal),
+                          ),
+                        ),
+
+                        // CardCreator
+                        Positioned(
+                          bottom: -4,
+                          left: 3,
+                          child: Text(
+                            stories[index].creator,
+                            style: Theme.of(context)
+                                .textTheme
+                                .titleSmall!
+                                .copyWith(color: Colors.white, fontWeight: FontWeight.normal),
                           ),
                         )
                       ],

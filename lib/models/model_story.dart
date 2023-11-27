@@ -8,53 +8,59 @@ class ModelStory {
   String articleLink;
   String date;
   String? imageURL;
+  String creator;
   
   ModelStory({
     required this.title,
+    required this.description,
+    required this.content,
     required this.articleLink,
     required this.date,
-    required this.content,
     required this.imageURL,
-    required this.description,
+    required this.creator,
   });
 
   ModelStory copyWith({
     String? title,
+    String? description,
+    String? content,
     String? articleLink,
     String? date,
-    String? content,
     String? imageURL,
-    String? description,
+    String? creator,
   }) {
     return ModelStory(
       title: title ?? this.title,
+      description: description ?? this.description,
+      content: content ?? this.content,
       articleLink: articleLink ?? this.articleLink,
       date: date ?? this.date,
-      content: content ?? this.content,
       imageURL: imageURL ?? this.imageURL,
-      description: description ?? this.description,
+      creator: creator ?? this.creator,
     );
   }
 
   Map<String, dynamic> toMap() {
     return <String, dynamic>{
       'title': title,
+      'description': description,
+      'content': content,
       'articleLink': articleLink,
       'date': date,
-      'content': content,
       'imageURL': imageURL,
-      'description': description,
+      'creator': creator,
     };
   }
 
   factory ModelStory.fromMap(Map<String, dynamic> map) {
     return ModelStory(
       title: map['title'] as String,
+      description: map['description'] as String,
+      content: map['content'] as String,
       articleLink: map['articleLink'] as String,
       date: map['date'] as String,
-      content: map['content'] as String,
-      imageURL: map['imageURL'] as String,
-      description: map['description'] as String,
+      imageURL: map['imageURL'] != null ? map['imageURL'] as String : null,
+      creator: map['creator'] as String,
     );
   }
 
@@ -64,7 +70,7 @@ class ModelStory {
 
   @override
   String toString() {
-    return 'ModelStory(title: $title, articleLink: $articleLink, date: $date, content: $content, imageURL: $imageURL, description: $description)';
+    return 'ModelStory(title: $title, description: $description, content: $content, articleLink: $articleLink, date: $date, imageURL: $imageURL, creator: $creator)';
   }
 
   @override
@@ -73,20 +79,22 @@ class ModelStory {
   
     return 
       other.title == title &&
+      other.description == description &&
+      other.content == content &&
       other.articleLink == articleLink &&
       other.date == date &&
-      other.content == content &&
       other.imageURL == imageURL &&
-      other.description == description;
+      other.creator == creator;
   }
 
   @override
   int get hashCode {
     return title.hashCode ^
+      description.hashCode ^
+      content.hashCode ^
       articleLink.hashCode ^
       date.hashCode ^
-      content.hashCode ^
       imageURL.hashCode ^
-      description.hashCode;
+      creator.hashCode;
   }
 }

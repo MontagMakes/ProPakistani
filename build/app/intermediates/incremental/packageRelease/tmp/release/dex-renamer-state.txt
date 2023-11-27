@@ -1,4 +1,4 @@
-#Sat Nov 25 18:44:15 PKT 2023
+#Mon Nov 27 17:58:29 PKT 2023
 base.0=E\:\\code\\flutter projects\\tribune\\build\\app\\intermediates\\dex\\release\\minifyReleaseWithR8\\classes.dex
 path.0=classes.dex
 renamed.0=classes.dex

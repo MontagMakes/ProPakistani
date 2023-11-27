@@ -14,128 +14,135 @@
 11-->E:\code\flutter projects\tribune\android\app\src\main\AndroidManifest.xml:2:1-62
 11-->E:\code\flutter projects\tribune\android\app\src\main\AndroidManifest.xml:2:18-60
 12
-13    <permission
-13-->[androidx.core:core:1.10.1] C:\Users\Montag\.gradle\caches\transforms-3\c4988ff80110f75080a936fc6f044848\transformed\core-1.10.1\AndroidManifest.xml:22:5-24:47
-14        android:name="com.example.dawn.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
-14-->[androidx.core:core:1.10.1] C:\Users\Montag\.gradle\caches\transforms-3\c4988ff80110f75080a936fc6f044848\transformed\core-1.10.1\AndroidManifest.xml:23:9-81
-15        android:protectionLevel="signature" />
-15-->[androidx.core:core:1.10.1] C:\Users\Montag\.gradle\caches\transforms-3\c4988ff80110f75080a936fc6f044848\transformed\core-1.10.1\AndroidManifest.xml:24:9-44
+13    <meta-data
+13-->E:\code\flutter projects\tribune\android\app\src\main\AndroidManifest.xml:35:5-37:32
+14        android:name="io.flutter.embedding.android.EnableImpeller"
+14-->E:\code\flutter projects\tribune\android\app\src\main\AndroidManifest.xml:36:9-67
+15        android:value="true" />
+15-->E:\code\flutter projects\tribune\android\app\src\main\AndroidManifest.xml:37:9-29
 16
-17    <uses-permission android:name="com.example.dawn.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
-17-->[androidx.core:core:1.10.1] C:\Users\Montag\.gradle\caches\transforms-3\c4988ff80110f75080a936fc6f044848\transformed\core-1.10.1\AndroidManifest.xml:26:5-97
-17-->[androidx.core:core:1.10.1] C:\Users\Montag\.gradle\caches\transforms-3\c4988ff80110f75080a936fc6f044848\transformed\core-1.10.1\AndroidManifest.xml:26:22-94
-18
-19    <application
-20        android:name="android.app.Application"
-20-->E:\code\flutter projects\tribune\android\app\src\main\AndroidManifest.xml:5:9-42
-21        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-21-->[androidx.core:core:1.10.1] C:\Users\Montag\.gradle\caches\transforms-3\c4988ff80110f75080a936fc6f044848\transformed\core-1.10.1\AndroidManifest.xml:28:18-86
-22        android:icon="@mipmap/launcher_icon"
-22-->E:\code\flutter projects\tribune\android\app\src\main\AndroidManifest.xml:6:9-45
-23        android:label="Tribune" >
-23-->E:\code\flutter projects\tribune\android\app\src\main\AndroidManifest.xml:4:9-32
-24        <activity
-24-->E:\code\flutter projects\tribune\android\app\src\main\AndroidManifest.xml:7:9-27:20
-25            android:name="com.example.dawn.MainActivity"
-25-->E:\code\flutter projects\tribune\android\app\src\main\AndroidManifest.xml:8:13-41
-26            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
-26-->E:\code\flutter projects\tribune\android\app\src\main\AndroidManifest.xml:12:13-163
-27            android:exported="true"
-27-->E:\code\flutter projects\tribune\android\app\src\main\AndroidManifest.xml:9:13-36
-28            android:hardwareAccelerated="true"
-28-->E:\code\flutter projects\tribune\android\app\src\main\AndroidManifest.xml:13:13-47
-29            android:launchMode="singleTop"
-29-->E:\code\flutter projects\tribune\android\app\src\main\AndroidManifest.xml:10:13-43
-30            android:theme="@style/LaunchTheme"
-30-->E:\code\flutter projects\tribune\android\app\src\main\AndroidManifest.xml:11:13-47
-31            android:windowSoftInputMode="adjustResize" >
-31-->E:\code\flutter projects\tribune\android\app\src\main\AndroidManifest.xml:14:13-55
-32
-33            <!--
-34                 Specifies an Android theme to apply to this Activity as soon as
-35                 the Android process has started. This theme is visible to the user
-36                 while the Flutter UI initializes. After that, this theme continues
-37                 to determine the Window background behind the Flutter UI.
-38            -->
-39            <meta-data
-39-->E:\code\flutter projects\tribune\android\app\src\main\AndroidManifest.xml:19:13-22:17
-40                android:name="io.flutter.embedding.android.NormalTheme"
-40-->E:\code\flutter projects\tribune\android\app\src\main\AndroidManifest.xml:20:15-70
-41                android:resource="@style/NormalTheme" />
-41-->E:\code\flutter projects\tribune\android\app\src\main\AndroidManifest.xml:21:15-52
-42
-43            <intent-filter>
-43-->E:\code\flutter projects\tribune\android\app\src\main\AndroidManifest.xml:23:13-26:29
-44                <action android:name="android.intent.action.MAIN" />
-44-->E:\code\flutter projects\tribune\android\app\src\main\AndroidManifest.xml:24:17-68
-44-->E:\code\flutter projects\tribune\android\app\src\main\AndroidManifest.xml:24:25-66
-45
-46                <category android:name="android.intent.category.LAUNCHER" />
-46-->E:\code\flutter projects\tribune\android\app\src\main\AndroidManifest.xml:25:17-76
-46-->E:\code\flutter projects\tribune\android\app\src\main\AndroidManifest.xml:25:27-74
-47            </intent-filter>
-48        </activity>
-49        <!--
-50             Don't delete the meta-data below.
-51             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
-52        -->
-53        <meta-data
-53-->E:\code\flutter projects\tribune\android\app\src\main\AndroidManifest.xml:30:9-32:33
-54            android:name="flutterEmbedding"
-54-->E:\code\flutter projects\tribune\android\app\src\main\AndroidManifest.xml:31:13-44
-55            android:value="2" />
-55-->E:\code\flutter projects\tribune\android\app\src\main\AndroidManifest.xml:32:13-30
-56        <!--
-57           Declares a provider which allows us to store files to share in
-58           '.../caches/share_plus' and grant the receiving action access
-59        -->
-60        <provider
-60-->[:share_plus] E:\code\flutter projects\tribune\build\share_plus\intermediates\merged_manifest\release\AndroidManifest.xml:15:9-23:20
-61            android:name="dev.fluttercommunity.plus.share.ShareFileProvider"
-61-->[:share_plus] E:\code\flutter projects\tribune\build\share_plus\intermediates\merged_manifest\release\AndroidManifest.xml:16:13-77
-62            android:authorities="com.example.dawn.flutter.share_provider"
-62-->[:share_plus] E:\code\flutter projects\tribune\build\share_plus\intermediates\merged_manifest\release\AndroidManifest.xml:17:13-74
-63            android:exported="false"
-63-->[:share_plus] E:\code\flutter projects\tribune\build\share_plus\intermediates\merged_manifest\release\AndroidManifest.xml:18:13-37
-64            android:grantUriPermissions="true" >
-64-->[:share_plus] E:\code\flutter projects\tribune\build\share_plus\intermediates\merged_manifest\release\AndroidManifest.xml:19:13-47
-65            <meta-data
-65-->[:share_plus] E:\code\flutter projects\tribune\build\share_plus\intermediates\merged_manifest\release\AndroidManifest.xml:20:13-22:68
-66                android:name="android.support.FILE_PROVIDER_PATHS"
-66-->[:share_plus] E:\code\flutter projects\tribune\build\share_plus\intermediates\merged_manifest\release\AndroidManifest.xml:21:17-67
-67                android:resource="@xml/flutter_share_file_paths" />
-67-->[:share_plus] E:\code\flutter projects\tribune\build\share_plus\intermediates\merged_manifest\release\AndroidManifest.xml:22:17-65
-68        </provider>
-69        <!--
-70           This manifest declared broadcast receiver allows us to use an explicit
-71           Intent when creating a PendingItent to be informed of the user's choice
-72        -->
-73        <receiver
-73-->[:share_plus] E:\code\flutter projects\tribune\build\share_plus\intermediates\merged_manifest\release\AndroidManifest.xml:28:9-34:20
-74            android:name="dev.fluttercommunity.plus.share.SharePlusPendingIntent"
-74-->[:share_plus] E:\code\flutter projects\tribune\build\share_plus\intermediates\merged_manifest\release\AndroidManifest.xml:29:13-82
-75            android:exported="false" >
-75-->[:share_plus] E:\code\flutter projects\tribune\build\share_plus\intermediates\merged_manifest\release\AndroidManifest.xml:30:13-37
-76            <intent-filter>
-76-->[:share_plus] E:\code\flutter projects\tribune\build\share_plus\intermediates\merged_manifest\release\AndroidManifest.xml:31:13-33:29
-77                <action android:name="EXTRA_CHOSEN_COMPONENT" />
-77-->[:share_plus] E:\code\flutter projects\tribune\build\share_plus\intermediates\merged_manifest\release\AndroidManifest.xml:32:17-65
-77-->[:share_plus] E:\code\flutter projects\tribune\build\share_plus\intermediates\merged_manifest\release\AndroidManifest.xml:32:25-62
-78            </intent-filter>
-79        </receiver>
-80
-81        <uses-library
-81-->[androidx.window:window:1.0.0-beta04] C:\Users\Montag\.gradle\caches\transforms-3\25cee5f028ac2a6b79fd6278ff5b59e2\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:25:9-27:40
-82            android:name="androidx.window.extensions"
-82-->[androidx.window:window:1.0.0-beta04] C:\Users\Montag\.gradle\caches\transforms-3\25cee5f028ac2a6b79fd6278ff5b59e2\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:26:13-54
-83            android:required="false" />
-83-->[androidx.window:window:1.0.0-beta04] C:\Users\Montag\.gradle\caches\transforms-3\25cee5f028ac2a6b79fd6278ff5b59e2\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:27:13-37
-84        <uses-library
-84-->[androidx.window:window:1.0.0-beta04] C:\Users\Montag\.gradle\caches\transforms-3\25cee5f028ac2a6b79fd6278ff5b59e2\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:28:9-30:40
-85            android:name="androidx.window.sidecar"
-85-->[androidx.window:window:1.0.0-beta04] C:\Users\Montag\.gradle\caches\transforms-3\25cee5f028ac2a6b79fd6278ff5b59e2\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:29:13-51
-86            android:required="false" />
-86-->[androidx.window:window:1.0.0-beta04] C:\Users\Montag\.gradle\caches\transforms-3\25cee5f028ac2a6b79fd6278ff5b59e2\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:30:13-37
-87    </application>
-88
-89</manifest>
+17    <permission
+17-->[androidx.core:core:1.10.1] C:\Users\Montag\.gradle\caches\transforms-3\c4988ff80110f75080a936fc6f044848\transformed\core-1.10.1\AndroidManifest.xml:22:5-24:47
+18        android:name="com.example.dawn.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+18-->[androidx.core:core:1.10.1] C:\Users\Montag\.gradle\caches\transforms-3\c4988ff80110f75080a936fc6f044848\transformed\core-1.10.1\AndroidManifest.xml:23:9-81
+19        android:protectionLevel="signature" />
+19-->[androidx.core:core:1.10.1] C:\Users\Montag\.gradle\caches\transforms-3\c4988ff80110f75080a936fc6f044848\transformed\core-1.10.1\AndroidManifest.xml:24:9-44
+20
+21    <uses-permission android:name="com.example.dawn.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+21-->[androidx.core:core:1.10.1] C:\Users\Montag\.gradle\caches\transforms-3\c4988ff80110f75080a936fc6f044848\transformed\core-1.10.1\AndroidManifest.xml:26:5-97
+21-->[androidx.core:core:1.10.1] C:\Users\Montag\.gradle\caches\transforms-3\c4988ff80110f75080a936fc6f044848\transformed\core-1.10.1\AndroidManifest.xml:26:22-94
+22
+23    <application
+24        android:name="android.app.Application"
+24-->E:\code\flutter projects\tribune\android\app\src\main\AndroidManifest.xml:5:9-42
+25        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+25-->[androidx.core:core:1.10.1] C:\Users\Montag\.gradle\caches\transforms-3\c4988ff80110f75080a936fc6f044848\transformed\core-1.10.1\AndroidManifest.xml:28:18-86
+26        android:icon="@mipmap/launcher_icon"
+26-->E:\code\flutter projects\tribune\android\app\src\main\AndroidManifest.xml:6:9-45
+27        android:label="Tribune" >
+27-->E:\code\flutter projects\tribune\android\app\src\main\AndroidManifest.xml:4:9-32
+28        <activity
+28-->E:\code\flutter projects\tribune\android\app\src\main\AndroidManifest.xml:7:9-28:20
+29            android:name="com.example.dawn.MainActivity"
+29-->E:\code\flutter projects\tribune\android\app\src\main\AndroidManifest.xml:8:13-41
+30            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+30-->E:\code\flutter projects\tribune\android\app\src\main\AndroidManifest.xml:12:13-163
+31            android:exported="true"
+31-->E:\code\flutter projects\tribune\android\app\src\main\AndroidManifest.xml:9:13-36
+32            android:hardwareAccelerated="true"
+32-->E:\code\flutter projects\tribune\android\app\src\main\AndroidManifest.xml:13:13-47
+33            android:launchMode="singleTop"
+33-->E:\code\flutter projects\tribune\android\app\src\main\AndroidManifest.xml:10:13-43
+34            android:theme="@style/LaunchTheme"
+34-->E:\code\flutter projects\tribune\android\app\src\main\AndroidManifest.xml:11:13-47
+35            android:windowSoftInputMode="adjustResize" >
+35-->E:\code\flutter projects\tribune\android\app\src\main\AndroidManifest.xml:14:13-55
+36
+37            <!--
+38                 Specifies an Android theme to apply to this Activity as soon as
+39                 the Android process has started. This theme is visible to the user
+40                 while the Flutter UI initializes. After that, this theme continues
+41                 to determine the Window background behind the Flutter UI.
+42            -->
+43            <meta-data
+43-->E:\code\flutter projects\tribune\android\app\src\main\AndroidManifest.xml:19:13-23:17
+44                android:name="io.flutter.embedding.android.NormalTheme"
+44-->E:\code\flutter projects\tribune\android\app\src\main\AndroidManifest.xml:21:15-70
+45                android:resource="@style/NormalTheme" />
+45-->E:\code\flutter projects\tribune\android\app\src\main\AndroidManifest.xml:22:15-52
+46
+47            <intent-filter>
+47-->E:\code\flutter projects\tribune\android\app\src\main\AndroidManifest.xml:24:13-27:29
+48                <action android:name="android.intent.action.MAIN" />
+48-->E:\code\flutter projects\tribune\android\app\src\main\AndroidManifest.xml:25:17-68
+48-->E:\code\flutter projects\tribune\android\app\src\main\AndroidManifest.xml:25:25-66
+49
+50                <category android:name="android.intent.category.LAUNCHER" />
+50-->E:\code\flutter projects\tribune\android\app\src\main\AndroidManifest.xml:26:17-76
+50-->E:\code\flutter projects\tribune\android\app\src\main\AndroidManifest.xml:26:27-74
+51            </intent-filter>
+52        </activity>
+53        <!--
+54             Don't delete the meta-data below.
+55             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+56        -->
+57        <meta-data
+57-->E:\code\flutter projects\tribune\android\app\src\main\AndroidManifest.xml:31:9-33:33
+58            android:name="flutterEmbedding"
+58-->E:\code\flutter projects\tribune\android\app\src\main\AndroidManifest.xml:32:13-44
+59            android:value="2" />
+59-->E:\code\flutter projects\tribune\android\app\src\main\AndroidManifest.xml:33:13-30
+60        <!--
+61           Declares a provider which allows us to store files to share in
+62           '.../caches/share_plus' and grant the receiving action access
+63        -->
+64        <provider
+64-->[:share_plus] E:\code\flutter projects\tribune\build\share_plus\intermediates\merged_manifest\release\AndroidManifest.xml:15:9-23:20
+65            android:name="dev.fluttercommunity.plus.share.ShareFileProvider"
+65-->[:share_plus] E:\code\flutter projects\tribune\build\share_plus\intermediates\merged_manifest\release\AndroidManifest.xml:16:13-77
+66            android:authorities="com.example.dawn.flutter.share_provider"
+66-->[:share_plus] E:\code\flutter projects\tribune\build\share_plus\intermediates\merged_manifest\release\AndroidManifest.xml:17:13-74
+67            android:exported="false"
+67-->[:share_plus] E:\code\flutter projects\tribune\build\share_plus\intermediates\merged_manifest\release\AndroidManifest.xml:18:13-37
+68            android:grantUriPermissions="true" >
+68-->[:share_plus] E:\code\flutter projects\tribune\build\share_plus\intermediates\merged_manifest\release\AndroidManifest.xml:19:13-47
+69            <meta-data
+69-->[:share_plus] E:\code\flutter projects\tribune\build\share_plus\intermediates\merged_manifest\release\AndroidManifest.xml:20:13-22:68
+70                android:name="android.support.FILE_PROVIDER_PATHS"
+70-->[:share_plus] E:\code\flutter projects\tribune\build\share_plus\intermediates\merged_manifest\release\AndroidManifest.xml:21:17-67
+71                android:resource="@xml/flutter_share_file_paths" />
+71-->[:share_plus] E:\code\flutter projects\tribune\build\share_plus\intermediates\merged_manifest\release\AndroidManifest.xml:22:17-65
+72        </provider>
+73        <!--
+74           This manifest declared broadcast receiver allows us to use an explicit
+75           Intent when creating a PendingItent to be informed of the user's choice
+76        -->
+77        <receiver
+77-->[:share_plus] E:\code\flutter projects\tribune\build\share_plus\intermediates\merged_manifest\release\AndroidManifest.xml:28:9-34:20
+78            android:name="dev.fluttercommunity.plus.share.SharePlusPendingIntent"
+78-->[:share_plus] E:\code\flutter projects\tribune\build\share_plus\intermediates\merged_manifest\release\AndroidManifest.xml:29:13-82
+79            android:exported="false" >
+79-->[:share_plus] E:\code\flutter projects\tribune\build\share_plus\intermediates\merged_manifest\release\AndroidManifest.xml:30:13-37
+80            <intent-filter>
+80-->[:share_plus] E:\code\flutter projects\tribune\build\share_plus\intermediates\merged_manifest\release\AndroidManifest.xml:31:13-33:29
+81                <action android:name="EXTRA_CHOSEN_COMPONENT" />
+81-->[:share_plus] E:\code\flutter projects\tribune\build\share_plus\intermediates\merged_manifest\release\AndroidManifest.xml:32:17-65
+81-->[:share_plus] E:\code\flutter projects\tribune\build\share_plus\intermediates\merged_manifest\release\AndroidManifest.xml:32:25-62
+82            </intent-filter>
+83        </receiver>
+84
+85        <uses-library
+85-->[androidx.window:window:1.0.0-beta04] C:\Users\Montag\.gradle\caches\transforms-3\25cee5f028ac2a6b79fd6278ff5b59e2\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:25:9-27:40
+86            android:name="androidx.window.extensions"
+86-->[androidx.window:window:1.0.0-beta04] C:\Users\Montag\.gradle\caches\transforms-3\25cee5f028ac2a6b79fd6278ff5b59e2\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:26:13-54
+87            android:required="false" />
+87-->[androidx.window:window:1.0.0-beta04] C:\Users\Montag\.gradle\caches\transforms-3\25cee5f028ac2a6b79fd6278ff5b59e2\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:27:13-37
+88        <uses-library
+88-->[androidx.window:window:1.0.0-beta04] C:\Users\Montag\.gradle\caches\transforms-3\25cee5f028ac2a6b79fd6278ff5b59e2\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:28:9-30:40
+89            android:name="androidx.window.sidecar"
+89-->[androidx.window:window:1.0.0-beta04] C:\Users\Montag\.gradle\caches\transforms-3\25cee5f028ac2a6b79fd6278ff5b59e2\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:29:13-51
+90            android:required="false" />
+90-->[androidx.window:window:1.0.0-beta04] C:\Users\Montag\.gradle\caches\transforms-3\25cee5f028ac2a6b79fd6278ff5b59e2\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:30:13-37
+91    </application>
+92
+93</manifest>

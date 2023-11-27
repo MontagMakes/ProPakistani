@@ -14,7 +14,6 @@ class _ScreenSettingState extends State<ScreenSetting> {
 
   @override
   Widget build(BuildContext context) {
-    
     // When dark mode is on, the switch will stay switched on
     AdaptiveThemeMode themeMode = AdaptiveTheme.of(context).mode;
     if (themeMode == AdaptiveThemeMode.light) {
@@ -38,7 +37,8 @@ class _ScreenSettingState extends State<ScreenSetting> {
               children: [
                 Text(
                   "Dark Mode",
-                  style: TextStyle(fontSize: MediaQuery.of(context).textScaleFactor*20),
+                  style: TextStyle(
+                      fontSize: MediaQuery.of(context).textScaleFactor * 20),
                 ),
                 Switch(
                     value: isDarkMode,
@@ -69,17 +69,25 @@ class _ScreenSettingState extends State<ScreenSetting> {
               children: [
                 Text(
                   "Contact Us",
-                  style: TextStyle(fontSize: MediaQuery.of(context).textScaleFactor*20),
+                  style: TextStyle(
+                      fontSize: MediaQuery.of(context).textScaleFactor * 20),
                 ),
                 GestureDetector(
                   onTap: () {
-                      Clipboard.setData(const ClipboardData(
-                              text: "Editor@dawn.com"))
-                          .then((value) => ScaffoldMessenger.of(context)
-                              .showSnackBar(const SnackBar(
-                                  content: Text(
-                                      "The link has been successfully copied to your clipboard."))));
-                    },
+                    Clipboard.setData(
+                      const ClipboardData(text: "Editor@dawn.com"))
+                            .then((value) => ScaffoldMessenger.of(context)
+                      .showSnackBar(SnackBar(
+                          behavior: SnackBarBehavior.floating,
+                          width: MediaQuery.of(context).size.width * 0.8,
+                          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
+                          padding: const EdgeInsets.all(15),
+                          content: const Text(
+                            "The link has been successfully copied to your clipboard."
+                          )
+                      ))
+                    );
+                  },
                   child: const Text(
                     "Editor@dawn.com",
                     style: TextStyle(color: Colors.blue),
@@ -101,15 +109,20 @@ class _ScreenSettingState extends State<ScreenSetting> {
                 children: [
                   Text(
                     "Website",
-                    style: TextStyle(fontSize: MediaQuery.of(context).textScaleFactor*20),
+                    style: TextStyle(
+                        fontSize: MediaQuery.of(context).textScaleFactor * 20),
                   ),
                   GestureDetector(
                     onTap: () {
                       Clipboard.setData(const ClipboardData(
                               text: "https://tribune.com.pk/"))
                           .then((value) => ScaffoldMessenger.of(context)
-                              .showSnackBar(const SnackBar(
-                                  content: Text(
+                              .showSnackBar(SnackBar(
+                                behavior: SnackBarBehavior.floating,
+                          width: MediaQuery.of(context).size.width * 0.8,
+                          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
+                          padding: const EdgeInsets.all(15),
+                                  content: const Text(
                                       "The link has been successfully copied to your clipboard."))));
                     },
                     child: const Text(
