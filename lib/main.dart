@@ -2,11 +2,15 @@ import 'package:adaptive_theme/adaptive_theme.dart';
 import 'package:dawn/globals/globals.dart';
 import 'package:dawn/screens/screen_home_page/screen_home_page.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   final savedThemeMode = await AdaptiveTheme.getThemeMode();
+  SystemChrome.setPreferredOrientations([
+    DeviceOrientation.portraitUp
+  ]);
 
   
   runApp(MyApp(savedThemeMode: savedThemeMode));
@@ -14,7 +18,7 @@ void main() async {
 
 class MyApp extends StatelessWidget {
   final AdaptiveThemeMode? savedThemeMode;
-
+  
   const MyApp({super.key, this.savedThemeMode});
 
   @override
@@ -37,6 +41,7 @@ class MyApp extends StatelessWidget {
       ),
       initial: savedThemeMode ?? AdaptiveThemeMode.light,
       builder: (theme, dark) => MaterialApp(
+        
         debugShowCheckedModeBanner: false,
         theme: theme,
         darkTheme: dark,
