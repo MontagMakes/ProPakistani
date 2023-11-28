@@ -2,7 +2,7 @@ import 'package:adaptive_theme/adaptive_theme.dart';
 import 'package:dawn/globals/globals.dart';
 import 'package:dawn/screens/screen_home_page/screen_home_page.dart';
 import 'package:flutter/material.dart';
-import 'package:shared_preferences/shared_preferences.dart';
+
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();

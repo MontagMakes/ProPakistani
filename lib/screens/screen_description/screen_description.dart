@@ -138,7 +138,7 @@ class _ScreenDescriptionState extends State<ScreenDescription> {
                         style: Theme.of(context)
                             .textTheme
                             .titleLarge!
-                            .copyWith(color: Colors.white)),
+                            .copyWith(color: Colors.white, fontWeight: FontWeight.bold)),
                   ),
                 ),
                 Positioned(
@@ -148,7 +148,7 @@ class _ScreenDescriptionState extends State<ScreenDescription> {
                         style: Theme.of(context)
                             .textTheme
                             .titleSmall!
-                            .copyWith(color: Colors.white))),
+                            .copyWith(color: Colors.white, fontWeight: FontWeight.normal))),
                 Positioned(
                     bottom: 0,
                     left: -10,
@@ -157,7 +157,7 @@ class _ScreenDescriptionState extends State<ScreenDescription> {
                       style: Theme.of(context)
                           .textTheme
                           .titleSmall!
-                          .copyWith(color: Colors.white),
+                          .copyWith(color: Colors.white, fontWeight: FontWeight.normal),
                     )),
               ],
             ),

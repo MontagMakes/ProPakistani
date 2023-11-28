@@ -1,4 +1,0 @@
-#Sun Nov 26 11:14:56 PKT 2023
-base.0=E\:\\code\\flutter projects\\tribune\\build\\app\\intermediates\\dex\\profile\\mergeDexProfile\\classes.dex
-path.0=classes.dex
-renamed.0=classes.dex

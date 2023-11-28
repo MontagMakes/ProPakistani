@@ -75,7 +75,7 @@ class _ScreenSettingState extends State<ScreenSetting> {
                 GestureDetector(
                   onTap: () {
                     Clipboard.setData(
-                      const ClipboardData(text: "Editor@dawn.com"))
+                      const ClipboardData(text: "editorial@tribune.com.pk"))
                             .then((value) => ScaffoldMessenger.of(context)
                       .showSnackBar(SnackBar(
                           behavior: SnackBarBehavior.floating,
@@ -89,7 +89,7 @@ class _ScreenSettingState extends State<ScreenSetting> {
                     );
                   },
                   child: const Text(
-                    "Editor@dawn.com",
+                    "editorial@tribune.com.pk",
                     style: TextStyle(color: Colors.blue),
                   ),
                 )

@@ -35,6 +35,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
   @override
   Widget build(BuildContext context) {
+    print(Theme.of(context).textTheme.displayMedium!.fontSize);
     final isDarkMode = AdaptiveTheme.of(context).mode == AdaptiveThemeMode.dark;
     return Scaffold(
       drawerDragStartBehavior: DragStartBehavior.start,
@@ -43,47 +44,77 @@ class _MyHomePageState extends State<MyHomePage> {
           physics: const BouncingScrollPhysics(
               parent: AlwaysScrollableScrollPhysics()),
           children: [
-            SizedBox(
-              height: 75,
-              child: RichText(
-                text: TextSpan(children: [
-                  //Title: Tribune
-                  WidgetSpan(
-                    child: Transform(
-                      transform: Matrix4.translationValues(
-                          MediaQuery.sizeOf(context).width * 0.08, 0, 0),
-                      child: Text(
-                        "TRIBUNE",
-                        style: GoogleFonts.playfair(
-                            fontSize:
-                                MediaQuery.of(context).textScaleFactor * 60,
-                            color: isDarkMode ? Colors.white : Colors.black),
-                      ),
-                    ),
+            Center(
+              child: Stack(children: [
+                SizedBox(
+                  width: MediaQuery.of(context).size.width * 0.6,
+                  height: MediaQuery.of(context).size.height * 0.08,
+                  child: ColoredBox(color: Colors.teal.shade100),
+                ),
+                Positioned(
+                  child: Text(
+                    "TRIBUNE",
+                    style: GoogleFonts.playfair(
+                        fontSize: MediaQuery.of(context).size.width * 0.15,
+                        fontWeight: FontWeight.normal,
+                        color: isDarkMode ? Colors.white : Colors.black),
                   ),
-
-                  //Title: The Express
-                  WidgetSpan(
-                    child: Transform(
-                      transform: Matrix4.translationValues(
-                          -MediaQuery.sizeOf(context).width * -0.463,
-                          -MediaQuery.sizeOf(context).height * 0.1,
-                          0),
-                      child: Text(
-                        "THE EXPRESS",
-                        style: TextStyle(
-                            fontStyle: FontStyle.italic,
-                            fontSize:
-                                MediaQuery.of(context).textScaleFactor * 13,
-                            color: isDarkMode
-                                ? Colors.red
-                                : Colors.redAccent.shade700),
-                      ),
-                    ),
-                  )
-                ]),
-              ),
+                ),
+                Positioned(
+                  top: 10,
+                  right: 7,
+                  child: Text(
+                    "THE EXPRESS",
+                    style: Theme.of(context).textTheme.labelSmall!.copyWith(
+                        fontSize: MediaQuery.of(context).size.width * 0.03,
+                        fontStyle: FontStyle.italic,
+                        fontWeight: FontWeight.normal,
+                        color: isDarkMode
+                            ? Colors.red
+                            : Colors.redAccent.shade700),
+                  ),
+                )
+              ]),
             ),
+
+            // SizedBox(
+            //   height: 75,
+            //   child: RichText(
+            //     softWrap: false,
+            //     text: TextSpan(children: [
+            //       //Title: Tribune
+            //       WidgetSpan(
+            //         child: Transform(
+            //           transform: Matrix4.translationValues(
+            //               MediaQuery.sizeOf(context).width * 0.08, 0, 0),
+            //           child: Text(
+            //             "TRIBUNE",
+            //             style: GoogleFonts.playfair(
+            //                 fontSize:Theme.of(context).textTheme.displayLarge!.fontSize,
+            //                 color: isDarkMode ? Colors.white : Colors.black),
+            //           ),
+            //         ),
+            //       ),
+
+            //       //Title: The Express
+            //       WidgetSpan(
+            //         child: Transform(
+            //           transform: Matrix4.translationValues(
+            //               -MediaQuery.sizeOf(context).width * 0.15,
+            //               -MediaQuery.sizeOf(context).height * 0.082,
+            //               0),
+            //           child: Text(
+            //             "THE EXPRESS",
+            //             style: Theme.of(context).textTheme.bodySmall!.copyWith(
+            //               fontStyle: FontStyle.italic,
+            //               color: isDarkMode ? Colors.red : Colors.redAccent.shade700
+            //             ),
+            //           ),
+            //         ),
+            //       )
+            //     ]),
+            //   ),
+            // ),
             for (int i = 0; i < categories.length; i++)
               listTile(context, categories[i], i),
           ],
@@ -93,38 +124,35 @@ class _MyHomePageState extends State<MyHomePage> {
       //AppBar
       appBar: AppBar(
         centerTitle: true,
-        title: RichText(
-          text: TextSpan(children: [
-            WidgetSpan(
-              child: Transform.translate(
-                offset: Offset(MediaQuery.of(context).size.width * 0.07, 0),
-                child: Text(
-                  "TRIBUNE",
-                  style: GoogleFonts.playfair(
-                      fontSize: MediaQuery.of(context).textScaleFactor * 43,
-                      color: isDarkMode ? Colors.white : Colors.black),
-                ),
-              ),
+        title: Stack(children: [
+          SizedBox(
+            width: MediaQuery.of(context).size.width * 0.53,
+            height: MediaQuery.of(context).size.height * 0.07,
+            child: ColoredBox(color: Colors.teal.shade100),
+          ),
+          Positioned(
+            child: Text(
+              "TRIBUNE",
+              style: GoogleFonts.playfair(
+                  fontSize: MediaQuery.of(context).size.width * 0.135,
+                  fontWeight: FontWeight.normal,
+                  color: isDarkMode ? Colors.white : Colors.black),
             ),
-            WidgetSpan(
-              child: Transform.translate(
-                offset: Offset(MediaQuery.of(context).size.width * -0.1,
-                    MediaQuery.of(context).size.height * -0.051),
-                child: Text(
-                  "THE EXPRESS",
-                  style: TextStyle(
-                      fontSize: MediaQuery.of(context).textScaleFactor * 10,
-                      fontStyle: FontStyle.italic,
-                      color:
-                          isDarkMode ? Colors.red : Colors.redAccent.shade700),
-                ),
-              ),
-            )
-          ]),
-        ),
-
+          ),
+          Positioned(
+            top: 3,
+            right: 3,
+            child: Text(
+              "THE EXPRESS",
+              style: Theme.of(context).textTheme.labelSmall!.copyWith(
+                  fontSize: MediaQuery.of(context).size.width * 0.03,
+                  fontStyle: FontStyle.italic,
+                  fontWeight: FontWeight.normal,
+                  color: isDarkMode ? Colors.red : Colors.redAccent.shade700),
+            ),
+          )
+        ]),
         actions: [
-
           //Settings Button
           IconButton(
               onPressed: () {
@@ -143,7 +171,6 @@ class _MyHomePageState extends State<MyHomePage> {
                       ),
                     ));
               },
-        
               icon: const Icon(Icons.settings)),
         ],
       ),
@@ -231,11 +258,15 @@ class _MyHomePageState extends State<MyHomePage> {
                           child: Text(
                             stories[index].title.toString(),
                             textAlign: TextAlign.justify,
-                            style: TextStyle(
-                                fontSize:
-                                    MediaQuery.of(context).textScaleFactor * 18,
-                                fontWeight: FontWeight.bold,
-                                color: Colors.white),
+                            style: Theme.of(context)
+                                .textTheme
+                                .bodyLarge!
+                                .copyWith(
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.white,
+                                    fontSize:
+                                        MediaQuery.of(context).size.width *
+                                            0.045),
                           ),
                         ),
 
@@ -249,7 +280,9 @@ class _MyHomePageState extends State<MyHomePage> {
                             style: Theme.of(context)
                                 .textTheme
                                 .titleSmall!
-                                .copyWith(color: Colors.white, fontWeight: FontWeight.normal),
+                                .copyWith(
+                                    color: Colors.white,
+                                    fontWeight: FontWeight.normal),
                           ),
                         ),
 
@@ -262,7 +295,9 @@ class _MyHomePageState extends State<MyHomePage> {
                             style: Theme.of(context)
                                 .textTheme
                                 .titleSmall!
-                                .copyWith(color: Colors.white, fontWeight: FontWeight.normal),
+                                .copyWith(
+                                    color: Colors.white,
+                                    fontWeight: FontWeight.normal),
                           ),
                         )
                       ],
@@ -281,7 +316,10 @@ class _MyHomePageState extends State<MyHomePage> {
 
   ListTile listTile(BuildContext context, String categoryName, int index) {
     return ListTile(
-      title: Text(categoryName),
+      title: Text(
+        categoryName,
+        style: Theme.of(context).textTheme.bodyMedium,
+      ),
       onTap: () async {
         if (categoryName == "K-P") {
           categoryName = "khyber-pakhtunkhwa";

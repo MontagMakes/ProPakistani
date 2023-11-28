@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.dawn"
+    package="com.montagmakes.tribune"
     android:versionCode="1"
     android:versionName="1.0.0" >
 
@@ -15,16 +15,16 @@
         android:value="true" />
 
     <permission
-        android:name="com.example.dawn.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+        android:name="com.montagmakes.tribune.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
         android:protectionLevel="signature" />
 
-    <uses-permission android:name="com.example.dawn.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+    <uses-permission android:name="com.montagmakes.tribune.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
 
     <application
         android:name="android.app.Application"
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
         android:icon="@mipmap/launcher_icon"
-        android:label="Tribune" >
+        android:label="The Express Tribune - Unofficial News App" >
         <activity
             android:name="com.example.dawn.MainActivity"
             android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
@@ -63,7 +63,7 @@
         -->
         <provider
             android:name="dev.fluttercommunity.plus.share.ShareFileProvider"
-            android:authorities="com.example.dawn.flutter.share_provider"
+            android:authorities="com.montagmakes.tribune.flutter.share_provider"
             android:exported="false"
             android:grantUriPermissions="true" >
             <meta-data

@@ -48,11 +48,11 @@ dependencies:
   shared_preferences: ^2.2.2
   
 flutter_native_splash:
-  color: "#0d001a"
+  color: "#ffffff"
   color_dark: "#0d001a"
   
   android_12:
-    color: "#0d001a"
+    color: "#ffffff"
     color_dark: "#0d001a"
     icon_background_color: "#0d001a"
     #icon_background_color_dark: "#0d001a"
