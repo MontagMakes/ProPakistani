@@ -49,7 +49,6 @@ class _MyHomePageState extends State<MyHomePage> {
                 SizedBox(
                   width: MediaQuery.of(context).size.width * 0.6,
                   height: MediaQuery.of(context).size.height * 0.08,
-                  child: ColoredBox(color: Colors.teal.shade100),
                 ),
                 Positioned(
                   child: Text(
@@ -128,7 +127,6 @@ class _MyHomePageState extends State<MyHomePage> {
           SizedBox(
             width: MediaQuery.of(context).size.width * 0.53,
             height: MediaQuery.of(context).size.height * 0.07,
-            child: ColoredBox(color: Colors.teal.shade100),
           ),
           Positioned(
             child: Text(
