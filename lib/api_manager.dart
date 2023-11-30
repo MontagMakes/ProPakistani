@@ -63,7 +63,7 @@ class ApiService {
         }
       }
     } catch (e) {
-      print(e);
+      Exception(e.toString());
     }
     return toReturn;
   }
