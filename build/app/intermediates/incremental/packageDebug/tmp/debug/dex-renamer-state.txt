@@ -1,4 +1,4 @@
-#Fri Dec 01 00:02:00 PKT 2023
+#Sat Dec 02 01:36:16 PKT 2023
 base.0=E\:\\code\\flutter projects\\tribune\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
 path.0=classes.dex
 renamed.0=classes.dex
