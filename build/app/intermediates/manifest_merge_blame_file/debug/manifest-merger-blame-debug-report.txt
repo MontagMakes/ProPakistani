@@ -5,7 +5,7 @@
 5    android:versionName="1.0.3" >
 6
 7    <uses-sdk
-8        android:minSdkVersion="19"
+8        android:minSdkVersion="21"
 9        android:targetSdkVersion="33" />
 10    <!--
 11         The INTERNET permission is required for development. Specifically,
@@ -35,7 +35,7 @@
 25-->[androidx.core:core:1.10.1] C:\Users\Montag\.gradle\caches\transforms-3\c4988ff80110f75080a936fc6f044848\transformed\core-1.10.1\AndroidManifest.xml:26:22-94
 26
 27    <application
-28        android:name="android.app.Application"
+28        android:name="io.flutter.app.FlutterMultiDexApplication"
 29        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 29-->[androidx.core:core:1.10.1] C:\Users\Montag\.gradle\caches\transforms-3\c4988ff80110f75080a936fc6f044848\transformed\core-1.10.1\AndroidManifest.xml:28:18-86
 30        android:debuggable="true"
