@@ -24,10 +24,6 @@
         "source": "com.example.dawn.app-core-1.10.1-5:/drawable/notification_bg_low.xml"
     },
     {
-        "merged": "com.example.dawn.app-merged_res-13:/drawable_launch_background.xml.flat",
-        "source": "com.example.dawn.app-main-6:/drawable/launch_background.xml"
-    },
-    {
         "merged": "com.example.dawn.app-merged_res-13:/drawable-xxhdpi-v4_ic_call_answer.png.flat",
         "source": "com.example.dawn.app-core-1.10.1-5:/drawable-xxhdpi-v4/ic_call_answer.png"
     },
@@ -92,16 +88,8 @@
         "source": "com.example.dawn.app-core-1.10.1-5:/drawable-mdpi-v4/ic_call_answer_low.png"
     },
     {
-        "merged": "com.example.dawn.app-merged_res-13:/layout-v16_notification_template_custom_big.xml.flat",
-        "source": "com.example.dawn.app-core-1.10.1-5:/layout-v16/notification_template_custom_big.xml"
-    },
-    {
         "merged": "com.example.dawn.app-merged_res-13:/xml_flutter_share_file_paths.xml.flat",
         "source": "com.example.dawn.app-packaged_res-16:/xml/flutter_share_file_paths.xml"
-    },
-    {
-        "merged": "com.example.dawn.app-merged_res-13:/layout_notification_action.xml.flat",
-        "source": "com.example.dawn.app-core-1.10.1-5:/layout/notification_action.xml"
     },
     {
         "merged": "com.example.dawn.app-merged_res-13:/drawable-hdpi-v4_ic_call_answer_video.png.flat",
@@ -118,10 +106,6 @@
     {
         "merged": "com.example.dawn.app-merged_res-13:/drawable-xxhdpi-v4_ic_call_answer_video.png.flat",
         "source": "com.example.dawn.app-core-1.10.1-5:/drawable-xxhdpi-v4/ic_call_answer_video.png"
-    },
-    {
-        "merged": "com.example.dawn.app-merged_res-13:/drawable-night_background.png.flat",
-        "source": "com.example.dawn.app-main-6:/drawable-night/background.png"
     },
     {
         "merged": "com.example.dawn.app-merged_res-13:/mipmap-xxxhdpi_launcher_icon.png.flat",
@@ -212,10 +196,6 @@
         "source": "com.example.dawn.app-core-1.10.1-5:/drawable-hdpi-v4/notification_bg_low_pressed.9.png"
     },
     {
-        "merged": "com.example.dawn.app-merged_res-13:/layout_notification_action_tombstone.xml.flat",
-        "source": "com.example.dawn.app-core-1.10.1-5:/layout/notification_action_tombstone.xml"
-    },
-    {
         "merged": "com.example.dawn.app-merged_res-13:/drawable-xhdpi-v4_notification_bg_low_pressed.9.png.flat",
         "source": "com.example.dawn.app-core-1.10.1-5:/drawable-xhdpi-v4/notification_bg_low_pressed.9.png"
     },
@@ -284,10 +264,6 @@
         "source": "com.example.dawn.app-core-1.10.1-5:/drawable-xhdpi-v4/notification_bg_normal_pressed.9.png"
     },
     {
-        "merged": "com.example.dawn.app-merged_res-13:/drawable-night_launch_background.xml.flat",
-        "source": "com.example.dawn.app-main-6:/drawable-night/launch_background.xml"
-    },
-    {
         "merged": "com.example.dawn.app-merged_res-13:/drawable-mdpi-v4_ic_call_answer.png.flat",
         "source": "com.example.dawn.app-core-1.10.1-5:/drawable-mdpi-v4/ic_call_answer.png"
     },
@@ -320,10 +296,6 @@
         "source": "com.example.dawn.app-main-6:/drawable-night-v21/background.png"
     },
     {
-        "merged": "com.example.dawn.app-merged_res-13:/layout_notification_template_icon_group.xml.flat",
-        "source": "com.example.dawn.app-core-1.10.1-5:/layout/notification_template_icon_group.xml"
-    },
-    {
         "merged": "com.example.dawn.app-merged_res-13:/drawable-hdpi-v4_ic_call_decline.png.flat",
         "source": "com.example.dawn.app-core-1.10.1-5:/drawable-hdpi-v4/ic_call_decline.png"
     },
@@ -346,10 +318,6 @@
     {
         "merged": "com.example.dawn.app-merged_res-13:/drawable-xhdpi-v4_ic_call_decline_low.png.flat",
         "source": "com.example.dawn.app-core-1.10.1-5:/drawable-xhdpi-v4/ic_call_decline_low.png"
-    },
-    {
-        "merged": "com.example.dawn.app-merged_res-13:/drawable_background.png.flat",
-        "source": "com.example.dawn.app-main-6:/drawable/background.png"
     },
     {
         "merged": "com.example.dawn.app-merged_res-13:/drawable-hdpi-v4_notification_bg_low_normal.9.png.flat",

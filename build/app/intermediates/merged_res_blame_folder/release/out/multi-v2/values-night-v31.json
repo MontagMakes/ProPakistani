@@ -4,7 +4,7 @@
             "outputFile": "com.example.dawn.app-mergeReleaseResources-11:/values-night-v31/values-night-v31.xml",
             "map": [
                 {
-                    "source": "E:\\code\\flutter projects\\tribune\\android\\app\\src\\main\\res\\values-night-v31\\styles.xml",
+                    "source": "E:\\code\\flutter projects\\tribune2\\tribune_app\\android\\app\\src\\main\\res\\values-night-v31\\styles.xml",
                     "from": {
                         "startLines": "3,17",
                         "startColumns": "4,4",

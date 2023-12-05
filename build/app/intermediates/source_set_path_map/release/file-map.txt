@@ -4,15 +4,15 @@ com.example.dawn.app-jetified-annotation-experimental-1.3.0-2 C:\Users\Montag\.g
 com.example.dawn.app-lifecycle-runtime-2.3.1-3 C:\Users\Montag\.gradle\caches\transforms-3\9a249567dcb8025899915ed9a2426636\transformed\lifecycle-runtime-2.3.1\res
 com.example.dawn.app-jetified-window-java-1.0.0-beta04-4 C:\Users\Montag\.gradle\caches\transforms-3\ae81e06d24c799147c26814497a2a305\transformed\jetified-window-java-1.0.0-beta04\res
 com.example.dawn.app-core-1.10.1-5 C:\Users\Montag\.gradle\caches\transforms-3\c4988ff80110f75080a936fc6f044848\transformed\core-1.10.1\res
-com.example.dawn.app-main-6 E:\code\flutter projects\tribune\android\app\src\main\res
-com.example.dawn.app-release-7 E:\code\flutter projects\tribune\android\app\src\release\res
-com.example.dawn.app-pngs-8 E:\code\flutter projects\tribune\build\app\generated\res\pngs\release
-com.example.dawn.app-resValues-9 E:\code\flutter projects\tribune\build\app\generated\res\resValues\release
-com.example.dawn.app-rs-10 E:\code\flutter projects\tribune\build\app\generated\res\rs\release
-com.example.dawn.app-mergeReleaseResources-11 E:\code\flutter projects\tribune\build\app\intermediates\incremental\release\mergeReleaseResources\merged.dir
-com.example.dawn.app-mergeReleaseResources-12 E:\code\flutter projects\tribune\build\app\intermediates\incremental\release\mergeReleaseResources\stripped.dir
-com.example.dawn.app-merged_res-13 E:\code\flutter projects\tribune\build\app\intermediates\merged_res\release
-com.example.dawn.app-packaged_res-14 E:\code\flutter projects\tribune\build\flutter_native_splash\intermediates\packaged_res\release
-com.example.dawn.app-packaged_res-15 E:\code\flutter projects\tribune\build\path_provider_android\intermediates\packaged_res\release
-com.example.dawn.app-packaged_res-16 E:\code\flutter projects\tribune\build\share_plus\intermediates\packaged_res\release
-com.example.dawn.app-packaged_res-17 E:\code\flutter projects\tribune\build\shared_preferences_android\intermediates\packaged_res\release
+com.example.dawn.app-main-6 E:\code\flutter projects\tribune2\tribune_app\android\app\src\main\res
+com.example.dawn.app-release-7 E:\code\flutter projects\tribune2\tribune_app\android\app\src\release\res
+com.example.dawn.app-pngs-8 E:\code\flutter projects\tribune2\tribune_app\build\app\generated\res\pngs\release
+com.example.dawn.app-resValues-9 E:\code\flutter projects\tribune2\tribune_app\build\app\generated\res\resValues\release
+com.example.dawn.app-rs-10 E:\code\flutter projects\tribune2\tribune_app\build\app\generated\res\rs\release
+com.example.dawn.app-mergeReleaseResources-11 E:\code\flutter projects\tribune2\tribune_app\build\app\intermediates\incremental\release\mergeReleaseResources\merged.dir
+com.example.dawn.app-mergeReleaseResources-12 E:\code\flutter projects\tribune2\tribune_app\build\app\intermediates\incremental\release\mergeReleaseResources\stripped.dir
+com.example.dawn.app-merged_res-13 E:\code\flutter projects\tribune2\tribune_app\build\app\intermediates\merged_res\release
+com.example.dawn.app-packaged_res-14 E:\code\flutter projects\tribune2\tribune_app\build\flutter_native_splash\intermediates\packaged_res\release
+com.example.dawn.app-packaged_res-15 E:\code\flutter projects\tribune2\tribune_app\build\path_provider_android\intermediates\packaged_res\release
+com.example.dawn.app-packaged_res-16 E:\code\flutter projects\tribune2\tribune_app\build\share_plus\intermediates\packaged_res\release
+com.example.dawn.app-packaged_res-17 E:\code\flutter projects\tribune2\tribune_app\build\shared_preferences_android\intermediates\packaged_res\release
