@@ -23,13 +23,16 @@ class _ScreenSettingState extends State<ScreenSetting> {
     }
 
     return Scaffold(
+
       appBar: AppBar(
         title: const Text("Settings"),
       ),
+
       body: Padding(
         padding: const EdgeInsets.only(left: 20, right: 20),
         child: Column(children: [
-          // Row: Dark mode
+          
+          //Row: Dark Mode
           SizedBox(
             height: MediaQuery.sizeOf(context).height * 0.08,
             child: Row(
@@ -38,7 +41,7 @@ class _ScreenSettingState extends State<ScreenSetting> {
                 Text(
                   "Dark Mode",
                   style: TextStyle(
-                      fontSize: MediaQuery.of(context).textScaleFactor * 20),
+                      fontSize: MediaQuery.of(context).size.width * 0.05),
                 ),
                 Switch(
                     value: isDarkMode,
@@ -70,7 +73,7 @@ class _ScreenSettingState extends State<ScreenSetting> {
                 Text(
                   "Contact Us",
                   style: TextStyle(
-                      fontSize: MediaQuery.of(context).textScaleFactor * 20),
+                      fontSize: MediaQuery.of(context).size.width * 0.05),
                 ),
                 GestureDetector(
                   onTap: () {
@@ -110,7 +113,7 @@ class _ScreenSettingState extends State<ScreenSetting> {
                   Text(
                     "Website",
                     style: TextStyle(
-                        fontSize: MediaQuery.of(context).textScaleFactor * 20),
+                        fontSize: MediaQuery.of(context).size.width * 0.05),
                   ),
                   GestureDetector(
                     onTap: () {

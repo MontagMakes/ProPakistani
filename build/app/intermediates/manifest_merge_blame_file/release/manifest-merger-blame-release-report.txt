@@ -1,8 +1,8 @@
 1<?xml version="1.0" encoding="utf-8"?>
 2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
 3    package="com.montagmakes.tribune"
-4    android:versionCode="5"
-5    android:versionName="1.0.4" >
+4    android:versionCode="6"
+5    android:versionName="1.0.5" >
 6
 7    <uses-sdk
 8        android:minSdkVersion="21"
@@ -39,8 +39,8 @@
 25-->[androidx.core:core:1.10.1] C:\Users\Montag\.gradle\caches\transforms-3\c4988ff80110f75080a936fc6f044848\transformed\core-1.10.1\AndroidManifest.xml:28:18-86
 26        android:icon="@mipmap/launcher_icon"
 26-->E:\code\flutter projects\tribune2\tribune_app\android\app\src\main\AndroidManifest.xml:6:9-45
-27        android:label="The Express Tribune - Unofficial News App" >
-27-->E:\code\flutter projects\tribune2\tribune_app\android\app\src\main\AndroidManifest.xml:4:9-66
+27        android:label="Express Tribune" >
+27-->E:\code\flutter projects\tribune2\tribune_app\android\app\src\main\AndroidManifest.xml:4:9-40
 28        <activity
 28-->E:\code\flutter projects\tribune2\tribune_app\android\app\src\main\AndroidManifest.xml:7:9-28:20
 29            android:name="com.example.dawn.MainActivity"

@@ -1,13 +1,17 @@
+// ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:adaptive_theme/adaptive_theme.dart';
 import 'package:dawn/api_manager.dart';
 import 'package:dawn/globals/globals.dart';
 import 'package:dawn/models/model_story.dart';
 import 'package:dawn/screens/screen_description/screen_description.dart';
-import 'package:dawn/screens/screen_settings/screen_settings.dart';
 import 'package:dawn/utils/utils.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+
+import 'button_settings.dart';
+import 'card_stories.dart';
+import 'title_header_drawer.dart';
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key});
@@ -17,8 +21,14 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
+  // Category Variable to store the category name
   int categoryIndex = 0;
+
+  // Empty List of stories to fill with data from API
   List<ModelStory> stories = [];
+
+  double drawerWidthFactor = 0.77;
+
   final ScrollController _controller = ScrollController();
 
   @override
@@ -27,6 +37,7 @@ class _MyHomePageState extends State<MyHomePage> {
     getTribuneNews();
   }
 
+  // Function to get the News from API and put it in the Empty list
   getTribuneNews() async {
     stories = (await ApiService().getNews("home"));
     Future.delayed(const Duration(seconds: 1))
@@ -35,275 +46,159 @@ class _MyHomePageState extends State<MyHomePage> {
 
   @override
   Widget build(BuildContext context) {
-    
     final isDarkMode = AdaptiveTheme.of(context).mode == AdaptiveThemeMode.dark;
+
     return Scaffold(
       drawerDragStartBehavior: DragStartBehavior.start,
+
+      //Drawer
       drawer: Drawer(
-        width: MediaQuery.of(context).size.width *0.77,
+        width: MediaQuery.of(context).size.width * drawerWidthFactor,
         child: ListView(
           physics: const BouncingScrollPhysics(
-          parent: AlwaysScrollableScrollPhysics()),
-              
+              parent: AlwaysScrollableScrollPhysics()),
           children: [
-            Center(
-              child: Stack(children: [
-                SizedBox(
-                  width: MediaQuery.of(context).size.width * 0.6,
-                  height: MediaQuery.of(context).size.height * 0.08,
-                ),
-                Positioned(
-                  child: Text(
-                    "TRIBUNE",
-                    style: GoogleFonts.playfair(
-                        fontSize: MediaQuery.of(context).size.width * 0.15,
-                        fontWeight: FontWeight.normal,
-                        color: isDarkMode ? Colors.white : Colors.black),
-                  ),
-                ),
-                Positioned(
-                  top: 10,
-                  right: 7,
-                  child: Text(
-                    "THE EXPRESS",
-                    style: Theme.of(context).textTheme.labelSmall!.copyWith(
-                        fontSize: MediaQuery.of(context).size.width * 0.03,
-                        fontStyle: FontStyle.italic,
-                        fontWeight: FontWeight.normal,
-                        color: isDarkMode
-                            ? Colors.red
-                            : Colors.redAccent.shade700),
-                  ),
-                )
-              ]),
-            ),
+            TitleDrawer(isDarkMode: isDarkMode),
 
+            //Looping over the Category List to create a list of Categories
             for (int i = 0; i < categories.length; i++)
-              listTile(context, categories[i], i),
+              ListTile(
+                title: Text(
+                  categories[i],
+                  style: Theme.of(context).textTheme.bodyMedium!.copyWith(
+                      fontSize: MediaQuery.of(context).size.width * 0.04),
+                ),
+                onTap: () async {
+                  if (categories[i] == "K-P") {
+                    categories[i] = "khyber-pakhtunkhwa";
+                  } else if (categories[i] == "Jammu & Kashmir") {
+                    categories[i] = "jammu-kashmir";
+                  } else if (categories[i] == "Gilgit Baltistan") {
+                    categories[i] = "gilgit-baltistan";
+                  }
+
+                  stories =
+                      (await ApiService().getNews(categories[i].toLowerCase()));
+                  if (mounted) {
+                    setState(() {
+                      Navigator.pop(context);
+                      categoryIndex = i;
+                      scrollToTopInstantly(_controller);
+                    });
+                  }
+                },
+              ),
           ],
         ),
       ),
 
       //AppBar
-      appBar:  AppBar(
-          centerTitle: true,
-          title: Stack(
-        children: [
-          Positioned(
-            child: Text(
-              "TRIBUNE",
-              style: GoogleFonts.playfair(
-                fontSize: MediaQuery.of(context).size.width * 0.1,
-                fontWeight: FontWeight.normal,
-                color: AdaptiveTheme.of(context).mode == AdaptiveThemeMode.dark
-                    ? Colors.white
-                    : Colors.black,
+      appBar: AppBar(
+        centerTitle: true,
+
+        //Using Stack and positioning to put "THE EXPRESS" on the top left of "TRIBUNE"
+        title: Stack(
+          children: [
+
+            //Position and size of "TRIBUNE"
+            Positioned(
+              child: Text(
+                "TRIBUNE",
+                style: GoogleFonts.playfair(
+                  fontSize: MediaQuery.of(context).size.width * 0.1,
+                  fontWeight: FontWeight.normal,
+                  color:
+                      AdaptiveTheme.of(context).mode == AdaptiveThemeMode.dark
+                          ? Colors.white
+                          : Colors.black,
+                ),
               ),
             ),
-          ),
-          //put "THE EXPRESS" on the top left of "TRIBUNE", The bottom part of "the express" is on the top of "TRIBUNE" on the top part of tribune
-          Positioned(
-            top: 1,
-            right: 5,
-            child: Text(
-              "THE EXPRESS",
-              style: Theme.of(context).textTheme.labelSmall!.copyWith(
-                  fontSize: MediaQuery.of(context).size.width * 0.025,
-                  fontStyle: FontStyle.italic,
-                  fontWeight: FontWeight.normal,
-                  color: Colors.redAccent.shade700),
-            ),
-          )
-        ],
-          ),
-          actions: [
-            //Settings Button
-            IconButton(
-                onPressed: () {
-                  Navigator.push(
-                      context,
-                      PageRouteBuilder(
-                        pageBuilder: (context, animation, secondaryAnimation) =>
-                            const ScreenSetting(),
-                        transitionsBuilder:
-                            (context, animation, secondaryAnimation, child) =>
-                                SlideTransition(
-                          position: animation.drive(Tween(
-                                  begin: const Offset(1.0, 0.0), end: Offset.zero)
-                              .chain(CurveTween(curve: Curves.decelerate))),
-                          child: child,
-                        ),
-                      ));
-                },
-                icon: const Icon(Icons.settings)),
+
+            //Position and size of "THE EXPRESS"
+            Positioned(
+              top: 1,
+              right: 5,
+              child: Text(
+                "THE EXPRESS",
+                style: Theme.of(context).textTheme.labelSmall!.copyWith(
+                    fontSize: MediaQuery.of(context).size.width * 0.025,
+                    fontStyle: FontStyle.italic,
+                    fontWeight: FontWeight.normal,
+                    color: Colors.redAccent.shade700),
+              ),
+            )
           ],
         ),
 
+        //Settings Button
+        actions: const [
+          ButtonSettings(),
+        ],
+      ),
 
       body: Column(
         children: [
+          //Category
           Center(
             child: Padding(
               padding: const EdgeInsets.only(top: 10),
               child: Text(
                 categories[categoryIndex],
                 style: TextStyle(
-                  fontSize: MediaQuery.of(context).textScaleFactor * 20,
+                  fontSize: MediaQuery.of(context).size.width * 0.05,
                 ),
               ),
             ),
           ),
+
+          //Store the list of stories in a ListView
           Expanded(
             child: ListView.separated(
-                physics: const BouncingScrollPhysics(
-                    parent: AlwaysScrollableScrollPhysics()),
-                controller: _controller,
-                shrinkWrap: true,
-                itemBuilder: (context, index) {
-                  return GestureDetector(
+              physics: const BouncingScrollPhysics(
+                  parent: AlwaysScrollableScrollPhysics()),
+              controller: _controller,
+              shrinkWrap: true,
+              itemCount: stories.length,
+
+              //Gap between the cards
+              separatorBuilder: (context, index) => const SizedBox(
+                height: 5,
+              ),
+
+              itemBuilder: (context, index) {
+                return GestureDetector(
+
+                    //Ontap to navigate to the description screen
                     onTap: () => {
-                      (Navigator.push(
-                          context,
-                          PageRouteBuilder(
-                            pageBuilder:
-                                (context, animation, secondaryAnimation) =>
+                          (Navigator.push(
+                              context,
+                              PageRouteBuilder(
+                                pageBuilder: (context, animation,
+                                        secondaryAnimation) =>
                                     ScreenDescription(stories: stories[index]),
-                            transitionsBuilder: (context, animation,
-                                    secondaryAnimation, child) =>
-                                SlideTransition(
-                              position: animation.drive(
-                                Tween(
-                                        begin: const Offset(1.0, 0.0),
-                                        end: Offset.zero)
-                                    .chain(
-                                        CurveTween(curve: Curves.decelerate)),
-                              ),
-                              child: child,
-                            ),
-                          )))
-                    },
-                    child: Stack(
-                      children: [
-                        Container(
-                          height: MediaQuery.of(context).size.height * 0.25,
-                          width: MediaQuery.of(context).size.width,
-                          margin: const EdgeInsets.all(10),
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(15),
-                            image: DecorationImage(
-                              fit: BoxFit.cover,
-                              image: NetworkImage(
-                                stories[index].imageURL.toString(),
-                              ),
-                            ),
-                          ),
-                        ),
-                        Container(
-                          height: MediaQuery.of(context).size.height * 0.25,
-                          width: MediaQuery.of(context).size.width,
-                          margin: const EdgeInsets.all(10),
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(15),
-                            gradient: LinearGradient(
-                              begin: Alignment.bottomCenter,
-                              end: Alignment.topCenter,
-                              colors: [
-                                Colors.black.withOpacity(1),
-                                Colors.transparent
-                              ],
-                            ),
-                          ),
-                        ),
+                                transitionsBuilder: (context, animation,
+                                        secondaryAnimation, child) =>
+                                    SlideTransition(
+                                  position: animation.drive(
+                                    Tween(
+                                            begin: const Offset(1.0, 0.0),
+                                            end: Offset.zero)
+                                        .chain(CurveTween(
+                                            curve: Curves.decelerate)),
+                                  ),
+                                  child: child,
+                                ),
+                              )))
+                        },
 
-                        //CardTitle
-                        Positioned(
-                          bottom: 50,
-                          left: 18,
-                          width: MediaQuery.sizeOf(context).width * 0.91,
-                          child: Text(
-                            stories[index].title.toString(),
-                            textAlign: TextAlign.justify,
-                            style: Theme.of(context)
-                                .textTheme
-                                .bodyLarge!
-                                .copyWith(
-                                    fontWeight: FontWeight.bold,
-                                    color: Colors.white,
-                                    fontSize:
-                                        MediaQuery.of(context).size.width *
-                                            0.045),
-                          ),
-                        ),
-
-                        // CardDate
-                        Positioned(
-                          bottom: 18,
-                          right: 15,
-                          child: Text(
-                            stories[index].date.toString(),
-                            textAlign: TextAlign.right,
-                            style: Theme.of(context)
-                                .textTheme
-                                .titleSmall!
-                                .copyWith(
-                                    color: Colors.white,
-                                    fontWeight: FontWeight.normal),
-                          ),
-                        ),
-
-                        // CardCreator
-                        Positioned(
-                          bottom: -4,
-                          left: 3,
-                          child: Text(
-                            stories[index].creator,
-                            style: Theme.of(context)
-                                .textTheme
-                                .titleSmall!
-                                .copyWith(
-                                    color: Colors.white,
-                                    fontWeight: FontWeight.normal),
-                          ),
-                        )
-                      ],
-                    ),
-                  );
-                },
-                separatorBuilder: (context, index) => const SizedBox(
-                      height: 5,
-                    ),
-                itemCount: stories.length),
+                    //Card
+                    child: CardStories(stories: stories, index: index));
+              },
+            ),
           ),
         ],
       ),
-    );
-  }
-
-  ListTile listTile(BuildContext context, String categoryName, int index) {
-    return ListTile(
-      
-      title: Text(
-        categoryName,
-        style: Theme.of(context).textTheme.bodyMedium!.copyWith(fontSize: MediaQuery.of(context).size.width* 0.04),
-      ),
-      onTap: () async {
-        if (categoryName == "K-P") {
-          categoryName = "khyber-pakhtunkhwa";
-        } else if (categoryName == "Jammu & Kashmir") {
-          categoryName = "jammu-kashmir";
-        } else if (categoryName == "Gilgit Baltistan") {
-          categoryName = "gilgit-baltistan";
-        }
-        
-        stories = (await ApiService().getNews(categoryName.toLowerCase()));
-        if (mounted) {
-          setState(() {
-            Navigator.pop(context);
-            categoryIndex = index;
-            scrollToTopInstantly(_controller);
-          });
-        }
-      },
     );
   }
 }

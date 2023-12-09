@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.montagmakes.tribune"
-    android:versionCode="5"
-    android:versionName="1.0.4" >
+    android:versionCode="6"
+    android:versionName="1.0.5" >
 
     <uses-sdk
         android:minSdkVersion="21"
@@ -24,7 +24,7 @@
         android:name="io.flutter.app.FlutterMultiDexApplication"
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
         android:icon="@mipmap/launcher_icon"
-        android:label="The Express Tribune - Unofficial News App" >
+        android:label="Express Tribune" >
         <activity
             android:name="com.example.dawn.MainActivity"
             android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"

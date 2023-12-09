@@ -12,7 +12,7 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\Mo
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.10.1] C:\Users\Montag\.gradle\caches\transforms-3\c4988ff80110f75080a936fc6f044848\transformed\core-1.10.1\AndroidManifest.xml:28:18-86
 	android:label
-		ADDED from E:\code\flutter projects\tribune2\tribune_app\android\app\src\main\AndroidManifest.xml:4:9-66
+		ADDED from E:\code\flutter projects\tribune2\tribune_app\android\app\src\main\AndroidManifest.xml:4:9-40
 	android:icon
 		ADDED from E:\code\flutter projects\tribune2\tribune_app\android\app\src\main\AndroidManifest.xml:6:9-45
 	android:name

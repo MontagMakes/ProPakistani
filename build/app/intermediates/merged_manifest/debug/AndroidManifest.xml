@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.montagmakes.tribune"
-    android:versionCode="4"
-    android:versionName="1.0.3" >
+    android:versionCode="6"
+    android:versionName="1.0.5" >
 
     <uses-sdk
         android:minSdkVersion="21"
@@ -29,7 +29,7 @@
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
         android:debuggable="true"
         android:icon="@mipmap/launcher_icon"
-        android:label="The Express Tribune - Unofficial News App" >
+        android:label="Express Tribune" >
         <activity
             android:name="com.example.dawn.MainActivity"
             android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
