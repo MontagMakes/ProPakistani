@@ -56,14 +56,7 @@ class ImageStoryState extends State<ImageStory> {
                         style: Theme.of(context).textTheme.titleSmall!.copyWith(
                             color: Colors.white,
                             fontWeight: FontWeight.normal))),
-                Positioned(
-                    bottom: 0,
-                    left: -10,
-                    child: Text(
-                      widget.stories.creator,
-                      style: Theme.of(context).textTheme.titleSmall!.copyWith(
-                          color: Colors.white, fontWeight: FontWeight.normal),
-                    )),
+                
               ],
             );
   }

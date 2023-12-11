@@ -83,18 +83,6 @@ class _CardStoriesState extends State<CardStories> {
           ),
         ),
 
-        // CardCreator
-        Positioned(
-          bottom: -4,
-          left: 3,
-          child: Text(
-            stories[index].creator,
-            style: TextStyle(
-                color: Colors.white,
-                fontSize: MediaQuery.of(context).size.width * 0.03
-            )
-          ),
-        )
       ],
     );
   }

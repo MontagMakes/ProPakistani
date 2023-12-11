@@ -78,7 +78,7 @@ class _ScreenSettingState extends State<ScreenSetting> {
                 GestureDetector(
                   onTap: () {
                     Clipboard.setData(
-                      const ClipboardData(text: "editorial@tribune.com.pk"))
+                      const ClipboardData(text: "hello@propakistani.pk"))
                             .then((value) => ScaffoldMessenger.of(context)
                       .showSnackBar(SnackBar(
                           behavior: SnackBarBehavior.floating,
@@ -92,7 +92,7 @@ class _ScreenSettingState extends State<ScreenSetting> {
                     );
                   },
                   child: const Text(
-                    "editorial@tribune.com.pk",
+                    "hello@propakistani.pk",
                     style: TextStyle(color: Colors.blue),
                   ),
                 )
@@ -118,7 +118,7 @@ class _ScreenSettingState extends State<ScreenSetting> {
                   GestureDetector(
                     onTap: () {
                       Clipboard.setData(const ClipboardData(
-                              text: "https://tribune.com.pk/"))
+                              text: "https://propakistani.pk/"))
                           .then((value) => ScaffoldMessenger.of(context)
                               .showSnackBar(SnackBar(
                                 behavior: SnackBarBehavior.floating,
@@ -129,7 +129,7 @@ class _ScreenSettingState extends State<ScreenSetting> {
                                       "The link has been successfully copied to your clipboard."))));
                     },
                     child: const Text(
-                      "https://tribune.com.pk/",
+                      "https://propakistani.pk/",
                       style: TextStyle(color: Colors.blue),
                     ),
                   )

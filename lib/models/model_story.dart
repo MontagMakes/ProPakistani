@@ -8,7 +8,7 @@ class ModelStory {
   String articleLink;
   String date;
   String? imageURL;
-  String creator;
+  
   
   ModelStory({
     required this.title,
@@ -17,7 +17,6 @@ class ModelStory {
     required this.articleLink,
     required this.date,
     required this.imageURL,
-    required this.creator,
   });
 
   ModelStory copyWith({
@@ -27,7 +26,6 @@ class ModelStory {
     String? articleLink,
     String? date,
     String? imageURL,
-    String? creator,
   }) {
     return ModelStory(
       title: title ?? this.title,
@@ -36,7 +34,6 @@ class ModelStory {
       articleLink: articleLink ?? this.articleLink,
       date: date ?? this.date,
       imageURL: imageURL ?? this.imageURL,
-      creator: creator ?? this.creator,
     );
   }
 
@@ -48,7 +45,6 @@ class ModelStory {
       'articleLink': articleLink,
       'date': date,
       'imageURL': imageURL,
-      'creator': creator,
     };
   }
 
@@ -60,7 +56,6 @@ class ModelStory {
       articleLink: map['articleLink'] as String,
       date: map['date'] as String,
       imageURL: map['imageURL'] != null ? map['imageURL'] as String : null,
-      creator: map['creator'] as String,
     );
   }
 
@@ -70,7 +65,7 @@ class ModelStory {
 
   @override
   String toString() {
-    return 'ModelStory(title: $title, description: $description, content: $content, articleLink: $articleLink, date: $date, imageURL: $imageURL, creator: $creator)';
+    return 'ModelStory(title: $title, description: $description, content: $content, articleLink: $articleLink, date: $date, imageURL: $imageURL)';
   }
 
   @override
@@ -83,8 +78,7 @@ class ModelStory {
       other.content == content &&
       other.articleLink == articleLink &&
       other.date == date &&
-      other.imageURL == imageURL &&
-      other.creator == creator;
+      other.imageURL == imageURL;
   }
 
   @override
@@ -94,7 +88,6 @@ class ModelStory {
       content.hashCode ^
       articleLink.hashCode ^
       date.hashCode ^
-      imageURL.hashCode ^
-      creator.hashCode;
+      imageURL.hashCode;
   }
 }

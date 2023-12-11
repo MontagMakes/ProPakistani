@@ -8,5 +8,13 @@ void scrollToTopInstantly (ScrollController controller){
   controller.animateTo(0, duration: const Duration(microseconds: 1), curve: Curves.linear);
 }
 
-const kColorSecondary = Color.fromARGB(255, 38, 0, 77);
-const kColorPrimary = Color.fromARGB(255, 13, 0, 26);
+
+
+const kColorPrimary = Color.fromRGBO(29, 122, 116, 1.0);
+
+final kFabShadow = BoxShadow(
+  color: Colors.grey.withOpacity(0.8),
+  spreadRadius: 1,
+  blurRadius: 5,
+  offset: const Offset(0, 0), // changes the position of the shadow
+);
