@@ -6,8 +6,9 @@ import '../../globals/globals.dart';
 
 class BackButtonFab extends StatelessWidget {
   final bool isDrawerOpen;
+  final bool isDialVisible;
   const BackButtonFab({
-    super.key, required this.isDrawerOpen,
+    super.key, required this.isDrawerOpen, required this.isDialVisible,
   });
 
   @override
@@ -23,6 +24,7 @@ class BackButtonFab extends StatelessWidget {
         shape: BoxShape.circle,
       ),
       child: SpeedDial(
+        visible: isDialVisible,
         shape: const CircleBorder(),
         icon: Icons.arrow_back,
         

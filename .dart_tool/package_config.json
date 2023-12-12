@@ -135,7 +135,7 @@
     },
     {
       "name": "flutter_native_splash",
-      "rootUri": "file:///C:/Users/Montag/AppData/Local/Pub/Cache/hosted/pub.dev/flutter_native_splash-2.3.6",
+      "rootUri": "file:///C:/Users/Montag/AppData/Local/Pub/Cache/hosted/pub.dev/flutter_native_splash-2.3.8",
       "packageUri": "lib/",
       "languageVersion": "2.19"
     },
@@ -160,12 +160,6 @@
     {
       "name": "font_awesome_flutter",
       "rootUri": "file:///C:/Users/Montag/AppData/Local/Pub/Cache/hosted/pub.dev/font_awesome_flutter-10.6.0",
-      "packageUri": "lib/",
-      "languageVersion": "3.0"
-    },
-    {
-      "name": "get_it",
-      "rootUri": "file:///C:/Users/Montag/AppData/Local/Pub/Cache/hosted/pub.dev/get_it-7.6.4",
       "packageUri": "lib/",
       "languageVersion": "3.0"
     },
@@ -248,6 +242,12 @@
       "languageVersion": "2.18"
     },
     {
+      "name": "nested",
+      "rootUri": "file:///C:/Users/Montag/AppData/Local/Pub/Cache/hosted/pub.dev/nested-1.0.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "path",
       "rootUri": "file:///C:/Users/Montag/AppData/Local/Pub/Cache/hosted/pub.dev/path-1.8.3",
       "packageUri": "lib/",
@@ -312,6 +312,12 @@
       "rootUri": "file:///C:/Users/Montag/AppData/Local/Pub/Cache/hosted/pub.dev/pointycastle-3.7.3",
       "packageUri": "lib/",
       "languageVersion": "2.14"
+    },
+    {
+      "name": "provider",
+      "rootUri": "file:///C:/Users/Montag/AppData/Local/Pub/Cache/hosted/pub.dev/provider-6.1.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
     },
     {
       "name": "share_plus",
@@ -500,7 +506,7 @@
       "languageVersion": "3.0"
     }
   ],
-  "generated": "2023-12-09T18:23:52.114629Z",
+  "generated": "2023-12-12T07:27:16.647935Z",
   "generator": "pub",
-  "generatorVersion": "3.2.2"
+  "generatorVersion": "3.2.3"
 }

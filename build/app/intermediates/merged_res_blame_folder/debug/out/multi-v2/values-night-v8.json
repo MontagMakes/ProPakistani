@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.dawn.app-mergeDebugResources-11:/values-night-v8/values-night-v8.xml",
+            "outputFile": "com.example.dawn.app-mergeDebugResources-10:/values-night-v8/values-night-v8.xml",
             "map": [
                 {
                     "source": "E:\\code\\flutter projects\\ProPakistani2\\tribune_app\\android\\app\\src\\main\\res\\values-night\\styles.xml",

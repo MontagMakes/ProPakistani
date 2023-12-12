@@ -1,1 +1,0 @@
- E:\\code\\flutter\ projects\\tribune2\\tribune_app\\.dart_tool\\flutter_build\\562ef616e6ccf68b868aa08f9ab1d34e\\native_assets.yaml: 

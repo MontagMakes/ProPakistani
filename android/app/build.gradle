@@ -35,7 +35,7 @@ android {
     namespace "com.example.dawn"
     
     compileSdkVersion flutter.compileSdkVersion
-    ndkVersion flutter.ndkVersion
+    ndkVersion "25.1.8937393"
     
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
@@ -53,13 +53,13 @@ android {
 
     defaultConfig {
         // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
-        applicationId "com.montagmakes.tribune"
+        applicationId "com.montagmakes.propakistani"
         // You can update the following values to match your application needs.
         // For more information, see: https://docs.flutter.dev/deployment/android#reviewing-the-gradle-build-configuration.
         minSdkVersion 21
         targetSdkVersion flutter.targetSdkVersion
-        versionCode 6
-        versionName "1.0.5"
+        versionCode 1
+        versionName "1.0.0"
     }
 
     signingConfigs {
@@ -73,7 +73,7 @@ android {
 
     buildTypes {
         release {
-            signingConfig signingConfigs.release    
+            signingConfig signingConfigs.debug  
             minifyEnabled true
             shrinkResources true
         }
@@ -87,10 +87,10 @@ flutter {
 
 dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
-    implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.8.0") {
+    implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.9.21") {
         because("kotlin-stdlib-jdk7 is now a part of kotlin-stdlib")
     }
-    implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.8.0") {
+    implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.9.21") {
         because("kotlin-stdlib-jdk8 is now a part of kotlin-stdlib")
     }
 }

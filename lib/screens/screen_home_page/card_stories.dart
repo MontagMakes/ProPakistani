@@ -1,13 +1,13 @@
+import 'package:dawn/providers/provider_news.dart';
 import 'package:flutter/material.dart';
-
-import '../../models/model_story.dart';
+import 'package:provider/provider.dart';
 
 class CardStories extends StatefulWidget {
-  final List<ModelStory> stories;
+  
   final int index;
   const CardStories({
     super.key,
-    required this.stories,
+    
     required this.index,
   });
 
@@ -18,7 +18,8 @@ class CardStories extends StatefulWidget {
 class _CardStoriesState extends State<CardStories> {
   @override
   Widget build(BuildContext context) {
-    List<ModelStory> stories = widget.stories;
+    var provider = context.watch<NewsProvider>();
+    
     int index = widget.index;
 
     return Stack(
@@ -33,7 +34,7 @@ class _CardStoriesState extends State<CardStories> {
             image: DecorationImage(
               fit: BoxFit.cover,
               image: NetworkImage(
-                stories[index].imageURL.toString(),
+                provider.getStoryImageURL(index),
               ),
             ),
           ),
@@ -60,7 +61,7 @@ class _CardStoriesState extends State<CardStories> {
           left: 18,
           width: MediaQuery.sizeOf(context).width * 0.91,
           child: Text(
-            stories[index].title.toString(),
+            provider.getStoryTitle(index),
             textAlign: TextAlign.justify,
             style: Theme.of(context).textTheme.bodyLarge!.copyWith(
                 fontWeight: FontWeight.bold,
@@ -74,7 +75,7 @@ class _CardStoriesState extends State<CardStories> {
           bottom: 18,
           right: 15,
           child: Text(
-            stories[index].date.toString(),
+            provider.getStoryDate(index),
             textAlign: TextAlign.right,
             style: TextStyle(
                 color: Colors.white,

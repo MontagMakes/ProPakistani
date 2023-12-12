@@ -9,6 +9,7 @@ void scrollToTopInstantly (ScrollController controller){
 }
 
 
+const kColorSecondary = Color.fromARGB(255, 20, 33, 37);
 
 const kColorPrimary = Color.fromRGBO(29, 122, 116, 1.0);
 

@@ -1,8 +1,12 @@
 import 'package:adaptive_theme/adaptive_theme.dart';
 import 'package:dawn/globals/globals.dart';
+import 'package:dawn/providers/provider_news.dart';
 import 'package:dawn/screens/screen_home_page/screen_home_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:provider/provider.dart';
+
+import 'providers/provider_shared_preferences.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -13,7 +17,10 @@ void main() async {
   //Force portrait mode
   SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
 
-  runApp(MyApp(savedThemeMode: savedThemeMode));
+  runApp(MultiProvider(providers: [
+    ChangeNotifierProvider(create: (_) => NewsProvider()),
+    ChangeNotifierProvider(create: (_) => SharedPreferencesProvider())
+  ], child: MyApp(savedThemeMode: savedThemeMode)));
 }
 
 class MyApp extends StatelessWidget {
@@ -28,17 +35,19 @@ class MyApp extends StatelessWidget {
       light: ThemeData(
         useMaterial3: true,
         brightness: Brightness.light,
+        primaryColor: Colors.white,
+        primaryColorDark: Colors.white,
+
         appBarTheme: AppBarTheme(
           titleTextStyle: TextStyle(
-            fontSize: MediaQuery.of(context).size.width * 0.05,
-            color:Colors.white
-          ),
+              fontSize: MediaQuery.of(context).size.width * 0.05,
+              color: Colors.white),
           iconTheme: const IconThemeData(color: Colors.white),
-            backgroundColor: kColorPrimary,
+          backgroundColor: kColorPrimary,
         ),
-        
         drawerTheme: DrawerThemeData(backgroundColor: Colors.blueGrey.shade50),
         scaffoldBackgroundColor: Colors.blueGrey.shade50,
+        dialogBackgroundColor: Colors.white,
         switchTheme: SwitchThemeData(
           thumbColor: MaterialStateProperty.all(Colors.black38),
           trackColor: MaterialStateProperty.all(Colors.blueGrey.shade50),
@@ -48,10 +57,11 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
         brightness: Brightness.dark,
         appBarTheme: const AppBarTheme(backgroundColor: kColorPrimary),
-        drawerTheme: const DrawerThemeData(backgroundColor: Colors.black),
-        scaffoldBackgroundColor: Colors.black,
+        drawerTheme: const DrawerThemeData(backgroundColor: kColorSecondary),
+        scaffoldBackgroundColor: kColorSecondary,
+        dialogBackgroundColor: kColorSecondary,
         switchTheme: SwitchThemeData(
-          thumbColor: MaterialStateProperty.all(Colors.black),
+          thumbColor: MaterialStateProperty.all(kColorSecondary),
           trackColor: MaterialStateProperty.all(Colors.blueGrey.shade50),
         ),
       ),

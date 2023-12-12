@@ -35,61 +35,38 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
 
-  get_it: ^7.6.4
   dio: ^5.3.3
   xml: ^6.3.0
   html_unescape: ^2.0.0
   google_fonts: ^6.1.0
   adaptive_theme: ^3.4.1
-  flutter_native_splash: ^2.3.6
+  flutter_native_splash: ^2.3.8
   share_plus: ^7.2.1
   flutter_speed_dial: ^7.0.0
   font_awesome_flutter: ^10.6.0
   shared_preferences: ^2.2.2
+  provider: ^6.1.1
 
   
 flutter_native_splash:
-  color: "#0d001a"
-  color_dark: "#0d001a"
+  color: "##1D7A74"
+  color_dark: "##1D7A74"
   
   android_12:
-    color: "#0d001a"
-    color_dark: "#0d001a"
-    icon_background_color: "#0d001a"
-    #icon_background_color_dark: "#0d001a"
+    color: "##1D7A74"
+    color_dark: "##1D7A74"
+    icon_background_color: "##1D7A74"
+    icon_background_color_dark: "#1D7A74"
 
-  title: 
-    color: "#ffffff"
-    font_size: 24
-    alignment: center
-    padding: 
-      top: 100
-      bottom: 100
-    background_color: "#4b0082"
-    #background_image: "assets/background_image.png"
-    #background_image_dark: "assets/background_image_dark.png"
+  
 
 flutter_launcher_icons:
-  image_path_android: "assets/logo_favicon2.png"
-  
-  image_path_ios: "assets/logo_favicon2.png"
   android: "launcher_icon"
-  ios: true
+  image_path: "assets/launcherIcon.png"
   min_sdk_android: 21  
-  remove_alpha_ios: true
-  background_color_ios: "#ffffff"
-  web:
-    generate: true
-    image_path: "assets/logo_favicon2.png"
-    background_color: "#4b0082"
-    theme_color: "#4b0082"
-  windows:
-    generate: true
-    image_path: "assets/logo_favicon2.png"
-    icon_size: 48
-  macos:
-    generate: true
-    image_path: "assets/logo_favicon2.png"
+  adaptive_icon_background: "#ffffff"
+  
+
   
 dev_dependencies:
   flutter_launcher_icons: ^0.13.1
@@ -118,6 +95,7 @@ flutter:
   assets:
       - assets/tribune-logo-dark-mode.png
       - assets/tribune-logo.png 
+      - assets/launcherIcon.png
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
 

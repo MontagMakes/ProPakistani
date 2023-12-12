@@ -1,11 +1,11 @@
-import 'package:dawn/api_manager.dart';
 import 'package:dawn/globals/globals.dart';
-import 'package:dawn/models/model_story.dart';
+import 'package:dawn/providers/provider_news.dart';
 import 'package:dawn/screens/screen_description/screen_description.dart';
 import 'package:dawn/utils/utils.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:provider/provider.dart';
 
 import 'button_settings.dart';
 import 'card_stories.dart';
@@ -21,9 +21,6 @@ class _MyHomePageState extends State<MyHomePage> {
   // Category Variable to store the category name
   int categoryIndex = 0;
 
-  // Empty List of stories to fill with data from API
-  List<ModelStory> stories = [];
-
   double drawerWidthFactor = 0.77;
 
   final ScrollController _controller = ScrollController();
@@ -31,18 +28,13 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   void initState() {
     super.initState();
-    getTribuneNews();
-  }
-
-  // Function to get the News from API and put it in the Empty list
-  getTribuneNews() async {
-    stories = (await ApiService().getNews(""));
-    Future.delayed(const Duration(seconds: 1))
-        .then((value) => setState(() => {}));
+    context.read<NewsProvider>().getNews();    
   }
 
   @override
   Widget build(BuildContext context) {
+    var newsProvider = context.watch<NewsProvider>();
+
     return Scaffold(
       drawerDragStartBehavior: DragStartBehavior.start,
       //Drawer
@@ -60,8 +52,6 @@ class _MyHomePageState extends State<MyHomePage> {
                 decoration: const BoxDecoration(
                   color: kColorPrimary,
                 ),
-                margin: EdgeInsets.zero,
-                padding: EdgeInsets.zero,
                 child: Center(
                   child: Text(
                     "ProPakistani",
@@ -81,13 +71,11 @@ class _MyHomePageState extends State<MyHomePage> {
                     style: Theme.of(context).textTheme.bodyMedium!.copyWith(
                         fontSize: MediaQuery.of(context).size.width * 0.04),
                   ),
-                  onTap: () async {
-                    
-                
-                    stories =
-                        (await ApiService().getNews(linkCategories[i].toLowerCase()));
+                  onTap: (){
+                    context.read<NewsProvider>().setCurrentCategory(i);
                     if (mounted) {
                       setState(() {
+                        
                         Navigator.pop(context);
                         categoryIndex = i;
                         scrollToTopInstantly(_controller);
@@ -103,7 +91,6 @@ class _MyHomePageState extends State<MyHomePage> {
       //AppBar
       appBar: AppBar(
         centerTitle: true,
-
         title: Text(
           "ProPakistani",
           style: GoogleFonts.playfair(
@@ -140,7 +127,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   parent: AlwaysScrollableScrollPhysics()),
               controller: _controller,
               shrinkWrap: true,
-              itemCount: stories.length,
+              itemCount: newsProvider.getStories().length,
 
               //Gap between the cards
               separatorBuilder: (context, index) => const SizedBox(
@@ -157,7 +144,7 @@ class _MyHomePageState extends State<MyHomePage> {
                               PageRouteBuilder(
                                 pageBuilder: (context, animation,
                                         secondaryAnimation) =>
-                                    ScreenDescription(stories: stories[index]),
+                                    ScreenDescription(index: index,),
                                 transitionsBuilder: (context, animation,
                                         secondaryAnimation, child) =>
                                     SlideTransition(
@@ -174,7 +161,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         },
 
                     //Card
-                    child: CardStories(stories: stories, index: index));
+                    child: CardStories(index: index,));
               },
             ),
           ),
