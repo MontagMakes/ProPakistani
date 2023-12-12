@@ -5,9 +5,10 @@ import '../api_manager.dart';
 
 class NewsProvider with ChangeNotifier {
   List<ModelStory> _stories = [];
-  final String _category = "";
+  String _category = "";
   
   List<ModelStory> get stories => _stories;
+  String get category => _category;
   
 
   getNews() async {
@@ -16,7 +17,8 @@ class NewsProvider with ChangeNotifier {
   }
 
   setCurrentCategory(int index) async {
-    _stories = await ApiService().getNews(linkCategories[index]);
+    _category = linkCategories[index];
+    
     notifyListeners();
   }
 

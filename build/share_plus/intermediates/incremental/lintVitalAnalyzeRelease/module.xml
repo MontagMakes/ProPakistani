@@ -1,0 +1,26 @@
+<lint-module
+    format="1"
+    dir="C:\Users\Montag\AppData\Local\Pub\Cache\hosted\pub.dev\share_plus-7.2.1\android"
+    name=":share_plus"
+    type="LIBRARY"
+    maven="dev.fluttercommunity.plus.share:share_plus:"
+    agpVersion="8.2.0"
+    buildFolder="E:\code\flutter projects\ProPakistani2\tribune_app\build\share_plus"
+    bootClassPath="D:\tools\Android\platforms\android-33\android.jar;D:\tools\Android\build-tools\34.0.0\core-lambda-stubs.jar"
+    javaSourceLevel="1.8"
+    compileTarget="android-33"
+    neverShrinking="true">
+  <lintOptions
+      disable="InvalidPackage"
+      abortOnError="true"
+      absolutePaths="true"
+      checkReleaseBuilds="true"
+      explainIssues="true">
+    <severities>
+      <severity
+        id="InvalidPackage"
+        severity="IGNORE" />
+    </severities>
+  </lintOptions>
+  <variant name="release"/>
+</lint-module>

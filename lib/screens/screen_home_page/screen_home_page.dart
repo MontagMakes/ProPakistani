@@ -30,6 +30,7 @@ class _MyHomePageState extends State<MyHomePage> {
     super.initState();
     context.read<NewsProvider>().getNews();    
   }
+  
 
   @override
   Widget build(BuildContext context) {
@@ -72,10 +73,10 @@ class _MyHomePageState extends State<MyHomePage> {
                         fontSize: MediaQuery.of(context).size.width * 0.04),
                   ),
                   onTap: (){
-                    context.read<NewsProvider>().setCurrentCategory(i);
+                    newsProvider.setCurrentCategory(i);
                     if (mounted) {
                       setState(() {
-                        
+                        newsProvider.getNews();
                         Navigator.pop(context);
                         categoryIndex = i;
                         scrollToTopInstantly(_controller);

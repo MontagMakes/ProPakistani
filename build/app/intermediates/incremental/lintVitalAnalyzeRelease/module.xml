@@ -1,0 +1,18 @@
+<lint-module
+    format="1"
+    dir="E:\code\flutter projects\ProPakistani2\tribune_app\android\app"
+    name=":app"
+    type="APP"
+    maven="android:app:"
+    agpVersion="8.2.0"
+    buildFolder="E:\code\flutter projects\ProPakistani2\tribune_app\build\app"
+    bootClassPath="D:\tools\Android\platforms\android-33\android.jar;D:\tools\Android\build-tools\34.0.0\core-lambda-stubs.jar"
+    javaSourceLevel="1.8"
+    compileTarget="android-33">
+  <lintOptions
+      abortOnError="true"
+      absolutePaths="true"
+      checkReleaseBuilds="true"
+      explainIssues="true"/>
+  <variant name="release"/>
+</lint-module>

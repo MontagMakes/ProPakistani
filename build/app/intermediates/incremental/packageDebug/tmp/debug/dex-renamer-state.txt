@@ -1,4 +1,4 @@
-#Tue Dec 12 15:11:01 PKT 2023
+#Tue Dec 12 15:53:19 PKT 2023
 base.0=E\:\\code\\flutter projects\\ProPakistani2\\tribune_app\\build\\app\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
 base.1=E\:\\code\\flutter projects\\ProPakistani2\\tribune_app\\build\\app\\intermediates\\dex\\debug\\mergeLibDexDebug\\0\\classes.dex
 base.2=E\:\\code\\flutter projects\\ProPakistani2\\tribune_app\\build\\app\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
