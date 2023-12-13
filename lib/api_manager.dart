@@ -1,4 +1,4 @@
-import 'package:dawn/models/model_story.dart';
+import 'package:propakistani/models/model_story.dart';
 import 'package:dio/dio.dart';
 import 'package:html_unescape/html_unescape_small.dart';
 import 'package:xml/xml.dart';

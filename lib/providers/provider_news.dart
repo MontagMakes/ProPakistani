@@ -1,5 +1,5 @@
-import 'package:dawn/models/model_story.dart';
-import 'package:dawn/utils/utils.dart';
+import 'package:propakistani/models/model_story.dart';
+import 'package:propakistani/utils/utils.dart';
 import 'package:flutter/material.dart';
 import '../api_manager.dart';
 

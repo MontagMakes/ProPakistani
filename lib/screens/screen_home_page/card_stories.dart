@@ -1,4 +1,4 @@
-import 'package:dawn/providers/provider_news.dart';
+import 'package:propakistani/providers/provider_news.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 

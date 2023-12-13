@@ -1,7 +1,7 @@
 import 'package:adaptive_theme/adaptive_theme.dart';
-import 'package:dawn/globals/globals.dart';
-import 'package:dawn/providers/provider_news.dart';
-import 'package:dawn/screens/screen_home_page/screen_home_page.dart';
+import 'package:propakistani/globals/globals.dart';
+import 'package:propakistani/providers/provider_news.dart';
+import 'package:propakistani/screens/screen_home_page/screen_home_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';

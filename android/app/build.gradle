@@ -93,4 +93,5 @@ dependencies {
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.9.21") {
         because("kotlin-stdlib-jdk8 is now a part of kotlin-stdlib")
     }
+    implementation 'com.android.support:multidex:1.0.3'
 }

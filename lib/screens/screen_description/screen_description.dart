@@ -1,8 +1,8 @@
 import 'dart:ui';
 import 'package:adaptive_theme/adaptive_theme.dart';
-import 'package:dawn/globals/globals.dart';
-import 'package:dawn/providers/provider_news.dart';
-import 'package:dawn/providers/provider_shared_preferences.dart';
+import 'package:propakistani/globals/globals.dart';
+import 'package:propakistani/providers/provider_news.dart';
+import 'package:propakistani/providers/provider_shared_preferences.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter/services.dart';
