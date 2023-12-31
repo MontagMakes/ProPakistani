@@ -1,7 +1,7 @@
 # ProPakistani News App
 
-<img src="https://github.com/MontagMakes/ProPakistani/assets/103876121/7dc535df-6386-4577-953e-9a57ca3cd706" alt="Image Alt Text" width="300" height="600">
-<img src="https://github.com/MontagMakes/ProPakistani/assets/103876121/05af1ae5-324a-4eb9-8f0f-a9d0ee419160" alt="Image Alt Text" width="300" height="600">
+<img src="https://github.com/MontagMakes/ProPakistani/assets/103876121/7dc535df-6386-4577-953e-9a57ca3cd706" alt="Image Alt Text" width="200" height="400">
+<img src="https://github.com/MontagMakes/ProPakistani/assets/103876121/05af1ae5-324a-4eb9-8f0f-a9d0ee419160" alt="Image Alt Text" width="200" height="400">
 <img src="https://github.com/MontagMakes/ProPakistani/assets/103876121/dbe2b979-a4d7-4599-8c67-73b742ec496c" alt="Image Alt Text" width="300" height="600">
 
 
