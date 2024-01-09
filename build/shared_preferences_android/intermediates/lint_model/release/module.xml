@@ -5,7 +5,7 @@
     type="LIBRARY"
     maven="io.flutter.plugins.sharedpreferences:shared_preferences_android:"
     agpVersion="8.2.0"
-    buildFolder="E:\code\flutter projects\ProPakistani2\tribune_app\build\shared_preferences_android"
+    buildFolder="E:\code\flutter projects\ProPakistani\build\shared_preferences_android"
     bootClassPath="D:\tools\Android\platforms\android-33\android.jar;D:\tools\Android\build-tools\34.0.0\core-lambda-stubs.jar"
     javaSourceLevel="1.8"
     compileTarget="android-33"

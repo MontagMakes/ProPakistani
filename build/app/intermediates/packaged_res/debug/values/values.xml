@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:ns1="http://schemas.android.com/tools">
+    <string name="com.crashlytics.android.build_id" ns1:ignore="UnusedResources,TypographyDashes" translatable="false">00000000000000000000000000000000</string>
+    <string name="gcm_defaultSenderId" translatable="false">637426244775</string>
+    <string name="google_api_key" translatable="false">AIzaSyAITGQ4ZiyjW9iXk9NXeMvq67lsBWfHCY4</string>
+    <string name="google_app_id" translatable="false">1:637426244775:android:922e3c62ebed384598cf82</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyAITGQ4ZiyjW9iXk9NXeMvq67lsBWfHCY4</string>
+    <string name="google_storage_bucket" translatable="false">propakistani-f1793.appspot.com</string>
+    <string name="project_id" translatable="false">propakistani-f1793</string>
     <style name="LaunchTheme" parent="@android:style/Theme.Light.NoTitleBar">
         
         <item name="android:windowBackground">@drawable/launch_background</item>

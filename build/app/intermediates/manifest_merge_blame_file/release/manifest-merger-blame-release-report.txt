@@ -1,147 +1,398 @@
 1<?xml version="1.0" encoding="utf-8"?>
 2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
 3    package="com.montagmakes.propakistani"
-4    android:versionCode="1"
-5    android:versionName="1.0.0" >
+4    android:versionCode="2"
+5    android:versionName="1.2.0" >
 6
 7    <uses-sdk
 8        android:minSdkVersion="21"
-9        android:targetSdkVersion="33" />
+9        android:targetSdkVersion="34" />
 10
 11    <uses-permission android:name="android.permission.INTERNET" />
-11-->E:\code\flutter projects\ProPakistani2\tribune_app\android\app\src\main\AndroidManifest.xml:2:1-62
-11-->E:\code\flutter projects\ProPakistani2\tribune_app\android\app\src\main\AndroidManifest.xml:2:18-60
+11-->E:\code\flutter projects\ProPakistani\android\app\src\main\AndroidManifest.xml:2:1-62
+11-->E:\code\flutter projects\ProPakistani\android\app\src\main\AndroidManifest.xml:2:18-60
 12
 13    <meta-data
-13-->E:\code\flutter projects\ProPakistani2\tribune_app\android\app\src\main\AndroidManifest.xml:35:5-37:32
+13-->E:\code\flutter projects\ProPakistani\android\app\src\main\AndroidManifest.xml:36:5-38:32
 14        android:name="io.flutter.embedding.android.EnableImpeller"
-14-->E:\code\flutter projects\ProPakistani2\tribune_app\android\app\src\main\AndroidManifest.xml:36:9-67
+14-->E:\code\flutter projects\ProPakistani\android\app\src\main\AndroidManifest.xml:37:9-67
 15        android:value="true" />
-15-->E:\code\flutter projects\ProPakistani2\tribune_app\android\app\src\main\AndroidManifest.xml:37:9-29
+15-->E:\code\flutter projects\ProPakistani\android\app\src\main\AndroidManifest.xml:38:9-29
 16
-17    <permission
-17-->[androidx.core:core:1.10.1] C:\Users\Montag\.gradle\caches\transforms-3\c52f800b49eb2591913780e82d616242\transformed\core-1.10.1\AndroidManifest.xml:22:5-24:47
-18        android:name="com.montagmakes.propakistani.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
-18-->[androidx.core:core:1.10.1] C:\Users\Montag\.gradle\caches\transforms-3\c52f800b49eb2591913780e82d616242\transformed\core-1.10.1\AndroidManifest.xml:23:9-81
-19        android:protectionLevel="signature" />
-19-->[androidx.core:core:1.10.1] C:\Users\Montag\.gradle\caches\transforms-3\c52f800b49eb2591913780e82d616242\transformed\core-1.10.1\AndroidManifest.xml:24:9-44
-20
-21    <uses-permission android:name="com.montagmakes.propakistani.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
-21-->[androidx.core:core:1.10.1] C:\Users\Montag\.gradle\caches\transforms-3\c52f800b49eb2591913780e82d616242\transformed\core-1.10.1\AndroidManifest.xml:26:5-97
-21-->[androidx.core:core:1.10.1] C:\Users\Montag\.gradle\caches\transforms-3\c52f800b49eb2591913780e82d616242\transformed\core-1.10.1\AndroidManifest.xml:26:22-94
-22
-23    <application
-24        android:name="io.flutter.app.FlutterMultiDexApplication"
-24-->E:\code\flutter projects\ProPakistani2\tribune_app\android\app\src\main\AndroidManifest.xml:5:9-42
-25        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-25-->[androidx.core:core:1.10.1] C:\Users\Montag\.gradle\caches\transforms-3\c52f800b49eb2591913780e82d616242\transformed\core-1.10.1\AndroidManifest.xml:28:18-86
-26        android:extractNativeLibs="true"
-27        android:icon="@mipmap/launcher_icon"
-27-->E:\code\flutter projects\ProPakistani2\tribune_app\android\app\src\main\AndroidManifest.xml:6:9-45
-28        android:label="ProPakistani" >
-28-->E:\code\flutter projects\ProPakistani2\tribune_app\android\app\src\main\AndroidManifest.xml:4:9-37
-29        <activity
-29-->E:\code\flutter projects\ProPakistani2\tribune_app\android\app\src\main\AndroidManifest.xml:7:9-28:20
-30            android:name="com.example.dawn.MainActivity"
-30-->E:\code\flutter projects\ProPakistani2\tribune_app\android\app\src\main\AndroidManifest.xml:8:13-41
-31            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
-31-->E:\code\flutter projects\ProPakistani2\tribune_app\android\app\src\main\AndroidManifest.xml:12:13-163
-32            android:exported="true"
-32-->E:\code\flutter projects\ProPakistani2\tribune_app\android\app\src\main\AndroidManifest.xml:9:13-36
-33            android:hardwareAccelerated="true"
-33-->E:\code\flutter projects\ProPakistani2\tribune_app\android\app\src\main\AndroidManifest.xml:13:13-47
-34            android:launchMode="singleTop"
-34-->E:\code\flutter projects\ProPakistani2\tribune_app\android\app\src\main\AndroidManifest.xml:10:13-43
-35            android:theme="@style/LaunchTheme"
-35-->E:\code\flutter projects\ProPakistani2\tribune_app\android\app\src\main\AndroidManifest.xml:11:13-47
-36            android:windowSoftInputMode="adjustResize" >
-36-->E:\code\flutter projects\ProPakistani2\tribune_app\android\app\src\main\AndroidManifest.xml:14:13-55
-37
-38            <!--
-39                 Specifies an Android theme to apply to this Activity as soon as
-40                 the Android process has started. This theme is visible to the user
-41                 while the Flutter UI initializes. After that, this theme continues
-42                 to determine the Window background behind the Flutter UI.
-43            -->
-44            <meta-data
-44-->E:\code\flutter projects\ProPakistani2\tribune_app\android\app\src\main\AndroidManifest.xml:19:13-23:17
-45                android:name="io.flutter.embedding.android.NormalTheme"
-45-->E:\code\flutter projects\ProPakistani2\tribune_app\android\app\src\main\AndroidManifest.xml:21:15-70
-46                android:resource="@style/NormalTheme" />
-46-->E:\code\flutter projects\ProPakistani2\tribune_app\android\app\src\main\AndroidManifest.xml:22:15-52
-47
-48            <intent-filter>
-48-->E:\code\flutter projects\ProPakistani2\tribune_app\android\app\src\main\AndroidManifest.xml:24:13-27:29
-49                <action android:name="android.intent.action.MAIN" />
-49-->E:\code\flutter projects\ProPakistani2\tribune_app\android\app\src\main\AndroidManifest.xml:25:17-68
-49-->E:\code\flutter projects\ProPakistani2\tribune_app\android\app\src\main\AndroidManifest.xml:25:25-66
-50
-51                <category android:name="android.intent.category.LAUNCHER" />
-51-->E:\code\flutter projects\ProPakistani2\tribune_app\android\app\src\main\AndroidManifest.xml:26:17-76
-51-->E:\code\flutter projects\ProPakistani2\tribune_app\android\app\src\main\AndroidManifest.xml:26:27-74
-52            </intent-filter>
-53        </activity>
-54        <!--
-55             Don't delete the meta-data below.
-56             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
-57        -->
-58        <meta-data
-58-->E:\code\flutter projects\ProPakistani2\tribune_app\android\app\src\main\AndroidManifest.xml:31:9-33:33
-59            android:name="flutterEmbedding"
-59-->E:\code\flutter projects\ProPakistani2\tribune_app\android\app\src\main\AndroidManifest.xml:32:13-44
-60            android:value="2" />
-60-->E:\code\flutter projects\ProPakistani2\tribune_app\android\app\src\main\AndroidManifest.xml:33:13-30
-61        <!--
-62           Declares a provider which allows us to store files to share in
-63           '.../caches/share_plus' and grant the receiving action access
-64        -->
-65        <provider
-65-->[:share_plus] E:\code\flutter projects\ProPakistani2\tribune_app\build\share_plus\intermediates\merged_manifest\release\AndroidManifest.xml:13:9-21:20
-66            android:name="dev.fluttercommunity.plus.share.ShareFileProvider"
-66-->[:share_plus] E:\code\flutter projects\ProPakistani2\tribune_app\build\share_plus\intermediates\merged_manifest\release\AndroidManifest.xml:14:13-77
-67            android:authorities="com.montagmakes.propakistani.flutter.share_provider"
-67-->[:share_plus] E:\code\flutter projects\ProPakistani2\tribune_app\build\share_plus\intermediates\merged_manifest\release\AndroidManifest.xml:15:13-74
-68            android:exported="false"
-68-->[:share_plus] E:\code\flutter projects\ProPakistani2\tribune_app\build\share_plus\intermediates\merged_manifest\release\AndroidManifest.xml:16:13-37
-69            android:grantUriPermissions="true" >
-69-->[:share_plus] E:\code\flutter projects\ProPakistani2\tribune_app\build\share_plus\intermediates\merged_manifest\release\AndroidManifest.xml:17:13-47
-70            <meta-data
-70-->[:share_plus] E:\code\flutter projects\ProPakistani2\tribune_app\build\share_plus\intermediates\merged_manifest\release\AndroidManifest.xml:18:13-20:68
-71                android:name="android.support.FILE_PROVIDER_PATHS"
-71-->[:share_plus] E:\code\flutter projects\ProPakistani2\tribune_app\build\share_plus\intermediates\merged_manifest\release\AndroidManifest.xml:19:17-67
-72                android:resource="@xml/flutter_share_file_paths" />
-72-->[:share_plus] E:\code\flutter projects\ProPakistani2\tribune_app\build\share_plus\intermediates\merged_manifest\release\AndroidManifest.xml:20:17-65
-73        </provider>
-74        <!--
-75           This manifest declared broadcast receiver allows us to use an explicit
-76           Intent when creating a PendingItent to be informed of the user's choice
-77        -->
-78        <receiver
-78-->[:share_plus] E:\code\flutter projects\ProPakistani2\tribune_app\build\share_plus\intermediates\merged_manifest\release\AndroidManifest.xml:26:9-32:20
-79            android:name="dev.fluttercommunity.plus.share.SharePlusPendingIntent"
-79-->[:share_plus] E:\code\flutter projects\ProPakistani2\tribune_app\build\share_plus\intermediates\merged_manifest\release\AndroidManifest.xml:27:13-82
-80            android:exported="false" >
-80-->[:share_plus] E:\code\flutter projects\ProPakistani2\tribune_app\build\share_plus\intermediates\merged_manifest\release\AndroidManifest.xml:28:13-37
-81            <intent-filter>
-81-->[:share_plus] E:\code\flutter projects\ProPakistani2\tribune_app\build\share_plus\intermediates\merged_manifest\release\AndroidManifest.xml:29:13-31:29
-82                <action android:name="EXTRA_CHOSEN_COMPONENT" />
-82-->[:share_plus] E:\code\flutter projects\ProPakistani2\tribune_app\build\share_plus\intermediates\merged_manifest\release\AndroidManifest.xml:30:17-65
-82-->[:share_plus] E:\code\flutter projects\ProPakistani2\tribune_app\build\share_plus\intermediates\merged_manifest\release\AndroidManifest.xml:30:25-62
-83            </intent-filter>
-84        </receiver>
-85
-86        <uses-library
-86-->[androidx.window:window:1.0.0-beta04] C:\Users\Montag\.gradle\caches\transforms-3\90e1cd19258b35a677ff13d536dde795\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:25:9-27:40
-87            android:name="androidx.window.extensions"
-87-->[androidx.window:window:1.0.0-beta04] C:\Users\Montag\.gradle\caches\transforms-3\90e1cd19258b35a677ff13d536dde795\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:26:13-54
-88            android:required="false" />
-88-->[androidx.window:window:1.0.0-beta04] C:\Users\Montag\.gradle\caches\transforms-3\90e1cd19258b35a677ff13d536dde795\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:27:13-37
-89        <uses-library
-89-->[androidx.window:window:1.0.0-beta04] C:\Users\Montag\.gradle\caches\transforms-3\90e1cd19258b35a677ff13d536dde795\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:28:9-30:40
-90            android:name="androidx.window.sidecar"
-90-->[androidx.window:window:1.0.0-beta04] C:\Users\Montag\.gradle\caches\transforms-3\90e1cd19258b35a677ff13d536dde795\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:29:13-51
-91            android:required="false" />
-91-->[androidx.window:window:1.0.0-beta04] C:\Users\Montag\.gradle\caches\transforms-3\90e1cd19258b35a677ff13d536dde795\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:30:13-37
-92    </application>
-93
-94</manifest>
+17    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+17-->[:firebase_analytics] E:\code\flutter projects\ProPakistani\build\firebase_analytics\intermediates\merged_manifest\release\AndroidManifest.xml:7:5-79
+17-->[:firebase_analytics] E:\code\flutter projects\ProPakistani\build\firebase_analytics\intermediates\merged_manifest\release\AndroidManifest.xml:7:22-76
+18    <uses-permission android:name="android.permission.WAKE_LOCK" />
+18-->[:firebase_analytics] E:\code\flutter projects\ProPakistani\build\firebase_analytics\intermediates\merged_manifest\release\AndroidManifest.xml:9:5-68
+18-->[:firebase_analytics] E:\code\flutter projects\ProPakistani\build\firebase_analytics\intermediates\merged_manifest\release\AndroidManifest.xml:9:22-65
+19    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+19-->[com.google.android.gms:play-services-measurement-api:21.5.0] C:\Users\Montag\.gradle\caches\transforms-3\c1e92d8c75adc6dd91aceeaaf9ba18ad\transformed\jetified-play-services-measurement-api-21.5.0\AndroidManifest.xml:25:5-79
+19-->[com.google.android.gms:play-services-measurement-api:21.5.0] C:\Users\Montag\.gradle\caches\transforms-3\c1e92d8c75adc6dd91aceeaaf9ba18ad\transformed\jetified-play-services-measurement-api-21.5.0\AndroidManifest.xml:25:22-76
+20    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_ATTRIBUTION" />
+20-->[com.google.android.gms:play-services-measurement-api:21.5.0] C:\Users\Montag\.gradle\caches\transforms-3\c1e92d8c75adc6dd91aceeaaf9ba18ad\transformed\jetified-play-services-measurement-api-21.5.0\AndroidManifest.xml:26:5-88
+20-->[com.google.android.gms:play-services-measurement-api:21.5.0] C:\Users\Montag\.gradle\caches\transforms-3\c1e92d8c75adc6dd91aceeaaf9ba18ad\transformed\jetified-play-services-measurement-api-21.5.0\AndroidManifest.xml:26:22-85
+21    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_AD_ID" />
+21-->[com.google.android.gms:play-services-measurement-api:21.5.0] C:\Users\Montag\.gradle\caches\transforms-3\c1e92d8c75adc6dd91aceeaaf9ba18ad\transformed\jetified-play-services-measurement-api-21.5.0\AndroidManifest.xml:27:5-82
+21-->[com.google.android.gms:play-services-measurement-api:21.5.0] C:\Users\Montag\.gradle\caches\transforms-3\c1e92d8c75adc6dd91aceeaaf9ba18ad\transformed\jetified-play-services-measurement-api-21.5.0\AndroidManifest.xml:27:22-79
+22    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+22-->[com.google.android.gms:play-services-measurement:21.5.0] C:\Users\Montag\.gradle\caches\transforms-3\b21d6fcb741d68d966f1d0db3e1d6bc1\transformed\jetified-play-services-measurement-21.5.0\AndroidManifest.xml:26:5-110
+22-->[com.google.android.gms:play-services-measurement:21.5.0] C:\Users\Montag\.gradle\caches\transforms-3\b21d6fcb741d68d966f1d0db3e1d6bc1\transformed\jetified-play-services-measurement-21.5.0\AndroidManifest.xml:26:22-107
+23
+24    <permission
+24-->[androidx.core:core:1.10.1] C:\Users\Montag\.gradle\caches\transforms-3\dcd1c692f2364f99ac59e5af1cc21cd8\transformed\core-1.10.1\AndroidManifest.xml:22:5-24:47
+25        android:name="com.montagmakes.propakistani.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+25-->[androidx.core:core:1.10.1] C:\Users\Montag\.gradle\caches\transforms-3\dcd1c692f2364f99ac59e5af1cc21cd8\transformed\core-1.10.1\AndroidManifest.xml:23:9-81
+26        android:protectionLevel="signature" />
+26-->[androidx.core:core:1.10.1] C:\Users\Montag\.gradle\caches\transforms-3\dcd1c692f2364f99ac59e5af1cc21cd8\transformed\core-1.10.1\AndroidManifest.xml:24:9-44
+27
+28    <uses-permission android:name="com.montagmakes.propakistani.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+28-->[androidx.core:core:1.10.1] C:\Users\Montag\.gradle\caches\transforms-3\dcd1c692f2364f99ac59e5af1cc21cd8\transformed\core-1.10.1\AndroidManifest.xml:26:5-97
+28-->[androidx.core:core:1.10.1] C:\Users\Montag\.gradle\caches\transforms-3\dcd1c692f2364f99ac59e5af1cc21cd8\transformed\core-1.10.1\AndroidManifest.xml:26:22-94
+29
+30    <application
+31        android:name="io.flutter.app.FlutterMultiDexApplication"
+31-->E:\code\flutter projects\ProPakistani\android\app\src\main\AndroidManifest.xml:5:9-42
+32        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+32-->[androidx.core:core:1.10.1] C:\Users\Montag\.gradle\caches\transforms-3\dcd1c692f2364f99ac59e5af1cc21cd8\transformed\core-1.10.1\AndroidManifest.xml:28:18-86
+33        android:extractNativeLibs="true"
+34        android:icon="@mipmap/launcher_icon"
+34-->E:\code\flutter projects\ProPakistani\android\app\src\main\AndroidManifest.xml:6:9-45
+35        android:label="ProPakistani" >
+35-->E:\code\flutter projects\ProPakistani\android\app\src\main\AndroidManifest.xml:4:9-37
+36        <activity
+36-->E:\code\flutter projects\ProPakistani\android\app\src\main\AndroidManifest.xml:7:9-29:20
+37            android:name="com.example.dawn.MainActivity"
+37-->E:\code\flutter projects\ProPakistani\android\app\src\main\AndroidManifest.xml:8:13-41
+38            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+38-->E:\code\flutter projects\ProPakistani\android\app\src\main\AndroidManifest.xml:12:13-163
+39            android:enableOnBackInvokedCallback="true"
+39-->E:\code\flutter projects\ProPakistani\android\app\src\main\AndroidManifest.xml:14:13-55
+40            android:exported="true"
+40-->E:\code\flutter projects\ProPakistani\android\app\src\main\AndroidManifest.xml:9:13-36
+41            android:hardwareAccelerated="true"
+41-->E:\code\flutter projects\ProPakistani\android\app\src\main\AndroidManifest.xml:13:13-47
+42            android:launchMode="singleTop"
+42-->E:\code\flutter projects\ProPakistani\android\app\src\main\AndroidManifest.xml:10:13-43
+43            android:theme="@style/LaunchTheme"
+43-->E:\code\flutter projects\ProPakistani\android\app\src\main\AndroidManifest.xml:11:13-47
+44            android:windowSoftInputMode="adjustResize" >
+44-->E:\code\flutter projects\ProPakistani\android\app\src\main\AndroidManifest.xml:15:13-55
+45
+46            <!--
+47                 Specifies an Android theme to apply to this Activity as soon as
+48                 the Android process has started. This theme is visible to the user
+49                 while the Flutter UI initializes. After that, this theme continues
+50                 to determine the Window background behind the Flutter UI.
+51            -->
+52            <meta-data
+52-->E:\code\flutter projects\ProPakistani\android\app\src\main\AndroidManifest.xml:20:13-24:17
+53                android:name="io.flutter.embedding.android.NormalTheme"
+53-->E:\code\flutter projects\ProPakistani\android\app\src\main\AndroidManifest.xml:22:15-70
+54                android:resource="@style/NormalTheme" />
+54-->E:\code\flutter projects\ProPakistani\android\app\src\main\AndroidManifest.xml:23:15-52
+55
+56            <intent-filter>
+56-->E:\code\flutter projects\ProPakistani\android\app\src\main\AndroidManifest.xml:25:13-28:29
+57                <action android:name="android.intent.action.MAIN" />
+57-->E:\code\flutter projects\ProPakistani\android\app\src\main\AndroidManifest.xml:26:17-68
+57-->E:\code\flutter projects\ProPakistani\android\app\src\main\AndroidManifest.xml:26:25-66
+58
+59                <category android:name="android.intent.category.LAUNCHER" />
+59-->E:\code\flutter projects\ProPakistani\android\app\src\main\AndroidManifest.xml:27:17-76
+59-->E:\code\flutter projects\ProPakistani\android\app\src\main\AndroidManifest.xml:27:27-74
+60            </intent-filter>
+61        </activity>
+62        <!--
+63             Don't delete the meta-data below.
+64             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+65        -->
+66        <meta-data
+66-->E:\code\flutter projects\ProPakistani\android\app\src\main\AndroidManifest.xml:32:9-34:33
+67            android:name="flutterEmbedding"
+67-->E:\code\flutter projects\ProPakistani\android\app\src\main\AndroidManifest.xml:33:13-44
+68            android:value="2" />
+68-->E:\code\flutter projects\ProPakistani\android\app\src\main\AndroidManifest.xml:34:13-30
+69
+70        <service
+70-->[:firebase_crashlytics] E:\code\flutter projects\ProPakistani\build\firebase_crashlytics\intermediates\merged_manifest\release\AndroidManifest.xml:8:9-12:19
+71            android:name="com.google.firebase.components.ComponentDiscoveryService"
+71-->[:firebase_crashlytics] E:\code\flutter projects\ProPakistani\build\firebase_crashlytics\intermediates\merged_manifest\release\AndroidManifest.xml:8:18-89
+72            android:directBootAware="true"
+72-->[com.google.firebase:firebase-common:20.4.2] C:\Users\Montag\.gradle\caches\transforms-3\c2801761a821a5ff59f76a6f7cf7730c\transformed\jetified-firebase-common-20.4.2\AndroidManifest.xml:32:13-43
+73            android:exported="false" >
+73-->[com.google.firebase:firebase-perf:20.5.1] C:\Users\Montag\.gradle\caches\transforms-3\a51189f15b53be8462c15cddae2178e6\transformed\jetified-firebase-perf-20.5.1\AndroidManifest.xml:13:13-37
+74            <meta-data
+74-->[:firebase_crashlytics] E:\code\flutter projects\ProPakistani\build\firebase_crashlytics\intermediates\merged_manifest\release\AndroidManifest.xml:9:13-11:85
+75                android:name="com.google.firebase.components:io.flutter.plugins.firebase.crashlytics.FlutterFirebaseAppRegistrar"
+75-->[:firebase_crashlytics] E:\code\flutter projects\ProPakistani\build\firebase_crashlytics\intermediates\merged_manifest\release\AndroidManifest.xml:10:17-130
+76                android:value="com.google.firebase.components.ComponentRegistrar" />
+76-->[:firebase_crashlytics] E:\code\flutter projects\ProPakistani\build\firebase_crashlytics\intermediates\merged_manifest\release\AndroidManifest.xml:11:17-82
+77            <meta-data
+77-->[:firebase_analytics] E:\code\flutter projects\ProPakistani\build\firebase_analytics\intermediates\merged_manifest\release\AndroidManifest.xml:13:13-15:85
+78                android:name="com.google.firebase.components:io.flutter.plugins.firebase.analytics.FlutterFirebaseAppRegistrar"
+78-->[:firebase_analytics] E:\code\flutter projects\ProPakistani\build\firebase_analytics\intermediates\merged_manifest\release\AndroidManifest.xml:14:17-128
+79                android:value="com.google.firebase.components.ComponentRegistrar" />
+79-->[:firebase_analytics] E:\code\flutter projects\ProPakistani\build\firebase_analytics\intermediates\merged_manifest\release\AndroidManifest.xml:15:17-82
+80            <meta-data
+80-->[:firebase_performance] E:\code\flutter projects\ProPakistani\build\firebase_performance\intermediates\merged_manifest\release\AndroidManifest.xml:11:13-13:85
+81                android:name="com.google.firebase.components:io.flutter.plugins.firebase.performance.FlutterFirebaseAppRegistrar"
+81-->[:firebase_performance] E:\code\flutter projects\ProPakistani\build\firebase_performance\intermediates\merged_manifest\release\AndroidManifest.xml:12:17-130
+82                android:value="com.google.firebase.components.ComponentRegistrar" />
+82-->[:firebase_performance] E:\code\flutter projects\ProPakistani\build\firebase_performance\intermediates\merged_manifest\release\AndroidManifest.xml:13:17-82
+83            <meta-data
+83-->[:firebase_core] E:\code\flutter projects\ProPakistani\build\firebase_core\intermediates\merged_manifest\release\AndroidManifest.xml:9:13-11:85
+84                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
+84-->[:firebase_core] E:\code\flutter projects\ProPakistani\build\firebase_core\intermediates\merged_manifest\release\AndroidManifest.xml:10:17-124
+85                android:value="com.google.firebase.components.ComponentRegistrar" />
+85-->[:firebase_core] E:\code\flutter projects\ProPakistani\build\firebase_core\intermediates\merged_manifest\release\AndroidManifest.xml:11:17-82
+86            <meta-data
+86-->[com.google.firebase:firebase-perf:20.5.1] C:\Users\Montag\.gradle\caches\transforms-3\a51189f15b53be8462c15cddae2178e6\transformed\jetified-firebase-perf-20.5.1\AndroidManifest.xml:14:13-16:85
+87                android:name="com.google.firebase.components:com.google.firebase.perf.FirebasePerfKtxRegistrar"
+87-->[com.google.firebase:firebase-perf:20.5.1] C:\Users\Montag\.gradle\caches\transforms-3\a51189f15b53be8462c15cddae2178e6\transformed\jetified-firebase-perf-20.5.1\AndroidManifest.xml:15:17-112
+88                android:value="com.google.firebase.components.ComponentRegistrar" />
+88-->[com.google.firebase:firebase-perf:20.5.1] C:\Users\Montag\.gradle\caches\transforms-3\a51189f15b53be8462c15cddae2178e6\transformed\jetified-firebase-perf-20.5.1\AndroidManifest.xml:16:17-82
+89            <meta-data
+89-->[com.google.firebase:firebase-perf:20.5.1] C:\Users\Montag\.gradle\caches\transforms-3\a51189f15b53be8462c15cddae2178e6\transformed\jetified-firebase-perf-20.5.1\AndroidManifest.xml:17:13-19:85
+90                android:name="com.google.firebase.components:com.google.firebase.perf.FirebasePerfRegistrar"
+90-->[com.google.firebase:firebase-perf:20.5.1] C:\Users\Montag\.gradle\caches\transforms-3\a51189f15b53be8462c15cddae2178e6\transformed\jetified-firebase-perf-20.5.1\AndroidManifest.xml:18:17-109
+91                android:value="com.google.firebase.components.ComponentRegistrar" />
+91-->[com.google.firebase:firebase-perf:20.5.1] C:\Users\Montag\.gradle\caches\transforms-3\a51189f15b53be8462c15cddae2178e6\transformed\jetified-firebase-perf-20.5.1\AndroidManifest.xml:19:17-82
+92            <meta-data
+92-->[com.google.firebase:firebase-crashlytics:18.6.0] C:\Users\Montag\.gradle\caches\transforms-3\840719fb9a3ee7a63e58ff0515119a53\transformed\jetified-firebase-crashlytics-18.6.0\AndroidManifest.xml:15:13-17:85
+93                android:name="com.google.firebase.components:com.google.firebase.crashlytics.FirebaseCrashlyticsKtxRegistrar"
+93-->[com.google.firebase:firebase-crashlytics:18.6.0] C:\Users\Montag\.gradle\caches\transforms-3\840719fb9a3ee7a63e58ff0515119a53\transformed\jetified-firebase-crashlytics-18.6.0\AndroidManifest.xml:16:17-126
+94                android:value="com.google.firebase.components.ComponentRegistrar" />
+94-->[com.google.firebase:firebase-crashlytics:18.6.0] C:\Users\Montag\.gradle\caches\transforms-3\840719fb9a3ee7a63e58ff0515119a53\transformed\jetified-firebase-crashlytics-18.6.0\AndroidManifest.xml:17:17-82
+95            <meta-data
+95-->[com.google.firebase:firebase-crashlytics:18.6.0] C:\Users\Montag\.gradle\caches\transforms-3\840719fb9a3ee7a63e58ff0515119a53\transformed\jetified-firebase-crashlytics-18.6.0\AndroidManifest.xml:18:13-20:85
+96                android:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar"
+96-->[com.google.firebase:firebase-crashlytics:18.6.0] C:\Users\Montag\.gradle\caches\transforms-3\840719fb9a3ee7a63e58ff0515119a53\transformed\jetified-firebase-crashlytics-18.6.0\AndroidManifest.xml:19:17-115
+97                android:value="com.google.firebase.components.ComponentRegistrar" />
+97-->[com.google.firebase:firebase-crashlytics:18.6.0] C:\Users\Montag\.gradle\caches\transforms-3\840719fb9a3ee7a63e58ff0515119a53\transformed\jetified-firebase-crashlytics-18.6.0\AndroidManifest.xml:20:17-82
+98            <meta-data
+98-->[com.google.firebase:firebase-sessions:1.2.0] C:\Users\Montag\.gradle\caches\transforms-3\5cc34058bdb1053d63bd9cfad80f493a\transformed\jetified-firebase-sessions-1.2.0\AndroidManifest.xml:29:13-31:85
+99                android:name="com.google.firebase.components:com.google.firebase.sessions.FirebaseSessionsRegistrar"
+99-->[com.google.firebase:firebase-sessions:1.2.0] C:\Users\Montag\.gradle\caches\transforms-3\5cc34058bdb1053d63bd9cfad80f493a\transformed\jetified-firebase-sessions-1.2.0\AndroidManifest.xml:30:17-117
+100                android:value="com.google.firebase.components.ComponentRegistrar" />
+100-->[com.google.firebase:firebase-sessions:1.2.0] C:\Users\Montag\.gradle\caches\transforms-3\5cc34058bdb1053d63bd9cfad80f493a\transformed\jetified-firebase-sessions-1.2.0\AndroidManifest.xml:31:17-82
+101            <meta-data
+101-->[com.google.firebase:firebase-config:21.6.0] C:\Users\Montag\.gradle\caches\transforms-3\f11e6d7cdafb9a937da4736409a7f618\transformed\jetified-firebase-config-21.6.0\AndroidManifest.xml:29:13-31:85
+102                android:name="com.google.firebase.components:com.google.firebase.remoteconfig.FirebaseRemoteConfigKtxRegistrar"
+102-->[com.google.firebase:firebase-config:21.6.0] C:\Users\Montag\.gradle\caches\transforms-3\f11e6d7cdafb9a937da4736409a7f618\transformed\jetified-firebase-config-21.6.0\AndroidManifest.xml:30:17-128
+103                android:value="com.google.firebase.components.ComponentRegistrar" />
+103-->[com.google.firebase:firebase-config:21.6.0] C:\Users\Montag\.gradle\caches\transforms-3\f11e6d7cdafb9a937da4736409a7f618\transformed\jetified-firebase-config-21.6.0\AndroidManifest.xml:31:17-82
+104            <meta-data
+104-->[com.google.firebase:firebase-config:21.6.0] C:\Users\Montag\.gradle\caches\transforms-3\f11e6d7cdafb9a937da4736409a7f618\transformed\jetified-firebase-config-21.6.0\AndroidManifest.xml:32:13-34:85
+105                android:name="com.google.firebase.components:com.google.firebase.remoteconfig.RemoteConfigRegistrar"
+105-->[com.google.firebase:firebase-config:21.6.0] C:\Users\Montag\.gradle\caches\transforms-3\f11e6d7cdafb9a937da4736409a7f618\transformed\jetified-firebase-config-21.6.0\AndroidManifest.xml:33:17-117
+106                android:value="com.google.firebase.components.ComponentRegistrar" />
+106-->[com.google.firebase:firebase-config:21.6.0] C:\Users\Montag\.gradle\caches\transforms-3\f11e6d7cdafb9a937da4736409a7f618\transformed\jetified-firebase-config-21.6.0\AndroidManifest.xml:34:17-82
+107            <meta-data
+107-->[com.google.android.gms:play-services-measurement-api:21.5.0] C:\Users\Montag\.gradle\caches\transforms-3\c1e92d8c75adc6dd91aceeaaf9ba18ad\transformed\jetified-play-services-measurement-api-21.5.0\AndroidManifest.xml:37:13-39:85
+108                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+108-->[com.google.android.gms:play-services-measurement-api:21.5.0] C:\Users\Montag\.gradle\caches\transforms-3\c1e92d8c75adc6dd91aceeaaf9ba18ad\transformed\jetified-play-services-measurement-api-21.5.0\AndroidManifest.xml:38:17-139
+109                android:value="com.google.firebase.components.ComponentRegistrar" />
+109-->[com.google.android.gms:play-services-measurement-api:21.5.0] C:\Users\Montag\.gradle\caches\transforms-3\c1e92d8c75adc6dd91aceeaaf9ba18ad\transformed\jetified-play-services-measurement-api-21.5.0\AndroidManifest.xml:39:17-82
+110            <meta-data
+110-->[com.google.firebase:firebase-installations:17.2.0] C:\Users\Montag\.gradle\caches\transforms-3\427c3d5b6897b0fef9280aca056c8f22\transformed\jetified-firebase-installations-17.2.0\AndroidManifest.xml:15:13-17:85
+111                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar"
+111-->[com.google.firebase:firebase-installations:17.2.0] C:\Users\Montag\.gradle\caches\transforms-3\427c3d5b6897b0fef9280aca056c8f22\transformed\jetified-firebase-installations-17.2.0\AndroidManifest.xml:16:17-130
+112                android:value="com.google.firebase.components.ComponentRegistrar" />
+112-->[com.google.firebase:firebase-installations:17.2.0] C:\Users\Montag\.gradle\caches\transforms-3\427c3d5b6897b0fef9280aca056c8f22\transformed\jetified-firebase-installations-17.2.0\AndroidManifest.xml:17:17-82
+113            <meta-data
+113-->[com.google.firebase:firebase-installations:17.2.0] C:\Users\Montag\.gradle\caches\transforms-3\427c3d5b6897b0fef9280aca056c8f22\transformed\jetified-firebase-installations-17.2.0\AndroidManifest.xml:18:13-20:85
+114                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+114-->[com.google.firebase:firebase-installations:17.2.0] C:\Users\Montag\.gradle\caches\transforms-3\427c3d5b6897b0fef9280aca056c8f22\transformed\jetified-firebase-installations-17.2.0\AndroidManifest.xml:19:17-127
+115                android:value="com.google.firebase.components.ComponentRegistrar" />
+115-->[com.google.firebase:firebase-installations:17.2.0] C:\Users\Montag\.gradle\caches\transforms-3\427c3d5b6897b0fef9280aca056c8f22\transformed\jetified-firebase-installations-17.2.0\AndroidManifest.xml:20:17-82
+116            <meta-data
+116-->[com.google.firebase:firebase-common-ktx:20.4.2] C:\Users\Montag\.gradle\caches\transforms-3\d8a7ad625c818cd1c3c20c16cb612117\transformed\jetified-firebase-common-ktx-20.4.2\AndroidManifest.xml:12:13-14:85
+117                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar"
+117-->[com.google.firebase:firebase-common-ktx:20.4.2] C:\Users\Montag\.gradle\caches\transforms-3\d8a7ad625c818cd1c3c20c16cb612117\transformed\jetified-firebase-common-ktx-20.4.2\AndroidManifest.xml:13:17-116
+118                android:value="com.google.firebase.components.ComponentRegistrar" />
+118-->[com.google.firebase:firebase-common-ktx:20.4.2] C:\Users\Montag\.gradle\caches\transforms-3\d8a7ad625c818cd1c3c20c16cb612117\transformed\jetified-firebase-common-ktx-20.4.2\AndroidManifest.xml:14:17-82
+119            <meta-data
+119-->[com.google.firebase:firebase-common:20.4.2] C:\Users\Montag\.gradle\caches\transforms-3\c2801761a821a5ff59f76a6f7cf7730c\transformed\jetified-firebase-common-20.4.2\AndroidManifest.xml:35:13-37:85
+120                android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar"
+120-->[com.google.firebase:firebase-common:20.4.2] C:\Users\Montag\.gradle\caches\transforms-3\c2801761a821a5ff59f76a6f7cf7730c\transformed\jetified-firebase-common-20.4.2\AndroidManifest.xml:36:17-109
+121                android:value="com.google.firebase.components.ComponentRegistrar" />
+121-->[com.google.firebase:firebase-common:20.4.2] C:\Users\Montag\.gradle\caches\transforms-3\c2801761a821a5ff59f76a6f7cf7730c\transformed\jetified-firebase-common-20.4.2\AndroidManifest.xml:37:17-82
+122            <meta-data
+122-->[com.google.firebase:firebase-abt:21.1.1] C:\Users\Montag\.gradle\caches\transforms-3\d1ff5a1e2aa5b84b51c2b83160e5acea\transformed\jetified-firebase-abt-21.1.1\AndroidManifest.xml:12:13-14:85
+123                android:name="com.google.firebase.components:com.google.firebase.abt.component.AbtRegistrar"
+123-->[com.google.firebase:firebase-abt:21.1.1] C:\Users\Montag\.gradle\caches\transforms-3\d1ff5a1e2aa5b84b51c2b83160e5acea\transformed\jetified-firebase-abt-21.1.1\AndroidManifest.xml:13:17-109
+124                android:value="com.google.firebase.components.ComponentRegistrar" />
+124-->[com.google.firebase:firebase-abt:21.1.1] C:\Users\Montag\.gradle\caches\transforms-3\d1ff5a1e2aa5b84b51c2b83160e5acea\transformed\jetified-firebase-abt-21.1.1\AndroidManifest.xml:14:17-82
+125            <meta-data
+125-->[com.google.firebase:firebase-datatransport:18.1.8] C:\Users\Montag\.gradle\caches\transforms-3\ee7771213f4f47bdbd06f9da83248f51\transformed\jetified-firebase-datatransport-18.1.8\AndroidManifest.xml:27:13-29:85
+126                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+126-->[com.google.firebase:firebase-datatransport:18.1.8] C:\Users\Montag\.gradle\caches\transforms-3\ee7771213f4f47bdbd06f9da83248f51\transformed\jetified-firebase-datatransport-18.1.8\AndroidManifest.xml:28:17-115
+127                android:value="com.google.firebase.components.ComponentRegistrar" />
+127-->[com.google.firebase:firebase-datatransport:18.1.8] C:\Users\Montag\.gradle\caches\transforms-3\ee7771213f4f47bdbd06f9da83248f51\transformed\jetified-firebase-datatransport-18.1.8\AndroidManifest.xml:29:17-82
+128        </service>
+129        <!--
+130           Declares a provider which allows us to store files to share in
+131           '.../caches/share_plus' and grant the receiving action access
+132        -->
+133        <provider
+133-->[:share_plus] E:\code\flutter projects\ProPakistani\build\share_plus\intermediates\merged_manifest\release\AndroidManifest.xml:13:9-21:20
+134            android:name="dev.fluttercommunity.plus.share.ShareFileProvider"
+134-->[:share_plus] E:\code\flutter projects\ProPakistani\build\share_plus\intermediates\merged_manifest\release\AndroidManifest.xml:14:13-77
+135            android:authorities="com.montagmakes.propakistani.flutter.share_provider"
+135-->[:share_plus] E:\code\flutter projects\ProPakistani\build\share_plus\intermediates\merged_manifest\release\AndroidManifest.xml:15:13-74
+136            android:exported="false"
+136-->[:share_plus] E:\code\flutter projects\ProPakistani\build\share_plus\intermediates\merged_manifest\release\AndroidManifest.xml:16:13-37
+137            android:grantUriPermissions="true" >
+137-->[:share_plus] E:\code\flutter projects\ProPakistani\build\share_plus\intermediates\merged_manifest\release\AndroidManifest.xml:17:13-47
+138            <meta-data
+138-->[:share_plus] E:\code\flutter projects\ProPakistani\build\share_plus\intermediates\merged_manifest\release\AndroidManifest.xml:18:13-20:68
+139                android:name="android.support.FILE_PROVIDER_PATHS"
+139-->[:share_plus] E:\code\flutter projects\ProPakistani\build\share_plus\intermediates\merged_manifest\release\AndroidManifest.xml:19:17-67
+140                android:resource="@xml/flutter_share_file_paths" />
+140-->[:share_plus] E:\code\flutter projects\ProPakistani\build\share_plus\intermediates\merged_manifest\release\AndroidManifest.xml:20:17-65
+141        </provider>
+142        <!--
+143           This manifest declared broadcast receiver allows us to use an explicit
+144           Intent when creating a PendingItent to be informed of the user's choice
+145        -->
+146        <receiver
+146-->[:share_plus] E:\code\flutter projects\ProPakistani\build\share_plus\intermediates\merged_manifest\release\AndroidManifest.xml:26:9-32:20
+147            android:name="dev.fluttercommunity.plus.share.SharePlusPendingIntent"
+147-->[:share_plus] E:\code\flutter projects\ProPakistani\build\share_plus\intermediates\merged_manifest\release\AndroidManifest.xml:27:13-82
+148            android:exported="false" >
+148-->[:share_plus] E:\code\flutter projects\ProPakistani\build\share_plus\intermediates\merged_manifest\release\AndroidManifest.xml:28:13-37
+149            <intent-filter>
+149-->[:share_plus] E:\code\flutter projects\ProPakistani\build\share_plus\intermediates\merged_manifest\release\AndroidManifest.xml:29:13-31:29
+150                <action android:name="EXTRA_CHOSEN_COMPONENT" />
+150-->[:share_plus] E:\code\flutter projects\ProPakistani\build\share_plus\intermediates\merged_manifest\release\AndroidManifest.xml:30:17-65
+150-->[:share_plus] E:\code\flutter projects\ProPakistani\build\share_plus\intermediates\merged_manifest\release\AndroidManifest.xml:30:25-62
+151            </intent-filter>
+152        </receiver>
+153
+154        <service
+154-->[com.google.firebase:firebase-sessions:1.2.0] C:\Users\Montag\.gradle\caches\transforms-3\5cc34058bdb1053d63bd9cfad80f493a\transformed\jetified-firebase-sessions-1.2.0\AndroidManifest.xml:22:9-25:40
+155            android:name="com.google.firebase.sessions.SessionLifecycleService"
+155-->[com.google.firebase:firebase-sessions:1.2.0] C:\Users\Montag\.gradle\caches\transforms-3\5cc34058bdb1053d63bd9cfad80f493a\transformed\jetified-firebase-sessions-1.2.0\AndroidManifest.xml:23:13-80
+156            android:enabled="true"
+156-->[com.google.firebase:firebase-sessions:1.2.0] C:\Users\Montag\.gradle\caches\transforms-3\5cc34058bdb1053d63bd9cfad80f493a\transformed\jetified-firebase-sessions-1.2.0\AndroidManifest.xml:24:13-35
+157            android:exported="false" />
+157-->[com.google.firebase:firebase-sessions:1.2.0] C:\Users\Montag\.gradle\caches\transforms-3\5cc34058bdb1053d63bd9cfad80f493a\transformed\jetified-firebase-sessions-1.2.0\AndroidManifest.xml:25:13-37
+158
+159        <property
+159-->[com.google.android.gms:play-services-measurement-api:21.5.0] C:\Users\Montag\.gradle\caches\transforms-3\c1e92d8c75adc6dd91aceeaaf9ba18ad\transformed\jetified-play-services-measurement-api-21.5.0\AndroidManifest.xml:30:9-32:61
+160            android:name="android.adservices.AD_SERVICES_CONFIG"
+160-->[com.google.android.gms:play-services-measurement-api:21.5.0] C:\Users\Montag\.gradle\caches\transforms-3\c1e92d8c75adc6dd91aceeaaf9ba18ad\transformed\jetified-play-services-measurement-api-21.5.0\AndroidManifest.xml:31:13-65
+161            android:resource="@xml/ga_ad_services_config" />
+161-->[com.google.android.gms:play-services-measurement-api:21.5.0] C:\Users\Montag\.gradle\caches\transforms-3\c1e92d8c75adc6dd91aceeaaf9ba18ad\transformed\jetified-play-services-measurement-api-21.5.0\AndroidManifest.xml:32:13-58
+162
+163        <provider
+163-->[com.google.firebase:firebase-common:20.4.2] C:\Users\Montag\.gradle\caches\transforms-3\c2801761a821a5ff59f76a6f7cf7730c\transformed\jetified-firebase-common-20.4.2\AndroidManifest.xml:23:9-28:39
+164            android:name="com.google.firebase.provider.FirebaseInitProvider"
+164-->[com.google.firebase:firebase-common:20.4.2] C:\Users\Montag\.gradle\caches\transforms-3\c2801761a821a5ff59f76a6f7cf7730c\transformed\jetified-firebase-common-20.4.2\AndroidManifest.xml:24:13-77
+165            android:authorities="com.montagmakes.propakistani.firebaseinitprovider"
+165-->[com.google.firebase:firebase-common:20.4.2] C:\Users\Montag\.gradle\caches\transforms-3\c2801761a821a5ff59f76a6f7cf7730c\transformed\jetified-firebase-common-20.4.2\AndroidManifest.xml:25:13-72
+166            android:directBootAware="true"
+166-->[com.google.firebase:firebase-common:20.4.2] C:\Users\Montag\.gradle\caches\transforms-3\c2801761a821a5ff59f76a6f7cf7730c\transformed\jetified-firebase-common-20.4.2\AndroidManifest.xml:26:13-43
+167            android:exported="false"
+167-->[com.google.firebase:firebase-common:20.4.2] C:\Users\Montag\.gradle\caches\transforms-3\c2801761a821a5ff59f76a6f7cf7730c\transformed\jetified-firebase-common-20.4.2\AndroidManifest.xml:27:13-37
+168            android:initOrder="100" />
+168-->[com.google.firebase:firebase-common:20.4.2] C:\Users\Montag\.gradle\caches\transforms-3\c2801761a821a5ff59f76a6f7cf7730c\transformed\jetified-firebase-common-20.4.2\AndroidManifest.xml:28:13-36
+169
+170        <receiver
+170-->[com.google.android.gms:play-services-measurement:21.5.0] C:\Users\Montag\.gradle\caches\transforms-3\b21d6fcb741d68d966f1d0db3e1d6bc1\transformed\jetified-play-services-measurement-21.5.0\AndroidManifest.xml:29:9-33:20
+171            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+171-->[com.google.android.gms:play-services-measurement:21.5.0] C:\Users\Montag\.gradle\caches\transforms-3\b21d6fcb741d68d966f1d0db3e1d6bc1\transformed\jetified-play-services-measurement-21.5.0\AndroidManifest.xml:30:13-85
+172            android:enabled="true"
+172-->[com.google.android.gms:play-services-measurement:21.5.0] C:\Users\Montag\.gradle\caches\transforms-3\b21d6fcb741d68d966f1d0db3e1d6bc1\transformed\jetified-play-services-measurement-21.5.0\AndroidManifest.xml:31:13-35
+173            android:exported="false" >
+173-->[com.google.android.gms:play-services-measurement:21.5.0] C:\Users\Montag\.gradle\caches\transforms-3\b21d6fcb741d68d966f1d0db3e1d6bc1\transformed\jetified-play-services-measurement-21.5.0\AndroidManifest.xml:32:13-37
+174        </receiver>
+175
+176        <service
+176-->[com.google.android.gms:play-services-measurement:21.5.0] C:\Users\Montag\.gradle\caches\transforms-3\b21d6fcb741d68d966f1d0db3e1d6bc1\transformed\jetified-play-services-measurement-21.5.0\AndroidManifest.xml:35:9-38:40
+177            android:name="com.google.android.gms.measurement.AppMeasurementService"
+177-->[com.google.android.gms:play-services-measurement:21.5.0] C:\Users\Montag\.gradle\caches\transforms-3\b21d6fcb741d68d966f1d0db3e1d6bc1\transformed\jetified-play-services-measurement-21.5.0\AndroidManifest.xml:36:13-84
+178            android:enabled="true"
+178-->[com.google.android.gms:play-services-measurement:21.5.0] C:\Users\Montag\.gradle\caches\transforms-3\b21d6fcb741d68d966f1d0db3e1d6bc1\transformed\jetified-play-services-measurement-21.5.0\AndroidManifest.xml:37:13-35
+179            android:exported="false" />
+179-->[com.google.android.gms:play-services-measurement:21.5.0] C:\Users\Montag\.gradle\caches\transforms-3\b21d6fcb741d68d966f1d0db3e1d6bc1\transformed\jetified-play-services-measurement-21.5.0\AndroidManifest.xml:38:13-37
+180        <service
+180-->[com.google.android.gms:play-services-measurement:21.5.0] C:\Users\Montag\.gradle\caches\transforms-3\b21d6fcb741d68d966f1d0db3e1d6bc1\transformed\jetified-play-services-measurement-21.5.0\AndroidManifest.xml:39:9-43:72
+181            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+181-->[com.google.android.gms:play-services-measurement:21.5.0] C:\Users\Montag\.gradle\caches\transforms-3\b21d6fcb741d68d966f1d0db3e1d6bc1\transformed\jetified-play-services-measurement-21.5.0\AndroidManifest.xml:40:13-87
+182            android:enabled="true"
+182-->[com.google.android.gms:play-services-measurement:21.5.0] C:\Users\Montag\.gradle\caches\transforms-3\b21d6fcb741d68d966f1d0db3e1d6bc1\transformed\jetified-play-services-measurement-21.5.0\AndroidManifest.xml:41:13-35
+183            android:exported="false"
+183-->[com.google.android.gms:play-services-measurement:21.5.0] C:\Users\Montag\.gradle\caches\transforms-3\b21d6fcb741d68d966f1d0db3e1d6bc1\transformed\jetified-play-services-measurement-21.5.0\AndroidManifest.xml:42:13-37
+184            android:permission="android.permission.BIND_JOB_SERVICE" />
+184-->[com.google.android.gms:play-services-measurement:21.5.0] C:\Users\Montag\.gradle\caches\transforms-3\b21d6fcb741d68d966f1d0db3e1d6bc1\transformed\jetified-play-services-measurement-21.5.0\AndroidManifest.xml:43:13-69
+185
+186        <uses-library
+186-->[androidx.privacysandbox.ads:ads-adservices:1.0.0-beta05] C:\Users\Montag\.gradle\caches\transforms-3\7a60f11e9a3e82839598567aa416ded7\transformed\jetified-ads-adservices-1.0.0-beta05\AndroidManifest.xml:23:9-25:40
+187            android:name="android.ext.adservices"
+187-->[androidx.privacysandbox.ads:ads-adservices:1.0.0-beta05] C:\Users\Montag\.gradle\caches\transforms-3\7a60f11e9a3e82839598567aa416ded7\transformed\jetified-ads-adservices-1.0.0-beta05\AndroidManifest.xml:24:13-50
+188            android:required="false" />
+188-->[androidx.privacysandbox.ads:ads-adservices:1.0.0-beta05] C:\Users\Montag\.gradle\caches\transforms-3\7a60f11e9a3e82839598567aa416ded7\transformed\jetified-ads-adservices-1.0.0-beta05\AndroidManifest.xml:25:13-37
+189        <uses-library
+189-->[androidx.window:window:1.0.0-beta04] C:\Users\Montag\.gradle\caches\transforms-3\6918101d66daffb7533bf26922f97981\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:25:9-27:40
+190            android:name="androidx.window.extensions"
+190-->[androidx.window:window:1.0.0-beta04] C:\Users\Montag\.gradle\caches\transforms-3\6918101d66daffb7533bf26922f97981\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:26:13-54
+191            android:required="false" />
+191-->[androidx.window:window:1.0.0-beta04] C:\Users\Montag\.gradle\caches\transforms-3\6918101d66daffb7533bf26922f97981\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:27:13-37
+192        <uses-library
+192-->[androidx.window:window:1.0.0-beta04] C:\Users\Montag\.gradle\caches\transforms-3\6918101d66daffb7533bf26922f97981\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:28:9-30:40
+193            android:name="androidx.window.sidecar"
+193-->[androidx.window:window:1.0.0-beta04] C:\Users\Montag\.gradle\caches\transforms-3\6918101d66daffb7533bf26922f97981\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:29:13-51
+194            android:required="false" />
+194-->[androidx.window:window:1.0.0-beta04] C:\Users\Montag\.gradle\caches\transforms-3\6918101d66daffb7533bf26922f97981\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:30:13-37
+195
+196        <meta-data
+196-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\Montag\.gradle\caches\transforms-3\556d4bb172674aa90aabe63c24f0c6cf\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:21:9-23:69
+197            android:name="com.google.android.gms.version"
+197-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\Montag\.gradle\caches\transforms-3\556d4bb172674aa90aabe63c24f0c6cf\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:22:13-58
+198            android:value="@integer/google_play_services_version" />
+198-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\Montag\.gradle\caches\transforms-3\556d4bb172674aa90aabe63c24f0c6cf\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:23:13-66
+199
+200        <service
+200-->[com.google.android.datatransport:transport-backend-cct:3.1.9] C:\Users\Montag\.gradle\caches\transforms-3\bae68348536e12aff7ea6163b8072553\transformed\jetified-transport-backend-cct-3.1.9\AndroidManifest.xml:28:9-34:19
+201            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+201-->[com.google.android.datatransport:transport-backend-cct:3.1.9] C:\Users\Montag\.gradle\caches\transforms-3\bae68348536e12aff7ea6163b8072553\transformed\jetified-transport-backend-cct-3.1.9\AndroidManifest.xml:29:13-103
+202            android:exported="false" >
+202-->[com.google.android.datatransport:transport-backend-cct:3.1.9] C:\Users\Montag\.gradle\caches\transforms-3\bae68348536e12aff7ea6163b8072553\transformed\jetified-transport-backend-cct-3.1.9\AndroidManifest.xml:30:13-37
+203            <meta-data
+203-->[com.google.android.datatransport:transport-backend-cct:3.1.9] C:\Users\Montag\.gradle\caches\transforms-3\bae68348536e12aff7ea6163b8072553\transformed\jetified-transport-backend-cct-3.1.9\AndroidManifest.xml:31:13-33:39
+204                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+204-->[com.google.android.datatransport:transport-backend-cct:3.1.9] C:\Users\Montag\.gradle\caches\transforms-3\bae68348536e12aff7ea6163b8072553\transformed\jetified-transport-backend-cct-3.1.9\AndroidManifest.xml:32:17-94
+205                android:value="cct" />
+205-->[com.google.android.datatransport:transport-backend-cct:3.1.9] C:\Users\Montag\.gradle\caches\transforms-3\bae68348536e12aff7ea6163b8072553\transformed\jetified-transport-backend-cct-3.1.9\AndroidManifest.xml:33:17-36
+206        </service>
+207        <service
+207-->[com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\Montag\.gradle\caches\transforms-3\5e0b87a7ac12eaef7d392ffbf27c73b8\transformed\jetified-transport-runtime-3.1.9\AndroidManifest.xml:26:9-30:19
+208            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+208-->[com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\Montag\.gradle\caches\transforms-3\5e0b87a7ac12eaef7d392ffbf27c73b8\transformed\jetified-transport-runtime-3.1.9\AndroidManifest.xml:27:13-117
+209            android:exported="false"
+209-->[com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\Montag\.gradle\caches\transforms-3\5e0b87a7ac12eaef7d392ffbf27c73b8\transformed\jetified-transport-runtime-3.1.9\AndroidManifest.xml:28:13-37
+210            android:permission="android.permission.BIND_JOB_SERVICE" >
+210-->[com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\Montag\.gradle\caches\transforms-3\5e0b87a7ac12eaef7d392ffbf27c73b8\transformed\jetified-transport-runtime-3.1.9\AndroidManifest.xml:29:13-69
+211        </service>
+212
+213        <receiver
+213-->[com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\Montag\.gradle\caches\transforms-3\5e0b87a7ac12eaef7d392ffbf27c73b8\transformed\jetified-transport-runtime-3.1.9\AndroidManifest.xml:32:9-34:40
+214            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+214-->[com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\Montag\.gradle\caches\transforms-3\5e0b87a7ac12eaef7d392ffbf27c73b8\transformed\jetified-transport-runtime-3.1.9\AndroidManifest.xml:33:13-132
+215            android:exported="false" />
+215-->[com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\Montag\.gradle\caches\transforms-3\5e0b87a7ac12eaef7d392ffbf27c73b8\transformed\jetified-transport-runtime-3.1.9\AndroidManifest.xml:34:13-37
+216
+217        <provider
+217-->[androidx.lifecycle:lifecycle-process:2.3.1] C:\Users\Montag\.gradle\caches\transforms-3\842dd5b891d371edda9dd8a7755b8f73\transformed\jetified-lifecycle-process-2.3.1\AndroidManifest.xml:25:9-29:43
+218            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+218-->[androidx.lifecycle:lifecycle-process:2.3.1] C:\Users\Montag\.gradle\caches\transforms-3\842dd5b891d371edda9dd8a7755b8f73\transformed\jetified-lifecycle-process-2.3.1\AndroidManifest.xml:26:13-79
+219            android:authorities="com.montagmakes.propakistani.lifecycle-process"
+219-->[androidx.lifecycle:lifecycle-process:2.3.1] C:\Users\Montag\.gradle\caches\transforms-3\842dd5b891d371edda9dd8a7755b8f73\transformed\jetified-lifecycle-process-2.3.1\AndroidManifest.xml:27:13-69
+220            android:exported="false"
+220-->[androidx.lifecycle:lifecycle-process:2.3.1] C:\Users\Montag\.gradle\caches\transforms-3\842dd5b891d371edda9dd8a7755b8f73\transformed\jetified-lifecycle-process-2.3.1\AndroidManifest.xml:28:13-37
+221            android:multiprocess="true" />
+221-->[androidx.lifecycle:lifecycle-process:2.3.1] C:\Users\Montag\.gradle\caches\transforms-3\842dd5b891d371edda9dd8a7755b8f73\transformed\jetified-lifecycle-process-2.3.1\AndroidManifest.xml:29:13-40
+222    </application>
+223
+224</manifest>

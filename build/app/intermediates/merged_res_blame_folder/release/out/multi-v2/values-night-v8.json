@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.dawn.app-mergeReleaseResources-10:/values-night-v8/values-night-v8.xml",
+            "outputFile": "com.example.dawn.app-mergeReleaseResources-21:/values-night-v8/values-night-v8.xml",
             "map": [
                 {
-                    "source": "E:\\code\\flutter projects\\ProPakistani2\\tribune_app\\android\\app\\src\\main\\res\\values-night\\styles.xml",
+                    "source": "E:\\code\\flutter projects\\ProPakistani\\android\\app\\src\\main\\res\\values-night\\styles.xml",
                     "from": {
                         "startLines": "3,18",
                         "startColumns": "4,4",
@@ -20,6 +20,23 @@
                         "endLines": "9,12",
                         "endColumns": "12,12",
                         "endOffsets": "502,671"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Montag\\.gradle\\caches\\transforms-3\\d2fb628f27d9c96b31780b41ee7392a0\\transformed\\appcompat-1.2.0\\res\\values-night-v8\\values-night-v8.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,125,209,293,389,491,593,687",
+                        "endColumns": "69,83,83,95,101,101,93,88",
+                        "endOffsets": "120,204,288,384,486,588,682,771"
+                    },
+                    "to": {
+                        "startLines": "13,14,15,16,17,18,19,20",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "676,746,830,914,1010,1112,1214,1308",
+                        "endColumns": "69,83,83,95,101,101,93,88",
+                        "endOffsets": "741,825,909,1005,1107,1209,1303,1392"
                     }
                 }
             ]

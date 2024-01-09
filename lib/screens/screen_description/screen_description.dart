@@ -112,7 +112,7 @@ class _ScreenDescriptionState extends State<ScreenDescription> {
                         backgroundColor:
                             (AdaptiveTheme.of(context).mode == AdaptiveThemeMode.light)
                                 ? Colors.white
-                                : kColorPrimary,
+                                : Colors.black,
                         child: Icon(
                           FontAwesomeIcons.copy,
                           color: AdaptiveTheme.of(context).mode == AdaptiveThemeMode.light
@@ -176,7 +176,7 @@ class _ScreenDescriptionState extends State<ScreenDescription> {
                           backgroundColor:
                             (AdaptiveTheme.of(context).mode == AdaptiveThemeMode.light)
                                 ? Colors.white
-                                : kColorPrimary),
+                                : Colors.black),
                 
                       //Font size decrement fab
                       SpeedDialChild(
@@ -198,7 +198,7 @@ class _ScreenDescriptionState extends State<ScreenDescription> {
                         backgroundColor:
                             (AdaptiveTheme.of(context).mode == AdaptiveThemeMode.light)
                                 ? Colors.white
-                                : kColorPrimary,
+                                : Colors.black,
                       ),
                 
                       //Font size increment fab
@@ -221,7 +221,7 @@ class _ScreenDescriptionState extends State<ScreenDescription> {
                         backgroundColor:
                             (AdaptiveTheme.of(context).mode == AdaptiveThemeMode.light)
                                 ? Colors.white
-                                : kColorPrimary,
+                                : Colors.black,
                       ),
                 
                       

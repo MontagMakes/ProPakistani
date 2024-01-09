@@ -59,11 +59,8 @@ class _ScreenSettingState extends State<ScreenSetting> {
               ],
             ),
           ),
-
-          const Divider(
-            height: 10,
-          ),
-
+          
+          const Divider(height: 10,),
           //Row: Contact us
           SizedBox(
             height: MediaQuery.sizeOf(context).height * 0.08,
@@ -75,6 +72,7 @@ class _ScreenSettingState extends State<ScreenSetting> {
                   style: TextStyle(
                       fontSize: MediaQuery.of(context).size.width * 0.05),
                 ),
+                
                 GestureDetector(
                   onTap: () {
                     Clipboard.setData(

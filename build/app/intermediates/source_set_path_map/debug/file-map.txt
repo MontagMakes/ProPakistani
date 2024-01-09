@@ -1,17 +1,32 @@
-com.example.dawn.app-jetified-annotation-experimental-1.3.0-0 C:\Users\Montag\.gradle\caches\transforms-3\184f971227f22e59ea65ef03c964ee21\transformed\jetified-annotation-experimental-1.3.0\res
-com.example.dawn.app-jetified-window-java-1.0.0-beta04-1 C:\Users\Montag\.gradle\caches\transforms-3\3ce1d764e6ddc8319f4b46d55b9e8fe9\transformed\jetified-window-java-1.0.0-beta04\res
-com.example.dawn.app-lifecycle-runtime-2.3.1-2 C:\Users\Montag\.gradle\caches\transforms-3\8ca8f8dc4bb70956b73bea9b6e8f863c\transformed\lifecycle-runtime-2.3.1\res
-com.example.dawn.app-jetified-window-1.0.0-beta04-3 C:\Users\Montag\.gradle\caches\transforms-3\90e1cd19258b35a677ff13d536dde795\transformed\jetified-window-1.0.0-beta04\res
-com.example.dawn.app-jetified-core-ktx-1.10.1-4 C:\Users\Montag\.gradle\caches\transforms-3\9e4508f4a450538a42476cda8e86164c\transformed\jetified-core-ktx-1.10.1\res
-com.example.dawn.app-core-1.10.1-5 C:\Users\Montag\.gradle\caches\transforms-3\c52f800b49eb2591913780e82d616242\transformed\core-1.10.1\res
-com.example.dawn.app-debug-6 E:\code\flutter projects\ProPakistani2\tribune_app\android\app\src\debug\res
-com.example.dawn.app-main-7 E:\code\flutter projects\ProPakistani2\tribune_app\android\app\src\main\res
-com.example.dawn.app-pngs-8 E:\code\flutter projects\ProPakistani2\tribune_app\build\app\generated\res\pngs\debug
-com.example.dawn.app-resValues-9 E:\code\flutter projects\ProPakistani2\tribune_app\build\app\generated\res\resValues\debug
-com.example.dawn.app-packageDebugResources-10 E:\code\flutter projects\ProPakistani2\tribune_app\build\app\intermediates\incremental\debug\packageDebugResources\merged.dir
-com.example.dawn.app-packageDebugResources-11 E:\code\flutter projects\ProPakistani2\tribune_app\build\app\intermediates\incremental\debug\packageDebugResources\stripped.dir
-com.example.dawn.app-merged_res-12 E:\code\flutter projects\ProPakistani2\tribune_app\build\app\intermediates\merged_res\debug
-com.example.dawn.app-packaged_res-13 E:\code\flutter projects\ProPakistani2\tribune_app\build\flutter_native_splash\intermediates\packaged_res\debug
-com.example.dawn.app-packaged_res-14 E:\code\flutter projects\ProPakistani2\tribune_app\build\path_provider_android\intermediates\packaged_res\debug
-com.example.dawn.app-packaged_res-15 E:\code\flutter projects\ProPakistani2\tribune_app\build\share_plus\intermediates\packaged_res\debug
-com.example.dawn.app-packaged_res-16 E:\code\flutter projects\ProPakistani2\tribune_app\build\shared_preferences_android\intermediates\packaged_res\debug
+com.example.dawn.app-jetified-play-services-basement-18.1.0-0 C:\Users\Montag\.gradle\caches\transforms-3\556d4bb172674aa90aabe63c24f0c6cf\transformed\jetified-play-services-basement-18.1.0\res
+com.example.dawn.app-jetified-window-java-1.0.0-beta04-1 C:\Users\Montag\.gradle\caches\transforms-3\5682fb4f71a3d1e89e53d98fed6cf50b\transformed\jetified-window-java-1.0.0-beta04\res
+com.example.dawn.app-jetified-annotation-experimental-1.3.0-2 C:\Users\Montag\.gradle\caches\transforms-3\5da28d97b9f91ce6b39566b02e2628c7\transformed\jetified-annotation-experimental-1.3.0\res
+com.example.dawn.app-jetified-window-1.0.0-beta04-3 C:\Users\Montag\.gradle\caches\transforms-3\6918101d66daffb7533bf26922f97981\transformed\jetified-window-1.0.0-beta04\res
+com.example.dawn.app-jetified-datastore-1.0.0-4 C:\Users\Montag\.gradle\caches\transforms-3\7153b054fef0c501bcb4e3aa33dd2d03\transformed\jetified-datastore-1.0.0\res
+com.example.dawn.app-jetified-ads-adservices-1.0.0-beta05-5 C:\Users\Montag\.gradle\caches\transforms-3\7a60f11e9a3e82839598567aa416ded7\transformed\jetified-ads-adservices-1.0.0-beta05\res
+com.example.dawn.app-jetified-appcompat-resources-1.2.0-6 C:\Users\Montag\.gradle\caches\transforms-3\9414b39dfe30d8daa0e7990e9677076a\transformed\jetified-appcompat-resources-1.2.0\res
+com.example.dawn.app-jetified-play-services-measurement-api-21.5.0-7 C:\Users\Montag\.gradle\caches\transforms-3\c1e92d8c75adc6dd91aceeaaf9ba18ad\transformed\jetified-play-services-measurement-api-21.5.0\res
+com.example.dawn.app-jetified-firebase-common-20.4.2-8 C:\Users\Montag\.gradle\caches\transforms-3\c2801761a821a5ff59f76a6f7cf7730c\transformed\jetified-firebase-common-20.4.2\res
+com.example.dawn.app-jetified-core-ktx-1.10.1-9 C:\Users\Montag\.gradle\caches\transforms-3\c284052068ef9cadfd5fcfb56fbc12b6\transformed\jetified-core-ktx-1.10.1\res
+com.example.dawn.app-lifecycle-runtime-2.3.1-10 C:\Users\Montag\.gradle\caches\transforms-3\cff532cc8aaa676daa206a8549982a0a\transformed\lifecycle-runtime-2.3.1\res
+com.example.dawn.app-appcompat-1.2.0-11 C:\Users\Montag\.gradle\caches\transforms-3\d2fb628f27d9c96b31780b41ee7392a0\transformed\appcompat-1.2.0\res
+com.example.dawn.app-jetified-datastore-preferences-1.0.0-12 C:\Users\Montag\.gradle\caches\transforms-3\d6b288bd73bd39ae86201a1d26e35739\transformed\jetified-datastore-preferences-1.0.0\res
+com.example.dawn.app-core-1.10.1-13 C:\Users\Montag\.gradle\caches\transforms-3\dcd1c692f2364f99ac59e5af1cc21cd8\transformed\core-1.10.1\res
+com.example.dawn.app-jetified-ads-adservices-java-1.0.0-beta05-14 C:\Users\Montag\.gradle\caches\transforms-3\ff7e7833e593bd43fd707af50b672d31\transformed\jetified-ads-adservices-java-1.0.0-beta05\res
+com.example.dawn.app-debug-15 E:\code\flutter projects\ProPakistani\android\app\src\debug\res
+com.example.dawn.app-main-16 E:\code\flutter projects\ProPakistani\android\app\src\main\res
+com.example.dawn.app-res-17 E:\code\flutter projects\ProPakistani\build\app\generated\crashlytics\res\debug
+com.example.dawn.app-pngs-18 E:\code\flutter projects\ProPakistani\build\app\generated\res\pngs\debug
+com.example.dawn.app-res-19 E:\code\flutter projects\ProPakistani\build\app\generated\res\processDebugGoogleServices
+com.example.dawn.app-resValues-20 E:\code\flutter projects\ProPakistani\build\app\generated\res\resValues\debug
+com.example.dawn.app-packageDebugResources-21 E:\code\flutter projects\ProPakistani\build\app\intermediates\incremental\debug\packageDebugResources\merged.dir
+com.example.dawn.app-packageDebugResources-22 E:\code\flutter projects\ProPakistani\build\app\intermediates\incremental\debug\packageDebugResources\stripped.dir
+com.example.dawn.app-merged_res-23 E:\code\flutter projects\ProPakistani\build\app\intermediates\merged_res\debug
+com.example.dawn.app-packaged_res-24 E:\code\flutter projects\ProPakistani\build\firebase_analytics\intermediates\packaged_res\debug
+com.example.dawn.app-packaged_res-25 E:\code\flutter projects\ProPakistani\build\firebase_core\intermediates\packaged_res\debug
+com.example.dawn.app-packaged_res-26 E:\code\flutter projects\ProPakistani\build\firebase_crashlytics\intermediates\packaged_res\debug
+com.example.dawn.app-packaged_res-27 E:\code\flutter projects\ProPakistani\build\firebase_performance\intermediates\packaged_res\debug
+com.example.dawn.app-packaged_res-28 E:\code\flutter projects\ProPakistani\build\flutter_native_splash\intermediates\packaged_res\debug
+com.example.dawn.app-packaged_res-29 E:\code\flutter projects\ProPakistani\build\path_provider_android\intermediates\packaged_res\debug
+com.example.dawn.app-packaged_res-30 E:\code\flutter projects\ProPakistani\build\share_plus\intermediates\packaged_res\debug
+com.example.dawn.app-packaged_res-31 E:\code\flutter projects\ProPakistani\build\shared_preferences_android\intermediates\packaged_res\debug

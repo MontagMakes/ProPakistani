@@ -1,0 +1,19 @@
+io.flutter.plugins.firebase.performance.firebase_performance-jetified-annotation-experimental-1.1.0-0 C:\Users\Montag\.gradle\caches\transforms-3\25f4d9aa8eeb1e668bb63b0fca6c115c\transformed\jetified-annotation-experimental-1.1.0\res
+io.flutter.plugins.firebase.performance.firebase_performance-jetified-play-services-basement-18.1.0-1 C:\Users\Montag\.gradle\caches\transforms-3\556d4bb172674aa90aabe63c24f0c6cf\transformed\jetified-play-services-basement-18.1.0\res
+io.flutter.plugins.firebase.performance.firebase_performance-jetified-window-java-1.0.0-beta04-2 C:\Users\Montag\.gradle\caches\transforms-3\5682fb4f71a3d1e89e53d98fed6cf50b\transformed\jetified-window-java-1.0.0-beta04\res
+io.flutter.plugins.firebase.performance.firebase_performance-jetified-window-1.0.0-beta04-3 C:\Users\Montag\.gradle\caches\transforms-3\6918101d66daffb7533bf26922f97981\transformed\jetified-window-1.0.0-beta04\res
+io.flutter.plugins.firebase.performance.firebase_performance-jetified-datastore-1.0.0-4 C:\Users\Montag\.gradle\caches\transforms-3\7153b054fef0c501bcb4e3aa33dd2d03\transformed\jetified-datastore-1.0.0\res
+io.flutter.plugins.firebase.performance.firebase_performance-jetified-appcompat-resources-1.2.0-5 C:\Users\Montag\.gradle\caches\transforms-3\9414b39dfe30d8daa0e7990e9677076a\transformed\jetified-appcompat-resources-1.2.0\res
+io.flutter.plugins.firebase.performance.firebase_performance-core-1.6.0-6 C:\Users\Montag\.gradle\caches\transforms-3\a149c3ca3a4d305dfd77e229af492b58\transformed\core-1.6.0\res
+io.flutter.plugins.firebase.performance.firebase_performance-jetified-firebase-common-20.4.2-7 C:\Users\Montag\.gradle\caches\transforms-3\c2801761a821a5ff59f76a6f7cf7730c\transformed\jetified-firebase-common-20.4.2\res
+io.flutter.plugins.firebase.performance.firebase_performance-lifecycle-runtime-2.3.1-8 C:\Users\Montag\.gradle\caches\transforms-3\cff532cc8aaa676daa206a8549982a0a\transformed\lifecycle-runtime-2.3.1\res
+io.flutter.plugins.firebase.performance.firebase_performance-appcompat-1.2.0-9 C:\Users\Montag\.gradle\caches\transforms-3\d2fb628f27d9c96b31780b41ee7392a0\transformed\appcompat-1.2.0\res
+io.flutter.plugins.firebase.performance.firebase_performance-jetified-datastore-preferences-1.0.0-10 C:\Users\Montag\.gradle\caches\transforms-3\d6b288bd73bd39ae86201a1d26e35739\transformed\jetified-datastore-preferences-1.0.0\res
+io.flutter.plugins.firebase.performance.firebase_performance-main-11 C:\Users\Montag\AppData\Local\Pub\Cache\hosted\pub.dev\firebase_performance-0.9.3+8\android\src\main\res
+io.flutter.plugins.firebase.performance.firebase_performance-release-12 C:\Users\Montag\AppData\Local\Pub\Cache\hosted\pub.dev\firebase_performance-0.9.3+8\android\src\release\res
+io.flutter.plugins.firebase.performance.firebase_performance-packaged_res-13 E:\code\flutter projects\ProPakistani\build\firebase_core\intermediates\packaged_res\release
+io.flutter.plugins.firebase.performance.firebase_performance-pngs-14 E:\code\flutter projects\ProPakistani\build\firebase_performance\generated\res\pngs\release
+io.flutter.plugins.firebase.performance.firebase_performance-resValues-15 E:\code\flutter projects\ProPakistani\build\firebase_performance\generated\res\resValues\release
+io.flutter.plugins.firebase.performance.firebase_performance-mergeReleaseResources-16 E:\code\flutter projects\ProPakistani\build\firebase_performance\intermediates\incremental\release\mergeReleaseResources\merged.dir
+io.flutter.plugins.firebase.performance.firebase_performance-mergeReleaseResources-17 E:\code\flutter projects\ProPakistani\build\firebase_performance\intermediates\incremental\release\mergeReleaseResources\stripped.dir
+io.flutter.plugins.firebase.performance.firebase_performance-merged_res-18 E:\code\flutter projects\ProPakistani\build\firebase_performance\intermediates\merged_res\release

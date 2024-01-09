@@ -1,15 +1,31 @@
 import 'package:adaptive_theme/adaptive_theme.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'package:firebase_crashlytics/firebase_crashlytics.dart';
+import 'package:flutter/foundation.dart';
 import 'package:propakistani/globals/globals.dart';
 import 'package:propakistani/providers/provider_news.dart';
 import 'package:propakistani/screens/screen_home_page/screen_home_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
-
+import 'firebase_options.dart';
 import 'providers/provider_shared_preferences.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
+
+  //Firebase
+  await Firebase.initializeApp();
+
+  //Firebase Crashlytics
+  FlutterError.onError = (errorDetails) {
+    FirebaseCrashlytics.instance.recordFlutterFatalError(errorDetails);
+  };
+  
+  PlatformDispatcher.instance.onError = (error, stack) {
+    FirebaseCrashlytics.instance.recordError(error, stack, fatal: true);
+    return true;
+  };
 
   //saving Theme mode to
   final savedThemeMode = await AdaptiveTheme.getThemeMode();
@@ -37,7 +53,6 @@ class MyApp extends StatelessWidget {
         brightness: Brightness.light,
         primaryColor: Colors.white,
         primaryColorDark: Colors.white,
-
         appBarTheme: AppBarTheme(
           titleTextStyle: TextStyle(
               fontSize: MediaQuery.of(context).size.width * 0.05,

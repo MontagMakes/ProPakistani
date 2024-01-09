@@ -2,12 +2,12 @@
     name="release"
     package="com.example.dawn"
     minSdkVersion="21"
-    targetSdkVersion="33"
+    targetSdkVersion="34"
     shrinking="true"
-    mergedManifest="E:\code\flutter projects\ProPakistani2\tribune_app\build\app\intermediates\merged_manifest\release\AndroidManifest.xml"
-    proguardFiles="E:\code\flutter projects\ProPakistani2\tribune_app\build\app\intermediates\default_proguard_files\global\proguard-android.txt-8.2.0;C:\flutter\packages\flutter_tools\gradle\flutter_proguard_rules.pro;proguard-rules.pro"
-    partialResultsDir="E:\code\flutter projects\ProPakistani2\tribune_app\build\app\intermediates\lint_vital_partial_results\release\out"
-    desugaredMethodsFiles="C:\Users\Montag\.gradle\caches\transforms-3\bd4410176496fb4eee7c4bcaa4836703\transformed\D8BackportedDesugaredMethods.txt">
+    mergedManifest="E:\code\flutter projects\ProPakistani\build\app\intermediates\merged_manifest\release\AndroidManifest.xml"
+    proguardFiles="E:\code\flutter projects\ProPakistani\build\app\intermediates\default_proguard_files\global\proguard-android.txt-8.2.0;C:\flutter\packages\flutter_tools\gradle\flutter_proguard_rules.pro;proguard-rules.pro"
+    partialResultsDir="E:\code\flutter projects\ProPakistani\build\app\intermediates\lint_vital_partial_results\release\out"
+    desugaredMethodsFiles="C:\Users\Montag\.gradle\caches\transforms-3\3dd64a9ae36e560365f17032c488c958\transformed\D8BackportedDesugaredMethods.txt">
   <buildFeatures
       namespacing="REQUIRED"/>
   <sourceProviders>
@@ -27,11 +27,11 @@
         value="io.flutter.app.FlutterMultiDexApplication" />
   </manifestPlaceholders>
   <artifact
-      classOutputs="E:\code\flutter projects\ProPakistani2\tribune_app\build\app\intermediates\javac\release\classes;E:\code\flutter projects\ProPakistani2\tribune_app\build\app\tmp\kotlin-classes\release;E:\code\flutter projects\ProPakistani2\tribune_app\build\app\kotlinToolingMetadata;E:\code\flutter projects\ProPakistani2\tribune_app\build\app\intermediates\compile_and_runtime_not_namespaced_r_class_jar\release\R.jar"
+      classOutputs="E:\code\flutter projects\ProPakistani\build\app\intermediates\javac\release\classes;E:\code\flutter projects\ProPakistani\build\app\tmp\kotlin-classes\release;E:\code\flutter projects\ProPakistani\build\app\kotlinToolingMetadata;E:\code\flutter projects\ProPakistani\build\app\intermediates\compile_and_runtime_not_namespaced_r_class_jar\release\R.jar"
       type="MAIN"
       applicationId="com.montagmakes.propakistani"
-      generatedSourceFolders="E:\code\flutter projects\ProPakistani2\tribune_app\build\app\generated\ap_generated_sources\release\out"
-      generatedResourceFolders="E:\code\flutter projects\ProPakistani2\tribune_app\build\app\generated\res\resValues\release"
-      desugaredMethodsFiles="C:\Users\Montag\.gradle\caches\transforms-3\bd4410176496fb4eee7c4bcaa4836703\transformed\D8BackportedDesugaredMethods.txt">
+      generatedSourceFolders="E:\code\flutter projects\ProPakistani\build\app\generated\ap_generated_sources\release\out"
+      generatedResourceFolders="E:\code\flutter projects\ProPakistani\build\app\generated\crashlytics\res\release;E:\code\flutter projects\ProPakistani\build\app\generated\res\resValues\release"
+      desugaredMethodsFiles="C:\Users\Montag\.gradle\caches\transforms-3\3dd64a9ae36e560365f17032c488c958\transformed\D8BackportedDesugaredMethods.txt">
   </artifact>
 </variant>

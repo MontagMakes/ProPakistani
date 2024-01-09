@@ -3,10 +3,10 @@
     package="io.flutter.plugins.sharedpreferences"
     minSdkVersion="16"
     targetSdkVersion="16"
-    mergedManifest="E:\code\flutter projects\ProPakistani2\tribune_app\build\shared_preferences_android\intermediates\merged_manifest\release\AndroidManifest.xml"
-    manifestMergeReport="E:\code\flutter projects\ProPakistani2\tribune_app\build\shared_preferences_android\outputs\logs\manifest-merger-release-report.txt"
-    proguardFiles="E:\code\flutter projects\ProPakistani2\tribune_app\build\shared_preferences_android\intermediates\default_proguard_files\global\proguard-android.txt-8.2.0"
-    partialResultsDir="E:\code\flutter projects\ProPakistani2\tribune_app\build\shared_preferences_android\intermediates\lint_vital_partial_results\release\out">
+    mergedManifest="E:\code\flutter projects\ProPakistani\build\shared_preferences_android\intermediates\merged_manifest\release\AndroidManifest.xml"
+    manifestMergeReport="E:\code\flutter projects\ProPakistani\build\shared_preferences_android\outputs\logs\manifest-merger-release-report.txt"
+    proguardFiles="E:\code\flutter projects\ProPakistani\build\shared_preferences_android\intermediates\default_proguard_files\global\proguard-android.txt-8.2.0"
+    partialResultsDir="E:\code\flutter projects\ProPakistani\build\shared_preferences_android\intermediates\lint_vital_partial_results\release\out">
   <buildFeatures
       namespacing="REQUIRED"/>
   <sourceProviders>
@@ -21,11 +21,11 @@
   <testFixturesSourceProviders>
   </testFixturesSourceProviders>
   <artifact
-      classOutputs="E:\code\flutter projects\ProPakistani2\tribune_app\build\shared_preferences_android\intermediates\javac\release\classes;E:\code\flutter projects\ProPakistani2\tribune_app\build\shared_preferences_android\intermediates\compile_r_class_jar\release\R.jar"
+      classOutputs="E:\code\flutter projects\ProPakistani\build\shared_preferences_android\intermediates\javac\release\classes;E:\code\flutter projects\ProPakistani\build\shared_preferences_android\intermediates\compile_r_class_jar\release\R.jar"
       type="MAIN"
       applicationId="io.flutter.plugins.sharedpreferences"
-      generatedSourceFolders="E:\code\flutter projects\ProPakistani2\tribune_app\build\shared_preferences_android\generated\ap_generated_sources\release\out"
-      generatedResourceFolders="E:\code\flutter projects\ProPakistani2\tribune_app\build\shared_preferences_android\generated\res\resValues\release"
-      desugaredMethodsFiles="C:\Users\Montag\.gradle\caches\transforms-3\bd4410176496fb4eee7c4bcaa4836703\transformed\D8BackportedDesugaredMethods.txt">
+      generatedSourceFolders="E:\code\flutter projects\ProPakistani\build\shared_preferences_android\generated\ap_generated_sources\release\out"
+      generatedResourceFolders="E:\code\flutter projects\ProPakistani\build\shared_preferences_android\generated\res\resValues\release"
+      desugaredMethodsFiles="C:\Users\Montag\.gradle\caches\transforms-3\3dd64a9ae36e560365f17032c488c958\transformed\D8BackportedDesugaredMethods.txt">
   </artifact>
 </variant>
