@@ -1,4 +1,0 @@
-com.example.dawn.test.app-androidTest-0 E:\code\flutter projects\ProPakistani2\tribune_app\build\app\generated\res\resValues\androidTest\debug
-com.example.dawn.test.app-mergeDebugAndroidTestResources-1 E:\code\flutter projects\ProPakistani2\tribune_app\build\app\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
-com.example.dawn.test.app-mergeDebugAndroidTestResources-2 E:\code\flutter projects\ProPakistani2\tribune_app\build\app\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
-com.example.dawn.test.app-merged_res-3 E:\code\flutter projects\ProPakistani2\tribune_app\build\app\intermediates\merged_res\debugAndroidTest

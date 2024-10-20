@@ -8,7 +8,6 @@ import 'package:propakistani/screens/screen_home_page/screen_home_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
-import 'firebase_options.dart';
 import 'providers/provider_shared_preferences.dart';
 
 void main() async {
